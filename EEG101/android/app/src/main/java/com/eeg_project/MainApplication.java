@@ -5,6 +5,8 @@ import android.app.Application;
 import com.choosemuse.libmuse.Muse;
 import com.eeg_project.components.emitter.AppNativeEventEmitter;
 import com.facebook.react.ReactApplication;
+import com.brentvatne.react.ReactVideoPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.airbnb.android.react.lottie.LottiePackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
 import com.cubicphuse.RCTTorch.RCTTorchPackage;
@@ -27,6 +29,13 @@ public class MainApplication extends Application implements ReactApplication {
   public static AppNativeEventEmitter eventEmitter;
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
+
+    // Override js entry point (dev, prod entry point is set from gradle)
+    @Override
+    protected String getJSMainModuleName() {
+      return "bimslab/index.android";
+    }
+
     @Override
     public boolean getUseDeveloperSupport() {
       return com.eeg_project.BuildConfig.DEBUG;
@@ -37,6 +46,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactVideoPackage(),
+            new VectorIconsPackage(),
             new LottiePackage(),
             new RNI18nPackage(),
           new RCTTorchPackage(),
