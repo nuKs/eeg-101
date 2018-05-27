@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.choosemuse.libmuse.Muse;
 import com.eeg_project.components.emitter.AppNativeEventEmitter;
+import com.eeg_project.AwarePackage;
 import com.facebook.react.ReactApplication;
 import com.brentvatne.react.ReactVideoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -52,7 +53,8 @@ public class MainApplication extends Application implements ReactApplication {
             new RNI18nPackage(),
           new RCTTorchPackage(),
           new SvgPackage(),
-          new EEGPackage()
+          new EEGPackage(),
+          new AwarePackage()
       );
     }
   };

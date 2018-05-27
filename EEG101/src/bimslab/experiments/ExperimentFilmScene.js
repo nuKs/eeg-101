@@ -13,6 +13,10 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 // import { setGraphViewDimensions } from "../redux/actions";
 
+// import {
+//   withRouter
+// } from "react-router-native";
+
 import Video from "react-native-video";
 
 const Wrapper_ = styled(View)`
@@ -29,8 +33,17 @@ class ExperimentFilmScene extends Component {
 
     this.state = {
     }
+
+    this.next = this.next.bind(this);
   }
 
+  next() {
+    console.log('onEnd');
+
+    // go to location 
+    // @warning router is not fully sync w/ redux!
+    this.props.history.push('/experiment/film');
+  }
 
   // @todo set state change
   render() {
@@ -43,7 +56,7 @@ class ExperimentFilmScene extends Component {
           source={Platform.OS === 'ios' ? {uri: 'resting-state'} : require('../../assets/resting-state.mp4')}
           volume={0.0}                 // 0 is muted, 1 is normal.
           paused={false}
-          onEnd={e => console.log('onEnd')}           // Callback when playback finishes
+          onEnd={e => this.next}           // Callback when playback finishes
           onError={e => console.error('onError', e)}    // Callback when video cannot be loaded
           resizeMode="cover"
 

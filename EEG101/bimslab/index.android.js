@@ -15,6 +15,7 @@ import FooterMenuButton from "../src/bimslab/FooterMenuButton";
 import ExperimentScene from "../src/bimslab/experiments/ExperimentScene";
 import ExperimentQAScene from "../src/bimslab/experiments/ExperimentQAScene";
 import ExperimentFilmScene from "../src/bimslab/experiments/ExperimentFilmScene";
+import ExperimentEndScene from "../src/bimslab/experiments/ExperimentEndScene";
 
 // Create store
 import { createStore, applyMiddleware } from "redux";
@@ -54,11 +55,12 @@ export default class EEG101 extends Component {
               <Content_>
                 <Switch>
                   <Route exact path="/" render={() => (
-                      <Redirect to="/experiment/film" />
+                      <Redirect to="/experiment" />
                   )}/>
                   <Route exact path="/experiment" component={ExperimentScene} />
                   <Route exact path="/experiment/qa" component={ExperimentQAScene} />
                   <Route exact path="/experiment/film" component={ExperimentFilmScene} />
+                  <Route exact path="/experiment/end" component={ExperimentEndScene} />
                 </Switch>
               </Content_>
               <Footer>
