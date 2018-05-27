@@ -16,8 +16,7 @@ import {
   withRouter
 } from "react-router-native";
 
-const Wrapper_ = styled
-  .View`
+const Wrapper_ = styled(View)`
     /* center content */
     flex: 1;
     flex-direction: column;
