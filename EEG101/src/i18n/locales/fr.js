@@ -314,4 +314,7 @@ export default {
 
 	// LineNoisePicker.js
 	notchFrequency:  '',
+	searchingDotDotDot: 'Recherche...',
+	connectingDotDotDot: 'Connexion...',
+	connected: 'Connecté'
 };

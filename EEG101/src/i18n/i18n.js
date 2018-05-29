@@ -5,6 +5,7 @@ import fr from './locales/fr';
 import de from './locales/de';
 
 I18n.fallbacks = true;
+I18n.locale = 'fr';
 
 I18n.translations = {
   en,

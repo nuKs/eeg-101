@@ -179,7 +179,7 @@ export default class ConnectorWidget extends Component {
 
             <View style={styles.connectingContainer}>
               <ActivityIndicator color={"#94DAFA"} size={"large"} />
-              <Text style={styles.connecting}>Searching...</Text>
+              <Text style={styles.connecting}>{I18n.t("searchingDotDotDot")}</Text>
             </View>
           </View>
         );
@@ -190,7 +190,7 @@ export default class ConnectorWidget extends Component {
             <View style={styles.connectingContainer}>
               <ActivityIndicator color={"#94DAFA"} size={"large"} />
               <View>
-                <Text style={styles.connecting}>Connecting...</Text>
+                <Text style={styles.connecting}>{I18n.t("connectingDotDotDot")}</Text>
                 <Text style={styles.connectingName}>
                   {this.props.availableMuses[this.state.selectedMuse].name}
                 </Text>
@@ -203,7 +203,7 @@ export default class ConnectorWidget extends Component {
         return (
           <View style={styles.container}>
             <View style={styles.connectingContainer}>
-              <Text style={styles.connected}>Connected</Text>
+              <Text style={styles.connected}>{I18n.t("connected")}</Text>
             </View>
           </View>
         );

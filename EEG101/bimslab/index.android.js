@@ -11,11 +11,14 @@ import {
   Switch
 } from "react-router-native";
 
-import FooterMenuButton from "../src/bimslab/FooterMenuButton";
 import ExperimentScene from "../src/bimslab/experiments/ExperimentScene";
 import ExperimentQAScene from "../src/bimslab/experiments/ExperimentQAScene";
 import ExperimentFilmScene from "../src/bimslab/experiments/ExperimentFilmScene";
 import ExperimentEndScene from "../src/bimslab/experiments/ExperimentEndScene";
+import ExperimentConnector1Scene from "../src/bimslab/experiments/ExperimentConnector1Scene";
+import ExperimentConnector2Scene from "../src/bimslab/experiments/ExperimentConnector2Scene";
+import ExperimentConnector3Scene from "../src/bimslab/experiments/ExperimentConnector3Scene";
+import Menu from "./Menu";
 
 // Create store
 import { createStore, applyMiddleware } from "redux";
@@ -59,26 +62,14 @@ export default class EEG101 extends Component {
                   )}/>
                   <Route exact path="/experiment" component={ExperimentScene} />
                   <Route exact path="/experiment/qa" component={ExperimentQAScene} />
+                  <Route exact path="/experiment/connector/1" component={ExperimentConnector1Scene} />
+                  <Route exact path="/experiment/connector/2" component={ExperimentConnector2Scene} />
+                  <Route exact path="/experiment/connector/3" component={ExperimentConnector3Scene} />
                   <Route exact path="/experiment/film" component={ExperimentFilmScene} />
                   <Route exact path="/experiment/end" component={ExperimentEndScene} />
                 </Switch>
               </Content_>
-              <Footer>
-                <FooterTab>
-                  <FooterMenuButton route="/" icon="add-circle">
-                    Tests
-                  </FooterMenuButton>
-                  <FooterMenuButton route="/graphs" icon="pulse">
-                    Graphes
-                  </FooterMenuButton>
-                  <FooterMenuButton route="/info" icon="list-box">
-                    Info
-                  </FooterMenuButton>
-                  <FooterMenuButton route="/settings" icon="settings">
-                    Réglages
-                  </FooterMenuButton>
-                </FooterTab>
-              </Footer>
+              <Menu />
             </Container>
           </AndroidBackButton>
         </NativeRouter>

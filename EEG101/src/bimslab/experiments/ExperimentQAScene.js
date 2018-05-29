@@ -59,7 +59,7 @@ class ExperimentQAScene extends Component {
 
     // go to location 
     // @warning router is not fully sync w/ redux!
-    this.props.history.push('/experiment/film');
+    this.props.history.push('/experiment/connector/1');
   }
 
   // @todo set state change
