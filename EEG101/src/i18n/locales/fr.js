@@ -316,5 +316,7 @@ export default {
 	notchFrequency:  '',
 	searchingDotDotDot: 'Recherche...',
 	connectingDotDotDot: 'Connexion...',
-	connected: 'Connecté'
+	connected: 'Connecté',
+	search: 'RECHERCHE', // search
+	bluetoothDisabled: 'Bluetooth semble désactivé !' // Bluetooth appears to be disabled!
 };

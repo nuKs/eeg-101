@@ -144,7 +144,7 @@ export default class ConnectorWidget extends Component {
           <View style={styles.container}>
             <Text style={styles.noMuses}>No connected Muse</Text>
             <WhiteButton onPress={() => this.getAndConnectToDevice()}>
-              SEARCH
+              {I18n.t("search")}
             </WhiteButton>
           </View>
         );
@@ -153,10 +153,10 @@ export default class ConnectorWidget extends Component {
         return (
           <View style={styles.container}>
             <Text style={styles.noMuses}>
-              Bluetooth appears to be disabled!
+              {I18n.t('bluetoothDisabled')}
             </Text>
             <WhiteButton onPress={() => this.getAndConnectToDevice()}>
-              SEARCH
+              {I18n.t("search")}
             </WhiteButton>
           </View>
         );
