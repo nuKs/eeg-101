@@ -76,11 +76,11 @@ class ConnectorOne extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.titleBox}>
-          <Text style={styles.title}>{I18n.t("step1Title")}</Text>
+          {/*<Text style={styles.title}>{I18n.t("step1Title")}</Text>*/}
           <Text style={styles.instructions}>
             {I18n.t("musePowerOnWarning")}
           </Text>
-          <Text style={styles.body}>{I18n.t("museFirstGenWarning")}</Text>
+          {/*<Text style={styles.body}>{I18n.t("museFirstGenWarning")}</Text>*/}
         </View>
         <View style={styles.offlineButtonContainer}>
           {/*<SandboxButton

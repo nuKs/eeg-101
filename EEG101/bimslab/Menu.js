@@ -23,22 +23,33 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
 });
 
+// bar-graph / Entypo
+
 const Menu = ({display}) => 
   display &&
   <Footer>
     <FooterTab>
-      <FooterMenuButton route="/" icon="add-circle">
+      <FooterMenuButton route="/" icon="ios-add-circle-outline">
         Tests
       </FooterMenuButton>
-      <FooterMenuButton route="/graphs" icon="pulse">
-        Graphes
+      <FooterMenuButton route="/graphs" icon="ios-pulse-outline">
+        Data 
+        {/*ios-options-outline ios-options*/}
       </FooterMenuButton>
-      <FooterMenuButton route="/info" icon="list-box">
+      {/*<FooterMenuButton route="/usage" icon="ios-information-circle-outline">
+        Usage
+      </FooterMenuButton>*/}
+      <FooterMenuButton route="/info" icon="ios-list-box-outline">
         Info
       </FooterMenuButton>
+      <FooterMenuButton badge={2} route="/notification" icon="ios-text-outline">
+        Notifs
+      </FooterMenuButton>
+      {/*
       <FooterMenuButton route="/settings" icon="settings">
         Réglages
       </FooterMenuButton>
+      */}
     </FooterTab>
   </Footer>;
 
