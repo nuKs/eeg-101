@@ -32,7 +32,7 @@ const Menu = ({display}) =>
       <FooterMenuButton route="/" icon="ios-add-circle-outline">
         Tests
       </FooterMenuButton>
-      <FooterMenuButton route="/graphs" icon="ios-pulse-outline">
+      <FooterMenuButton route="/analysis/graph/0" icon="ios-pulse-outline">
         Data 
         {/*ios-options-outline ios-options*/}
       </FooterMenuButton>

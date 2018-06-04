@@ -18,6 +18,7 @@ import ExperimentEndScene from "../src/bimslab/experiments/ExperimentEndScene";
 import ExperimentConnector1Scene from "../src/bimslab/experiments/ExperimentConnector1Scene";
 import ExperimentConnector2Scene from "../src/bimslab/experiments/ExperimentConnector2Scene";
 import ExperimentConnector3Scene from "../src/bimslab/experiments/ExperimentConnector3Scene";
+import AnalysisGraphScene from "../src/bimslab/analysis/AnalysisGraphScene";
 import Menu from "./Menu";
 
 // Create store
@@ -58,7 +59,7 @@ export default class EEG101 extends Component {
               <Content_>
                 <Switch>
                   <Route exact path="/" render={() => (
-                      <Redirect to="/experiment/qa" />
+                      <Redirect to="/analysis/graph/0" />
                   )}/>
                   <Route exact path="/experiment" component={ExperimentScene} />
                   <Route exact path="/experiment/qa" component={ExperimentQAScene} />
@@ -67,6 +68,7 @@ export default class EEG101 extends Component {
                   <Route exact path="/experiment/connector/3" component={ExperimentConnector3Scene} />
                   <Route exact path="/experiment/film" component={ExperimentFilmScene} />
                   <Route exact path="/experiment/end" component={ExperimentEndScene} />
+                  <Route exact path="/analysis/graph/0" component={AnalysisGraphScene} />
                 </Switch>
               </Content_>
               <Menu />

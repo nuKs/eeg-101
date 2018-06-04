@@ -17,12 +17,11 @@ import {
 } from "react-router-native";
 
 import Carousel, { Pagination } from 'react-native-snap-carousel';
-import LinkButton from "./WhiteLinkButton";
 
 const Wrapper_ = styled(View)`
     /* center content */
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white; /*#EFEFEF*/
     /* justify-content: center; */ 
     /* align-items: center; */
@@ -45,8 +44,8 @@ const HeaderText_ = styled(Text)
 let _data = [
   {
     type: 'text',
-    title: 'Indiquez la sévérité de vos symptomes.',
-    icon: 'chevron-down'
+    title: 'Explorez vos données.',
+    icon: 'chevron-right'
   },
   {
     type: 'question',
@@ -119,8 +118,10 @@ class ExperimentQAScene extends Component {
   }
 
   Item = ({ type, title, value, icon, onSlidingComplete, onSubmit }) =>
-    <View style={{flex: 1, justifyContent: 'center', alignContent: 'center', backgroundColor: 'transparent'}}>
-      <HeaderText_>{title}</HeaderText_>
+    <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', alignContent: 'center', backgroundColor: 'transparent'}}>
+      <View style={{width: '70%'}}>
+        <HeaderText_>{title}</HeaderText_>
+      </View>
       {type === 'question' &&
         <View style={{flexDirection: 'row', justifyContent: 'center', backgroundColor: 'transparent'}}>
           <Text style={{padding: 20, justifyContent: 'center'}}>-</Text>
@@ -155,6 +156,34 @@ class ExperimentQAScene extends Component {
     return (
       <Wrapper_>
         <View
+            style={{
+              position: 'absolute',
+              right: 0,
+              left: 0,
+              top: 0,
+              alignContent: 'center'
+            }}
+        >
+          <Pagination
+            vertical={false}
+            dotsLength={_data.length}
+            activeDotIndex={this.state.activeSlide}
+            containerStyle={{ backgroundColor: 'transparent' }}
+            dotStyle={{
+                width: 10,
+                height: 10,
+                borderRadius: 5,
+                marginHorizontal: 0,
+                backgroundColor: 'rgba(0, 0, 0, 0.92)',
+            }}
+            inactiveDotStyle={{
+                // Define styles for inactive dots here
+            }}
+            inactiveDotOpacity={0.4}
+            inactiveDotScale={0.6}
+          />
+        </View>
+        <View
           style={{
             position: 'absolute',
             top: 0,
@@ -172,13 +201,13 @@ class ExperimentQAScene extends Component {
                 firstItem={1}
                 enableMomentum={false}
                 enableSnap={true}
-                vertical={true}
-                sliderWidth={this.state.dimensions.width}
+                vertical={false}
                 inactiveSlideOpacity={0.7}
                 inactiveSlideScale={0.8}
+                sliderWidth={this.state.dimensions.width}
                 itemWidth={this.state.dimensions.width}
                 sliderHeight={this.state.dimensions.height}
-                itemHeight={this.state.dimensions.height / 3}
+                itemHeight={this.state.dimensions.height}
                 onSnapToItem={(index) => this.setState({ activeSlide: index }) }
                 renderItem={({item}) =>
                   <TouchableHighlight style={{padding: 25, justifyContent: 'center', alignContent: 'center'}}>
@@ -207,40 +236,6 @@ class ExperimentQAScene extends Component {
                 }
               />
             </View>}
-        </View>
-        <View
-            style={{
-              position: 'absolute',
-              right: -15,
-              top: 20,
-              bottom: 0,
-              justifyContent: 'center'
-            }}
-        >
-          <Pagination
-            vertical={true}
-            dotsLength={_data.length}
-            activeDotIndex={this.state.activeSlide}
-            containerStyle={{ backgroundColor: 'transparent' }}
-            dotStyle={{
-                width: 10,
-                height: 10,
-                borderRadius: 5,
-                marginHorizontal: 0,
-                backgroundColor: 'rgba(0, 0, 0, 0.92)',
-                shadowOffset: {
-                  width: 10,
-                  height: 10
-                },
-                shadowRadius: 5,
-                shadowOpacity: 1.0
-            }}
-            inactiveDotStyle={{
-                // Define styles for inactive dots here
-            }}
-            inactiveDotOpacity={0.4}
-            inactiveDotScale={0.6}
-          />
         </View>
       </Wrapper_>
     );

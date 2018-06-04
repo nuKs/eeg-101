@@ -173,9 +173,9 @@ class ExperimentQAScene extends Component {
                 enableMomentum={false}
                 enableSnap={true}
                 vertical={true}
-                sliderWidth={this.state.dimensions.width}
                 inactiveSlideOpacity={0.7}
-                inactiveSlideScale={0.8}
+                inactiveSlideScale={0.9}
+                sliderWidth={this.state.dimensions.width}
                 itemWidth={this.state.dimensions.width}
                 sliderHeight={this.state.dimensions.height}
                 itemHeight={this.state.dimensions.height / 3}
@@ -228,12 +228,6 @@ class ExperimentQAScene extends Component {
                 borderRadius: 5,
                 marginHorizontal: 0,
                 backgroundColor: 'rgba(0, 0, 0, 0.92)',
-                shadowOffset: {
-                  width: 10,
-                  height: 10
-                },
-                shadowRadius: 5,
-                shadowOpacity: 1.0
             }}
             inactiveDotStyle={{
                 // Define styles for inactive dots here
