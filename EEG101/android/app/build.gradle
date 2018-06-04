@@ -186,6 +186,7 @@ project.ext {
 }
 
 dependencies {
+    compile project(':react-native-svg')
     implementation project(':react-native-video')
     implementation project(':react-native-vector-icons')
     implementation project(':lottie-react-native')

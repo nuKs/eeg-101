@@ -6,6 +6,7 @@ import com.choosemuse.libmuse.Muse;
 import com.eeg_project.components.emitter.AppNativeEventEmitter;
 import com.eeg_project.AwarePackage;
 import com.facebook.react.ReactApplication;
+import com.horcrux.svg.SvgPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.airbnb.android.react.lottie.LottiePackage;
@@ -47,6 +48,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SvgPackage(),
             new ReactVideoPackage(),
             new VectorIconsPackage(),
             new LottiePackage(),
