@@ -1,24 +1,20 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, Footer, FooterTab } from 'native-base';
-import { AppRegistry, StatusBar } from "react-native";
+import { Container, Header, Content, Footer, FooterTab, StyleProvider } from 'native-base';
+import getTheme from '../native-base-theme/components';
+import { View, AppRegistry, StatusBar } from "react-native";
 import styled from "styled-components";
 
-import {
-  NativeRouter,
-  AndroidBackButton,
-  Route,
-  Redirect,
-  Switch
-} from "react-router-native";
+import { NativeRouter, AndroidBackButton, Route, Redirect, Switch } from "react-router-native";
 
 import ExperimentScene from "../src/bimslab/experiments/ExperimentScene";
 import ExperimentQAScene from "../src/bimslab/experiments/ExperimentQAScene";
 import ExperimentFilmScene from "../src/bimslab/experiments/ExperimentFilmScene";
 import ExperimentEndScene from "../src/bimslab/experiments/ExperimentEndScene";
-import ExperimentConnector1Scene from "../src/bimslab/experiments/ExperimentConnector1Scene";
+// import ExperimentConnector1Scene from "../src/bimslab/experiments/ExperimentConnector1Scene";
 import ExperimentConnector2Scene from "../src/bimslab/experiments/ExperimentConnector2Scene";
 import ExperimentConnector3Scene from "../src/bimslab/experiments/ExperimentConnector3Scene";
-import AnalysisGraphScene from "../src/bimslab/analysis/AnalysisGraphScene";
+import AnalysisRootScene from "../src/bimslab/analysis/AnalysisRootScene";
+import AnalysisRootMenu from "../src/bimslab/analysis/AnalysisRootMenu";
 import Menu from "./Menu";
 
 // Create store
@@ -50,32 +46,40 @@ const Content_ = styled(Content)
 export default class EEG101 extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <NativeRouter>
-          <AndroidBackButton>
-            <Container>
-              {/*<StatusBar backgroundColor="blue" />*/}
-              {/*<Header />*/}
-              <Content_>
+      <StyleProvider style={getTheme()}>
+        <Provider store={store}>
+          <NativeRouter>
+            {/*<View style={{flex: 1}}>*/}
+            <AndroidBackButton>
+              <StatusBar backgroundColor="black" />
+              <Container>
                 <Switch>
-                  <Route exact path="/" render={() => (
-                      <Redirect to="/analysis/graph/0" />
-                  )}/>
-                  <Route exact path="/experiment" component={ExperimentScene} />
-                  <Route exact path="/experiment/qa" component={ExperimentQAScene} />
-                  <Route exact path="/experiment/connector/1" component={ExperimentConnector1Scene} />
-                  <Route exact path="/experiment/connector/2" component={ExperimentConnector2Scene} />
-                  <Route exact path="/experiment/connector/3" component={ExperimentConnector3Scene} />
-                  <Route exact path="/experiment/film" component={ExperimentFilmScene} />
-                  <Route exact path="/experiment/end" component={ExperimentEndScene} />
-                  <Route exact path="/analysis/graph/0" component={AnalysisGraphScene} />
+                  <Route path="/analysis" component={AnalysisRootMenu} />
                 </Switch>
-              </Content_>
-              <Menu />
-            </Container>
-          </AndroidBackButton>
-        </NativeRouter>
-      </Provider>
+                <Content_>
+                  <Switch>
+                    <Route exact path="/" render={() => (
+                      <Redirect to="/experiment/film" />
+                    )}/>
+                    <Route exact path="/experiment" component={ExperimentScene} />
+                    <Route exact path="/experiment/qa" component={ExperimentQAScene} />
+                    <Route exact path="/experiment/connector/1" render={() => (
+                      <Redirect to="/experiment/connector/2" />
+                    )} />
+                    <Route exact path="/experiment/connector/2" component={ExperimentConnector2Scene} />
+                    <Route exact path="/experiment/connector/3" component={ExperimentConnector3Scene} />
+                    <Route exact path="/experiment/film" component={ExperimentFilmScene} />
+                    <Route exact path="/experiment/end" component={ExperimentEndScene} />
+                    <Route path="/analysis" component={AnalysisRootScene} />
+                  </Switch>
+                </Content_>
+                <Menu />
+              </Container>
+            </AndroidBackButton>
+            {/*</View>*/}
+          </NativeRouter>
+        </Provider>
+      </StyleProvider>
     );
   }
 }

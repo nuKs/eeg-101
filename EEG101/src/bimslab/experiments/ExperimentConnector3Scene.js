@@ -3,16 +3,13 @@ import {
   Text,
   Image,
   View,
-  NativeModules,
-  NativeEventEmitter
 } from "react-native";
 import { connect } from "react-redux";
 import { MediaQueryStyleSheet } from "react-native-responsive";
-import { isNil } from "lodash";
 import config from "../../redux/config";
 import Classifier from "../../native/Classifier";
-import LinkButton from "./WhiteLinkButton";
-import NoiseIndicator from "../../components/NoiseIndicator";
+import CleanButton from "../components/CleanButton";
+import NoiseIndicator from "./NoiseIndicator";
 import I18n from "../../i18n/i18n";
 import * as colors from "../../styles/colors";
 
@@ -65,7 +62,6 @@ class ConnectorThree extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.titleBox}>
-          <Text style={styles.title}>{I18n.t("step3Title")}</Text>
           <Text style={styles.instructions}>{I18n.t("museFitProperly")}</Text>
           <Text style={styles.body}>{I18n.t("fitInstructions")}</Text>
         </View>
@@ -74,7 +70,7 @@ class ConnectorThree extends Component {
         </View>
 
         <View style={styles.buttonContainer}>
-          <LinkButton onPress={this.click}> Commencer le test </LinkButton>
+          <CleanButton onPress={this.click}>COMMENCER</CleanButton>
         </View>
       </View>
     );

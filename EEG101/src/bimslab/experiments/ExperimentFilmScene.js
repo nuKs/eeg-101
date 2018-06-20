@@ -1,4 +1,4 @@
-/**
+ /**
  * Scene component used as a route in the index file.
  **/
 
@@ -6,16 +6,12 @@
 import React, { Component } from 'react';
 import { Platform, View, Slider, FlatList } from "react-native";
 import styled from "styled-components";
-import { Text, Button } from 'native-base';
 
 // Redux
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-// import { setGraphViewDimensions } from "../redux/actions";
 
-// import {
-//   withRouter
-// } from "react-router-native";
+import AwareModule from './AwareModule';
 
 import Video from "react-native-video";
 
@@ -35,6 +31,16 @@ class ExperimentFilmScene extends Component {
     }
 
     this.next = this.next.bind(this);
+  }
+
+  componentDidMount() {
+    console.log('bridge/js: startRecord');
+    AwareModule.startRecord();
+  }
+
+  componentWillUnmount() {
+    console.log('bridge/js: stopRecord');
+    AwareModule.stopRecord();
   }
 
   next() {

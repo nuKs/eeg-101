@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import { View, Slider, FlatList, TouchableHighlight, Dimensions } from "react-native";
 import styled from "styled-components";
-import { Text, Button, Icon } from 'native-base';
+import { Text, Button, Icon, Tabs, Tab, TabHeading, ScrollableTab, Header, Left, Body, Right, Segment, Content } from 'native-base';
 
 // Redux
 import { bindActionCreators } from "redux";
@@ -17,6 +17,7 @@ import {
 } from "react-router-native";
 
 import Carousel, { Pagination } from 'react-native-snap-carousel';
+import { VictoryTheme, VictoryChart, VictoryGroup, VictoryAxis, VictoryLine, VictoryScatter } from "victory-native";
 
 const Wrapper_ = styled(View)`
     /* center content */
@@ -58,35 +59,19 @@ let _data = [
     value: undefined
   },
   {
-    type: 'question',
-    title: 'Ma question #3',
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: 'Ma question #4',
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: 'Ma question #5',
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: 'Ma question #6',
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: 'Ma question #7',
-    value: undefined
-  },
-  {
     type: 'submit',
     title: 'Merci de votre participation'
   }
 ];
+
+
+const data = [
+  { quarter: 1, earnings: 13000 },
+  { quarter: 2, earnings: 16500 },
+  { quarter: 3, earnings: 14250 },
+  { quarter: 4, earnings: 19000 }
+];
+
 
 const {WIN_HEIGHT, WIN_WIDTH} = Dimensions.get('window');
 
@@ -95,13 +80,6 @@ class ExperimentQAScene extends Component {
     super(props)
 
     this.state = {
-      answer1: 0.5,
-      answer2: 0.5,
-      answer3: 0.5,
-      answer4: 0.5,
-      answer5: 0.5,
-      answer6: 0.5,
-      answer7: 0.5,
       dimensions: {},
       activeSlide: 0
     }
@@ -118,17 +96,33 @@ class ExperimentQAScene extends Component {
   }
 
   Item = ({ type, title, value, icon, onSlidingComplete, onSubmit }) =>
-    <View style={{flex: 1, flexDirection: 'column', justifyContent: 'center', alignContent: 'center', backgroundColor: 'transparent'}}>
-      <View style={{width: '70%'}}>
-        <HeaderText_>{title}</HeaderText_>
+    <View style={{flex: 1, justifyContent: 'center', alignContent: 'center', flexDirection: 'column', backgroundColor: 'transparent'}}>
+      <View>
+        <HeaderText_>Mon Graph #1</HeaderText_>
       </View>
-      {type === 'question' &&
-        <View style={{flexDirection: 'row', justifyContent: 'center', backgroundColor: 'transparent'}}>
-          <Text style={{padding: 20, justifyContent: 'center'}}>-</Text>
-          <Slider value={typeof value === 'undefined' ? 0.5 : value} style={{flex: 1}} onSlidingComplete={onSlidingComplete} />
-          <Text style={{padding: 20, justifyContent: 'center'}}>+</Text>
-        </View>
-      }
+      <VictoryChart
+        height={this.state.dimensions.height/2}
+        theme={VictoryTheme.material}
+        padding={{ left: 0, top: 0, right: 0, bottom: 0 }}
+      >
+        <VictoryAxis offsetY={50} />
+        <VictoryLine
+          style={{
+            data: { stroke: "#222", strokeWidth: 1 }
+          }}
+          data={data}
+          x="quarter"
+          y="earnings"
+          interpolation="monotoneX"
+        />
+        <VictoryScatter
+          size={2}
+          data={data}
+          x="quarter"
+          y="earnings"
+          style={{ data: { fill: "#222" } }}
+        />
+      </VictoryChart>
       {typeof icon !== 'undefined' &&
         <View style={{flex: 0, flexDirection: 'row', justifyContent: 'center', backgroundColor: 'transparent'}}>
           <Icon type="Entypo" name={icon} style={{marginTop: 15}} fontSize={35} />
@@ -155,88 +149,124 @@ class ExperimentQAScene extends Component {
     // @todo move flatlist out of render fn
     return (
       <Wrapper_>
-        <View
-            style={{
-              position: 'absolute',
-              right: 0,
-              left: 0,
-              top: 0,
-              alignContent: 'center'
-            }}
-        >
-          <Pagination
-            vertical={false}
-            dotsLength={_data.length}
-            activeDotIndex={this.state.activeSlide}
-            containerStyle={{ backgroundColor: 'transparent' }}
-            dotStyle={{
-                width: 10,
-                height: 10,
-                borderRadius: 5,
-                marginHorizontal: 0,
-                backgroundColor: 'rgba(0, 0, 0, 0.92)',
-            }}
-            inactiveDotStyle={{
-                // Define styles for inactive dots here
-            }}
-            inactiveDotOpacity={0.4}
-            inactiveDotScale={0.6}
-          />
-        </View>
-        <View
-          style={{
-            position: 'absolute',
-            top: 0,
-            bottom: 0,
-            right: 0,
-            left: 0
-          }}
-          onLayout={this.onLayout}
-        >
-          {this.state.dimensions.height && 
-            <View>
-              <Carousel
-                ref={(c) => { this._carousel = c; }}
-                data={_data}
-                firstItem={1}
-                enableMomentum={false}
-                enableSnap={true}
-                vertical={false}
-                inactiveSlideOpacity={0.7}
-                inactiveSlideScale={0.8}
-                sliderWidth={this.state.dimensions.width}
-                itemWidth={this.state.dimensions.width}
-                sliderHeight={this.state.dimensions.height}
-                itemHeight={this.state.dimensions.height}
-                onSnapToItem={(index) => this.setState({ activeSlide: index }) }
-                renderItem={({item}) =>
-                  <TouchableHighlight style={{padding: 25, justifyContent: 'center', alignContent: 'center'}}>
-                    <View 
-                      style={{
-                        height: '100%',
-                        width: '100%',
-                        backgroundColor: 'transparent',
-                        borderRadius: 5,
-                      }}
-                    >
-                      <this.Item
-                        type={item.type}
-                        title={item.title}
-                        value={item.value}
-                        icon={item.icon}
-                        onSlidingComplete={value => {
-                          // @todo fix state
-                          // this.setState({answer5: value})
-                          this._carousel.snapToNext();
-                        }}
-                        onSubmit={this.submit}
-                      />
-                    </View>
-                  </TouchableHighlight>
-                }
-              />
-            </View>}
-        </View>
+        <Header>
+          <Left>
+            {/*<Button transparent>
+              <Icon name="arrow-back" />
+            </Button>*/}
+          </Left>
+          <Body>
+            <Segment>
+              <Button first><Text>A</Text></Button>
+              <Button active><Text>M</Text></Button>
+              <Button last><Text>S</Text></Button>
+            </Segment>
+          </Body>
+          <Right>
+            {/*<Button transparent>
+              <Icon name="search" />
+            </Button>*/}
+          </Right>
+        </Header>
+        <Content>
+          <Tabs renderTabBar={()=> <ScrollableTab />}>
+            {/*<Icon name="camera" />*/}
+            <Tab heading={ <TabHeading><Text>Bande Passante</Text></TabHeading>}>
+            </Tab>
+            <Tab heading={ <TabHeading><Text>Qualité du Signal</Text></TabHeading>}>
+            </Tab>
+            <Tab heading={ <TabHeading><Text>Données</Text></TabHeading>}>
+            </Tab>
+            <Tab heading={ <TabHeading><Text>Graph #1</Text></TabHeading>}>
+              <View
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  bottom: 0,
+                  right: 0,
+                  left: 0
+                }}
+                onLayout={this.onLayout}
+              >
+                {this.state.dimensions.height && 
+                  <View>
+                    <Carousel
+                      ref={(c) => { this._carousel = c; }}
+                      data={_data}
+                      firstItem={1}
+                      enableMomentum={false}
+                      enableSnap={true}
+                      vertical={false}
+                      inactiveSlideOpacity={0.7}
+                      inactiveSlideScale={0.8}
+                      sliderWidth={this.state.dimensions.width}
+                      itemWidth={this.state.dimensions.width}
+                      sliderHeight={this.state.dimensions.height}
+                      itemHeight={this.state.dimensions.height}
+                      onSnapToItem={(index) => this.setState({ activeSlide: index }) }
+                      renderItem={({item}) =>
+                        <TouchableHighlight style={{padding: 25, justifyContent: 'center', alignContent: 'center'}}>
+                          <View 
+                            style={{
+                              height: '100%',
+                              width: '100%',
+                              backgroundColor: 'transparent',
+                              borderRadius: 5,
+                            }}
+                          >
+                            <this.Item
+                              type={item.type}
+                              title={item.title}
+                              value={item.value}
+                              icon={item.icon}
+                              onSlidingComplete={value => {
+                                // @todo fix state
+                                // this.setState({answer5: value})
+                                this._carousel.snapToNext();
+                              }}
+                              onSubmit={this.submit}
+                            />
+                          </View>
+                        </TouchableHighlight>
+                      }
+                    />
+                  </View>}
+              </View>
+              <View
+                  style={{
+                    position: 'absolute',
+                    right: 0,
+                    left: 0,
+                    bottom: 0,
+                    alignContent: 'center'
+                  }}
+              >
+                <Pagination
+                  vertical={false}
+                  dotsLength={_data.length}
+                  activeDotIndex={this.state.activeSlide}
+                  containerStyle={{ backgroundColor: 'transparent' }}
+                  dotStyle={{
+                      width: 10,
+                      height: 10,
+                      borderRadius: 5,
+                      marginHorizontal: 0,
+                      backgroundColor: 'rgba(0, 0, 0, 0.92)',
+                  }}
+                  inactiveDotStyle={{
+                      // Define styles for inactive dots here
+                  }}
+                  inactiveDotOpacity={0.4}
+                  inactiveDotScale={0.6}
+                />
+              </View>
+            </Tab>
+            {/* add-to-list */}
+            <Tab heading={ <TabHeading><Icon name="plus" type="Entypo" /></TabHeading> }>
+
+            </Tab>
+          </Tabs>
+        </Content>
       </Wrapper_>
     );
   }

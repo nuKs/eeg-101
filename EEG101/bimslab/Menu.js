@@ -29,7 +29,7 @@ const Menu = ({display}) =>
   display &&
   <Footer>
     <FooterTab>
-      <FooterMenuButton route="/" icon="ios-add-circle-outline">
+      <FooterMenuButton route="/experiment" icon="ios-add-circle-outline">
         Tests
       </FooterMenuButton>
       <FooterMenuButton route="/analysis/graph/0" icon="ios-pulse-outline">

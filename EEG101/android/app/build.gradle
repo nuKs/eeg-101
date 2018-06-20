@@ -186,6 +186,12 @@ project.ext {
 }
 
 dependencies {
+    compile project(':react-native-video')
+    compile project(':react-native-vector-icons')
+    compile project(':react-native-torch')
+    compile project(':react-native-linear-gradient')
+    compile project(':react-native-i18n')
+    compile project(':lottie-react-native')
     compile project(':react-native-svg')
     implementation project(':react-native-video')
     implementation project(':react-native-vector-icons')

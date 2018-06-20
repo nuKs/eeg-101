@@ -11,13 +11,9 @@ import { Text, Button, Icon } from 'native-base';
 // Redux
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-// import { setGraphViewDimensions } from "../redux/actions";
-import {
-  withRouter
-} from "react-router-native";
 
 import Carousel, { Pagination } from 'react-native-snap-carousel';
-import LinkButton from "./WhiteLinkButton";
+import CleanButton from '../components/CleanButton';
 
 const Wrapper_ = styled(View)`
     /* center content */
@@ -41,51 +37,110 @@ const HeaderText_ = styled(Text)
 
     color: #222;
   `;
-
 let _data = [
   {
     type: 'text',
-    title: 'Indiquez la sévérité de vos symptomes.',
+    title: "Indiquez la sévérité de vos symptomes pour aujourd'hui uniquement.",
     icon: 'chevron-down'
   },
   {
     type: 'question',
-    title: 'Ma question #1',
+    title: "Êtes vous insatisfait de votre journée?",
     value: undefined
   },
   {
     type: 'question',
-    title: 'Ma question #2',
+    title: "Avez vous eu de la difficulté à accomplir vos tâches efficacemment?",
     value: undefined
   },
   {
     type: 'question',
-    title: 'Ma question #3',
+    title: "Avez vu pensé être moins respectable en raison de votre problème de santé mentale?",
     value: undefined
   },
   {
     type: 'question',
-    title: 'Ma question #4',
+    title: "Avez vous beaucoup parlé ou communiqué avec d'autres personnes ? ",
     value: undefined
   },
   {
     type: 'question',
-    title: 'Ma question #5',
+    title: "La nuit passée, quelle a été la qualité de votre sommeil?",
     value: undefined
   },
   {
     type: 'question',
-    title: 'Ma question #6',
+    title: "Vous êtes vous senti stressé par divers événements?",
     value: undefined
   },
   {
     type: 'question',
-    title: 'Ma question #7',
+    title: "Vous êtes vous senti irritable?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous beaucoup pensé à la mort?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Vous êtes vous senti fort fatigué?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous vu ou entendu des choses que d'autres personnes ne peuvent voir ou entendre?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous pensé avoir des pouvoirs spéciaux, ou d'être sous le contrôle d'une force extérieure?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous trouvé difficile d'être motivé à commencer des activités ? ",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous eu le sentiment de manquer de spontanéité?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous consommé beaucoup de cannabis?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous consommé beaucoup d'alcool?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous eu l'impression que d'autres personnes vous regardaient bizarrement en raison de votre habillement?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Avez vous parlé ou bougé plus lentement qu'à l'habitude?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Vous êtes vous senti triste?",
+    value: undefined
+  },
+  {
+    type: 'question',
+    title: "Vous êtes vous senti anxieux ou nerveux?",
     value: undefined
   },
   {
     type: 'submit',
-    title: 'Merci de votre participation'
+    title: ""
   }
 ];
 
@@ -135,10 +190,9 @@ class ExperimentQAScene extends Component {
       }
       {type === 'submit' &&
         <View style={{marginTop: 15, paddingLeft: 25, paddingRight: 25}}>
-          <Button full success onPress={onSubmit}>
-            <Icon name="checkmark-circle" />
-            <Text>Valider</Text>
-          </Button>
+          <CleanButton onPress={onSubmit} icon="checkmark-circle">
+            VALIDER
+          </CleanButton>
         </View>
       }
     </View>

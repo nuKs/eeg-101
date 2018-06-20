@@ -1,19 +1,33 @@
 import React, { Component } from "react";
-import { Text, View } from "react-native";
+import { Text, View, PermissionsAndroid } from "react-native";
 import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import { MediaQueryStyleSheet } from "react-native-responsive";
 import config from "../../redux/config";
-import LinkButton from "./WhiteLinkButton";
-import WhiteButton from "./WhiteButton";
-import ConnectorWidget from "../../components/ConnectorWidget";
+import ConnectorWidget from "./ConnectorWidget";
 import I18n from "../../i18n/i18n";
 import * as colors from "../../styles/colors";
+import { setOfflineMode, initNativeEventListeners } from "../../redux/actions";
+
+import DescriptiveText from '../components/DescriptiveText';
+import CleanButton from '../components/CleanButton';
 
 // Sets isVisible prop by comparing state.scene.key (active scene) to the key of the wrapped scene
 function mapStateToProps(state) {
   return {
     connectionStatus: state.connectionStatus,
+    isOfflineMode: state.isOfflineMode
   };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {
+      setOfflineMode,
+      initNativeEventListeners
+    },
+    dispatch
+  );
 }
 
 class ConnectorTwo extends Component {
@@ -22,19 +36,41 @@ class ConnectorTwo extends Component {
     this.click = this.click.bind(this);
   }
 
+  componentDidMount() {
+    this.requestLocationPermission();
+    this.props.initNativeEventListeners();
+  }
+
+  // Checks if user has enabled coarse location permission neceessary for BLE function
+  // If not, displays request popup
+  async requestLocationPermission() {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
+        {
+          title: I18n.t("needsPermission"),
+          message: I18n.t("requiresLocation")
+        }
+      );
+    } catch (err) {
+      console.warn(err);
+    }
+  }
+
+
   renderButton() {
     if (
       this.props.connectionStatus === config.connectionStatus.CONNECTED
     ) {
       return (
-        <LinkButton onPress={this.click}>
-          {I18n.t("getStartedLink")}
-        </LinkButton>
+        <CleanButton onPress={this.click}>
+          SUIVANT
+        </CleanButton>
       );
     } else return (
-        <WhiteButton onPress={() => null} disabled={true}>
-          {I18n.t("getStartedLink")}
-        </WhiteButton>
+        <CleanButton onPress={() => null} disabled={true}>
+          SUIVANT
+        </CleanButton>
       );
   }
 
@@ -48,12 +84,9 @@ class ConnectorTwo extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.titleBox}>
-          <Text style={styles.title}>
-            {I18n.t("step2Title")}
-          </Text>
-          <Text style={styles.instructions}>
-            {I18n.t("waitMusePair")}
-          </Text>
+          <DescriptiveText>
+            Veuillez connecter votre appareil EEG.
+          </DescriptiveText>
         </View>
         <ConnectorWidget />
         <View style={styles.buttonContainer}>
@@ -63,7 +96,7 @@ class ConnectorTwo extends Component {
     );
   }
 }
-export default connect(mapStateToProps)(ConnectorTwo);
+export default connect(mapStateToProps, mapDispatchToProps)(ConnectorTwo);
 
 const styles = MediaQueryStyleSheet.create(
   // Base styles

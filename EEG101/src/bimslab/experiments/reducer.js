@@ -42,7 +42,6 @@ const initialState = {
   classifierData: new Array(30).fill(1),
   nativeEventEmitter: {},
   isBCIRunning: false
-
 };
 
 console.log('initial state', initialState);

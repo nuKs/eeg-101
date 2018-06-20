@@ -6,40 +6,28 @@
 import React, { Component } from 'react';
 import { View } from "react-native";
 import styled from "styled-components";
-import { Text } from 'native-base';
-import {
-  withRouter
-} from "react-router-native";
 
 // Redux
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-// import { setGraphViewDimensions } from "../redux/actions";
 
 // Bimslab
-import MegaButton from './MegaButton';
+import DescriptiveText from '../components/DescriptiveText';
+import CleanButton from '../components/CleanButton';
+import LinearGradient from 'react-native-linear-gradient';
 
-const Wrapper_ = styled
-  .View`
+const Wrapper_ = styled(LinearGradient)`
     /* center content */
+    position: relative;
     flex: 1;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   `;
-const HeaderText_ = styled(Text)
-  .attrs({
-    adjustsFontSizeToFit: true,
-    numberOfLines: 2
-  })`
-    font-size: 30;
-    margin-bottom: 50;
-    text-align: center;
 
-    /* for some reason padding alone doesn't work inside styled-components.. */
-    padding-left: 10;
-    padding-right: 10;
-  `;
+// adjustsFontSizeToFit: true,
+// numberOfLines: 2
+// margin - bottom: 50;
 
 class ExperimentScene extends Component {
   constructor(props) {
@@ -48,24 +36,28 @@ class ExperimentScene extends Component {
 
   render() {
     // @todo optimize by moving out of render function
-    let sentence, button;
+    let sentence1, sentence2, button;
     if (this.props.isExperimentEnabled) {
-      sentence = "Le test est disponible jusqu'à 21h";
-      button =  <MegaButton icon="arrow-dropright-circle" onPress={this.props.startExperiment.bind(this.props, this.props.history)}>
-                  Commencer maintenant
-                </MegaButton>;
+      sentence1 = "Le test est disponible.";
+      button =  <CleanButton icon="arrow-dropright-circle" onPress={this.props.startExperiment.bind(this.props, this.props.history)}>
+                  COMMENCER
+                </CleanButton>;
     }
     else {
-      sentence = "Merci de compléter le test entre 18 et 21h";
-      button = <MegaButton icon="close" disabled={true}></MegaButton>;
+      sentence1 = "Le test n'est pas disponible pour le moment.";
+      sentence2 = "Revenez plus tard.";
+      button = undefined;
     }
 
     return (
-      <Wrapper_>
-        <View>
-          <HeaderText_>{sentence}</HeaderText_>
-          {button}
+      <Wrapper_ colors={['#EEE', '#FFF', '#FFF', '#FFF', '#EEE']} >
+        <View style={{ position: 'absolute', top: 100 }}>
+          <DescriptiveText>{sentence1}</DescriptiveText>
+          {sentence2 && <DescriptiveText>{sentence2}</DescriptiveText>}
         </View>
+        {button && 
+          <View style={{ position: 'absolute', bottom: 80, width: '70%'}}>{button}</View>
+        }
       </Wrapper_>
     );
   }

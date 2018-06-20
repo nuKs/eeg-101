@@ -6,11 +6,11 @@ import com.choosemuse.libmuse.Muse;
 import com.eeg_project.components.emitter.AppNativeEventEmitter;
 import com.eeg_project.AwarePackage;
 import com.facebook.react.ReactApplication;
-import com.horcrux.svg.SvgPackage;
 import com.brentvatne.react.ReactVideoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
-import com.airbnb.android.react.lottie.LottiePackage;
+import com.BV.LinearGradient.LinearGradientPackage;
 import com.AlexanderZaytsev.RNI18n.RNI18nPackage;
+import com.airbnb.android.react.lottie.LottiePackage;
 import com.cubicphuse.RCTTorch.RCTTorchPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -48,15 +48,15 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new SvgPackage(),
             new ReactVideoPackage(),
             new VectorIconsPackage(),
-            new LottiePackage(),
+            new RCTTorchPackage(),
+            new LinearGradientPackage(),
             new RNI18nPackage(),
-          new RCTTorchPackage(),
-          new SvgPackage(),
-          new EEGPackage(),
-          new AwarePackage()
+            new LottiePackage(),
+            new SvgPackage(),
+            new EEGPackage(),
+            new AwarePackage()
       );
     }
   };
