@@ -91,11 +91,10 @@ android {
     dexOptions {
         preDexLibraries = false
     }
-
     defaultConfig {
         applicationId "com.eeg_project"
-        minSdkVersion 21 // required because of multiDexEnabled
-        targetSdkVersion 25
+        minSdkVersion 26 // required because of >=21 multiDexEnabled >=26 required because @ReactMethod annotation
+        targetSdkVersion 26
         versionCode 26
         versionName "2.6"
         multiDexEnabled true // Fix issue "Cause: method ID not in [0, 0xffff]: 65536"
@@ -105,10 +104,11 @@ android {
         signingConfigs {
             release {
                 if (project.hasProperty('EEG101_RELEASE_STORE_FILE')) {
-                 storeFile file(EEG101_RELEASE_STORE_FILE)
-                  storePassword EEG101_RELEASE_STORE_PASSWORD
-                   keyAlias EEG101_RELEASE_KEY_ALIAS
-                    keyPassword EEG101_RELEASE_KEY_PASSWORD }
+                    storeFile file(EEG101_RELEASE_STORE_FILE)
+                    storePassword EEG101_RELEASE_STORE_PASSWORD
+                    keyAlias EEG101_RELEASE_KEY_ALIAS
+                    keyPassword EEG101_RELEASE_KEY_PASSWORD
+                }
             }
         }
 
@@ -146,7 +146,6 @@ android {
         resValue "string", "provider_google_activity_recognition", android.defaultConfig.applicationId + ".provider.gar"
         resValue "string", "provider_google_fused", android.defaultConfig.applicationId + ".provider.geofences"
     }
-
     splits {
         abi {
             reset()
@@ -170,13 +169,15 @@ android {
         variant.outputs.each { output ->
             // For each separate APK per architecture, set a unique version code as described here:
             // http://tools.android.com/tech-docs/new-build-system/user-guide/apk-splits
-            def versionCodes = ["armeabi-v7a":1]
+            def versionCodes = ["armeabi-v7a": 1]
             def abi = output.getFilter(OutputFile.ABI)
             if (abi != null) {  // null for the universal-debug, universal-release variants
                 output.versionCodeOverride =
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
         }
+    }
+    productFlavors {
     }
 }
 
