@@ -213,16 +213,17 @@ dependencies {
     implementation 'com.github.wendykierp:JTransforms:3.1'
     //adding AWARE now as a dependency
     implementation 'com.github.denzilferreira:aware-client:master-SNAPSHOT'
-    implementation 'com.github.nuks:_a:master-SNAPSHOT' // { exclude module: 'libmuse_android' }
+    implementation 'com.github.nuks:_a:master-SNAPSHOT'
+    // { exclude module: 'libmuse_android' }
     //set by the project build.gradle/Jenkins
     //we add more plugins we want bundled after this. Let's compile now.
     //UCLA needs: activity recognition, fused location plugins, conversations
     /*
-    api "com.github.denzilferreira:com.aware.plugin.google.activity_recognition:$aware_libs"
-    api "com.github.denzilferreira:com.aware.plugin.google.fused_location:$aware_libs"
-    api "com.github.denzilferreira:com.aware.plugin.studentlife.audio_final:$aware_libs"
-    api "com.github.denzilferreira:com.aware.plugin.esm.scheduler:$aware_libs"
-    */
+        api "com.github.denzilferreira:com.aware.plugin.google.activity_recognition:$aware_libs"
+        api "com.github.denzilferreira:com.aware.plugin.google.fused_location:$aware_libs"
+        api "com.github.denzilferreira:com.aware.plugin.studentlife.audio_final:$aware_libs"
+        api "com.github.denzilferreira:com.aware.plugin.esm.scheduler:$aware_libs"
+        */
 }
 
 // Run this once to be able to run the application with BUCK
