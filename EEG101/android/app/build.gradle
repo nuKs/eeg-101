@@ -93,7 +93,7 @@ android {
     }
     defaultConfig {
         applicationId "com.eeg_project"
-        minSdkVersion 26 // required because of >=21 multiDexEnabled >=26 required because @ReactMethod annotation
+          // required because of >=21 multiDexEnabled >=26 required because @ReactMethod annotation
         targetSdkVersion 26
         versionCode 26
         versionName "2.6"
@@ -209,7 +209,7 @@ dependencies {
     // From node_modules
     implementation 'org.apache.commons:commons-lang3:3.4'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    // implementation files('libs/libmuse_android.jar') // @note transitive dependency already in com.github.nuks:_a:*
+    // implementation files('libs/libmuse_android.jar') // @note transitive de spendency already in com.github.nuks:_a:*
     implementation 'com.androidplot:androidplot-core:1.5.1'
     implementation 'com.github.wendykierp:JTransforms:3.1'
     //adding AWARE now as a dependency
