@@ -34,7 +34,6 @@ class ConnectorThree extends Component {
     this.props.history.push('/experiment/film');
   }
 
-
   componentDidMount() {
     if (this.props.connectionStatus === config.connectionStatus.CONNECTED) {
       Classifier.startClassifier(this.props.notchFrequency);

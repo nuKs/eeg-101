@@ -16,7 +16,6 @@ import ExperimentConnector3Scene from "../src/bimslab/experiments/ExperimentConn
 import AnalysisRootScene from "../src/bimslab/analysis/AnalysisRootScene";
 import AnalysisRootMenu from "../src/bimslab/analysis/AnalysisRootMenu";
 import Menu from "./Menu";
-
 // Create store
 import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
@@ -59,7 +58,7 @@ export default class EEG101 extends Component {
                 <Content_>
                   <Switch>
                     <Route exact path="/" render={() => (
-                      <Redirect to="/experiment/film" />
+                      <Redirect to="/experiment" />
                     )}/>
                     <Route exact path="/experiment" component={ExperimentScene} />
                     <Route exact path="/experiment/qa" component={ExperimentQAScene} />

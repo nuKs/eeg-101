@@ -35,12 +35,14 @@ class ExperimentFilmScene extends Component {
 
   componentDidMount() {
     console.log('bridge/js: startRecord');
-    AwareModule.startRecord();
+    // broke/merged stopRecording due to service binding timeout issue
+    AwareModule.startPluginAndRecording();
   }
 
   componentWillUnmount() {
     console.log('bridge/js: stopRecord');
-    AwareModule.stopRecord();
+    // broke/merged stopRecording due to service binding timeout issue
+    AwareModule.stopPluginAndRecording();
   }
 
   next() {
