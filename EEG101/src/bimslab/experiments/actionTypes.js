@@ -1,0 +1,1 @@
+export const STORE_QUESTIONNAIRE = 'experiment/store_questionnaire';

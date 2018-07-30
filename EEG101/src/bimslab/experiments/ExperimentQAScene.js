@@ -13,7 +13,11 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
 import Carousel, { Pagination } from 'react-native-snap-carousel';
+import { storeQuestionnaire } from './actions.js';
 import CleanButton from '../components/CleanButton';
+
+import questionnaire from './Questionnaire';
+import QuestionnaireAnswers from './QuestionnaireAnswers';
 
 const Wrapper_ = styled(View)`
     /* center content */
@@ -37,129 +41,41 @@ const HeaderText_ = styled(Text)
 
     color: #222;
   `;
-let _data = [
-  {
-    type: 'text',
-    title: "Indiquez la sévérité de vos symptomes pour aujourd'hui uniquement.",
-    icon: 'chevron-down'
-  },
-  {
-    type: 'question',
-    title: "Êtes vous insatisfait de votre journée?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous eu de la difficulté à accomplir vos tâches efficacemment?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vu pensé être moins respectable en raison de votre problème de santé mentale?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous beaucoup parlé ou communiqué avec d'autres personnes ? ",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "La nuit passée, quelle a été la qualité de votre sommeil?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Vous êtes vous senti stressé par divers événements?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Vous êtes vous senti irritable?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous beaucoup pensé à la mort?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Vous êtes vous senti fort fatigué?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous vu ou entendu des choses que d'autres personnes ne peuvent voir ou entendre?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous pensé avoir des pouvoirs spéciaux, ou d'être sous le contrôle d'une force extérieure?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous trouvé difficile d'être motivé à commencer des activités ? ",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous eu le sentiment de manquer de spontanéité?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous consommé beaucoup de cannabis?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous consommé beaucoup d'alcool?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous eu l'impression que d'autres personnes vous regardaient bizarrement en raison de votre habillement?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Avez vous parlé ou bougé plus lentement qu'à l'habitude?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Vous êtes vous senti triste?",
-    value: undefined
-  },
-  {
-    type: 'question',
-    title: "Vous êtes vous senti anxieux ou nerveux?",
-    value: undefined
-  },
-  {
-    type: 'submit',
-    title: ""
-  }
-];
-
-const {WIN_HEIGHT, WIN_WIDTH} = Dimensions.get('window');
 
 class ExperimentQAScene extends Component {
   constructor(props) {
     super(props)
 
+    let questions = questionnaire.getQuestions();
+
+    // Init Carousel API's data list based on question list
+    let data = [
+      // header
+      {
+        type: 'text',
+        title: "Indiquez la sévérité de vos symptomes pour aujourd'hui uniquement.",
+        icon: 'chevron-down'
+      },
+      // list
+      ...(questions
+        .filter(q => !!q.shown)
+        .map(q => ({
+          type: 'question',
+          questionId: q.id,
+          title: q.text,
+          value: undefined,
+        }))),
+      // footer
+      {
+        type: 'submit',
+        title: ""
+      }
+    ];
+
     this.state = {
-      answer1: 0.5,
-      answer2: 0.5,
-      answer3: 0.5,
-      answer4: 0.5,
-      answer5: 0.5,
-      answer6: 0.5,
-      answer7: 0.5,
       dimensions: {},
-      activeSlide: 0
+      activeSlide: 0,
+      data: data
     }
 
     this.submit = this.submit.bind(this);
@@ -168,18 +84,52 @@ class ExperimentQAScene extends Component {
   submit() {
     console.log(this.state);
 
+    try {
+      // Store questionnaire online
+      let values = this.state.data
+        .filter(d => d.type === 'question')
+        .map(d => ({
+          questionId: d.questionId,
+          value: d.value
+        }));
+      let answers = new QuestionnaireAnswers(Date.now(), questionnaire, values);
+      QuestionnaireAnswers.store(answers);
+
+      // send redux event - form filled !
+      // this.props.storeQuestionnaire(this.state.data);
+    }
+    catch (e) {
+      console.error('exception while storing questionnaire.', e);
+    }
+
+    // Either
+    // - Submit questionnaire here.
+    // or
+    // - Register event to submit
+    // or
+    // - Develop a model
+    // 
+    // 2 backstates
+    // - app/redux state for content display / module interaction etc.
+    //   propagate view reload on state change
+    // - backend state (w/ inner cache mechanism - for large dataset)
+    //   handles large amount of data
+    // 
+    // redux = view state
+    // frontend db = backend state
+
     // go to location 
     // @warning router is not fully sync w/ redux!
     this.props.history.push('/experiment/connector/1');
   }
 
-  Item = ({ type, title, value, icon, onSlidingComplete, onSubmit }) =>
+  Item = ({ id, type, title, value, icon, onSlidingComplete, onSubmit }) =>
     <View style={{flex: 1, justifyContent: 'center', alignContent: 'center', backgroundColor: 'transparent'}}>
       <HeaderText_>{title}</HeaderText_>
       {type === 'question' &&
         <View style={{flexDirection: 'row', justifyContent: 'center', backgroundColor: 'transparent'}}>
           <Text style={{padding: 20, justifyContent: 'center'}}>-</Text>
-          <Slider value={typeof value === 'undefined' ? 0.5 : value} style={{flex: 1}} onSlidingComplete={onSlidingComplete} />
+          <Slider value={typeof value === 'undefined' ? 0.5 : value} style={{flex: 1}} onSlidingComplete={ v => onSlidingComplete(v, id) } />
           <Text style={{padding: 20, justifyContent: 'center'}}>+</Text>
         </View>
       }
@@ -200,8 +150,61 @@ class ExperimentQAScene extends Component {
   onLayout = event => {
     // if (this.state.dimensions) return // layout was already called
     let {width, height} = event.nativeEvent.layout;
-    this.setState({dimensions: {width, height}})
+
+    // prevent list slowdown / reloading.
+    // @warniong this primary check up may cause synchronicity issues as the 
+    // state dimensions comparison is based on the current state at the moment 
+    // instead of the latest async state on the setState pipe. It's unlikely to
+    // happen though.
+    if (!this.state.dimensions || width !== this.state.dimensions.width || height !== this.state.dimensions.height) {
+      this.setState({dimensions: {width, height}})
+    }
   }
+
+  renderItem = ({item, index}) =>
+    <TouchableHighlight style={{padding: 25, justifyContent: 'center', alignContent: 'center'}}>
+      <View 
+        style={{
+          height: '100%',
+          width: '100%',
+          backgroundColor: 'transparent',
+          borderRadius: 5,
+        }}
+      >
+        <this.Item
+          id={item.questionId}
+          type={item.type}
+          title={item.title}
+          value={item.value}
+          icon={item.icon}
+          onSlidingComplete={(value, questionId) => {
+            this.setState(previousState => {
+              // clone the array synchronously to avoid side
+              // effects.
+              let newData = previousState.data.slice(0);
+
+              // change the value.
+              newData[index].value = value;
+
+              // set new state.
+              return {
+                ...previousState,
+                data: newData
+              }
+            });
+            // this.setState({answer5: value})
+            this._carousel.snapToNext();
+          }}
+          onSubmit={this.submit}
+        />
+      </View>
+    </TouchableHighlight>
+
+  setCarouselRef = (c) => {
+    this._carousel = c;
+  }
+
+  onSnapToItem = (index) => this.setState({ activeSlide: index })
 
   // @todo set state change
   render() {
@@ -221,8 +224,8 @@ class ExperimentQAScene extends Component {
           {this.state.dimensions.height && 
             <View>
               <Carousel
-                ref={(c) => { this._carousel = c; }}
-                data={_data}
+                ref={this.setCarouselRef}
+                data={this.state.data}
                 firstItem={1}
                 enableMomentum={false}
                 enableSnap={true}
@@ -233,32 +236,8 @@ class ExperimentQAScene extends Component {
                 itemWidth={this.state.dimensions.width}
                 sliderHeight={this.state.dimensions.height}
                 itemHeight={this.state.dimensions.height / 3}
-                onSnapToItem={(index) => this.setState({ activeSlide: index }) }
-                renderItem={({item}) =>
-                  <TouchableHighlight style={{padding: 25, justifyContent: 'center', alignContent: 'center'}}>
-                    <View 
-                      style={{
-                        height: '100%',
-                        width: '100%',
-                        backgroundColor: 'transparent',
-                        borderRadius: 5,
-                      }}
-                    >
-                      <this.Item
-                        type={item.type}
-                        title={item.title}
-                        value={item.value}
-                        icon={item.icon}
-                        onSlidingComplete={value => {
-                          // @todo fix state
-                          // this.setState({answer5: value})
-                          this._carousel.snapToNext();
-                        }}
-                        onSubmit={this.submit}
-                      />
-                    </View>
-                  </TouchableHighlight>
-                }
+                onSnapToItem={this.onSnapToItem}
+                renderItem={this.renderItem}
               />
             </View>}
         </View>
@@ -273,7 +252,7 @@ class ExperimentQAScene extends Component {
         >
           <Pagination
             vertical={true}
-            dotsLength={_data.length}
+            dotsLength={this.state.data.length}
             activeDotIndex={this.state.activeSlide}
             containerStyle={{ backgroundColor: 'transparent' }}
             dotStyle={{
@@ -304,6 +283,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
+      storeQuestionnaire
     },
     dispatch
   );

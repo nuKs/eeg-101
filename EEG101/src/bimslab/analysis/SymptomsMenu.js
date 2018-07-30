@@ -13,41 +13,30 @@ import { connect } from "react-redux";
 import { withRouter } from 'react-router-native';
 
 import CleanButton from '../components/CleanButton';
+import questionnaire from '../experiments/Questionnaire';
 
 class SymptomsMenu extends Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      menu: [
-        { key: 'Satisfaction', checkmark: false },
-        { key: 'Fonctionnement', checkmark: false },
-        { key: 'Stigma', checkmark: false },
-        { key: 'Social', checkmark: false },
-        { key: 'Sommeil', checkmark: false },
-        { key: 'Stress', checkmark: false },
-        { key: 'Irritabilité', checkmark: false },
-        { key: 'Mort', checkmark: false },
-        { key: 'Fatigue', checkmark: false },
-        { key: 'Sensoriel', checkmark: false },
-        { key: 'Croyance', checkmark: false },
-        { key: 'Motivation', checkmark: false },
-        { key: 'Spontanéité', checkmark: false },
-        { key: 'Cannabis', checkmark: false },
-        { key: 'Alcool', checkmark: false },
-        { key: 'Apparence', checkmark: false },
-        { key: 'Moteur', checkmark: false },
-        { key: 'Tristesse', checkmark: false },
-        { key: 'Anxiété', checkmark: false },
-      ]
+        // Generate list from questions.
+        menu: questionnaire
+            .getQuestions()
+            .filter(q => !!q.shown)
+            .map(q => ({
+              key: q.id,
+              questionId: q.id,
+              title: q.title,
+              checkmark: false
+            }))
     }
-
   }
 
   Item = ({item}) =>
     <ListItem
-      key={item.key}
-      title={item.key}
+      key={item.questionId}
+      title={item.title}
       leftIcon={{ name: item.icon }}
       chevron={false}
       checkmark={item.checkmark}
@@ -65,7 +54,7 @@ class SymptomsMenu extends Component {
       let menu = prevState.menu.slice(0);
       let idx = menu.indexOf(item);
       menu[idx].checkmark = !menu[idx].checkmark;
-      console.log(idx, menu);
+      // console.log(idx, menu);
 
       return {
         ...prevState,
@@ -73,14 +62,25 @@ class SymptomsMenu extends Component {
       };
     })
 
-    console.log('PRESSED', item);
+    // console.log('PRESSED', item);
   }
 
   onSubmit = () => {
     console.log('SUBMIT');
-    // go to location 
+    // Go to location w/ selected symptoms as parameter.
+    // 1. retrieve selected symptoms from state
+    let selectedQuestionIds = this.state
+      .menu
+      .filter(q => !!q.checkmark)
+      .map(q => q.questionId)
+      ;
+
+    // 2. `geq-bcd-geaqg-eqg,ada-geqgqeg-fqef,...`
+    let processedUrl = '/analysis/symptoms/' + encodeURIComponent(selectedQuestionIds.join(','));
+
+    // 3. go to location 
     // @warning router is not fully sync w/ redux!
-    this.props.history.push(`/analysis/symptoms/a`);
+    this.props.history.push(processedUrl);
   }
 
   render() {

@@ -22,12 +22,18 @@ import {
   STOP_BCI_RUNNING
 } from "../../redux/actionTypes";
 
+import {
+  STORE_QUESTIONNAIRE
+} from "./actionTypes";
+
 
 import { shouldExperimentBeEnabled } from "./enforce-schedule-for-experiment"
 
 const initialState = {
+  // bimslab
   isExperimentEnabled: shouldExperimentBeEnabled(),
   isExperimentOngoing: false,
+  qa: {},
 
   // neurotechx
   connectionStatus: config.connectionStatus.NOT_YET_CONNECTED,
@@ -74,6 +80,12 @@ export default function reducer(state = initialState, action = {}) {
       return {
         ...state,
         isExperimentOngoing: true
+      }
+
+    case STORE_QUESTIONNAIRE:
+      return {
+        ...state,
+        // @todo ?
       }
     
     // neurotechx

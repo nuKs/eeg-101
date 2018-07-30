@@ -69,7 +69,7 @@ const Wrapper_ = styled(View)`
             </Tab>
             <Tab heading={ <TabHeading><Text>Symptomes</Text></TabHeading> }>
               <Switch style={{ flex: 1 }}>
-                <Route exact path="/analysis/symptoms/a" component={() => <SymptomsGraph />} />
+                <Route exact path="/analysis/symptoms/:symptoms" component={() => <SymptomsGraph />} />
                 <Route path="/analysis">
                   {({}) => <SymptomsMenu />}
                 </Route>
