@@ -214,7 +214,7 @@ dependencies {
     implementation 'com.github.wendykierp:JTransforms:3.1'
     //adding AWARE now as a dependency
     implementation 'com.github.denzilferreira:aware-client:master-SNAPSHOT'
-    implementation 'com.github.nuks:_a:604c7003f7'
+    implementation 'com.github.nuks:_a:126d1ae086'
     implementation 'com.github.nuks:_b:38a1431e9b'
 
     // my attempt to fix https://stackoverflow.com/questions/15990075/the-import-com-google-android-gms-cannot-be-resolved
