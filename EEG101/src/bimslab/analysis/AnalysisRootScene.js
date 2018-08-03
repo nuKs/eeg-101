@@ -63,7 +63,7 @@ const Wrapper_ = styled(View)`
               <Switch>
                 <Route exact path="/analysis/usage/a" component={() => <Graph/>} />
                 <Route path="/analysis">
-                  {({}) => <UsageMenu />}
+                  {() => <UsageMenu />}
                 </Route>
               </Switch>
             </Tab>
@@ -71,7 +71,7 @@ const Wrapper_ = styled(View)`
               <Switch style={{ flex: 1 }}>
                 <Route exact path="/analysis/symptoms/:symptoms" component={() => <SymptomsGraph />} />
                 <Route path="/analysis">
-                  {({}) => <SymptomsMenu />}
+                  {() => <SymptomsMenu />}
                 </Route>
               </Switch>
             </Tab>

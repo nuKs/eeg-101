@@ -1,6 +1,7 @@
 // need to develop a model w
 
 import { AsyncStorage } from "react-native"
+import AwareModule from "./AwareModule";
 
 var _cache = {};
 
@@ -16,12 +17,24 @@ class QuestionnaireAnswer {
     }
 
     static async store(questionnaireAnswers) {
-        return new Promise((resolve, reject) => {
-            let timestamp = questionnaireAnswers._timestamp;
-            let values = questionnaireAnswers._values;
-            let date = new Date(timestamp);
+        let timestamp = questionnaireAnswers._timestamp;
+        let values = questionnaireAnswers._values;
+        let date = new Date(timestamp);
 
-            let questionnaireId = `${date.getFullYear().toString().substring(2)}${('0' + (+date.getMonth()+1)).slice(-2)}${('0' + date.getDate()).slice(-2)}`; // yymmdd
+        let questionnaireId = `${date.getFullYear().toString().substring(2)}${('0' + (+date.getMonth()+1)).slice(-2)}${('0' + date.getDate()).slice(-2)}`; // yymmdd
+
+        // Store in aware db
+        // 1. Convert data to java backend hashmap format
+        let map = {};
+        values.forEach(v => {
+            map[v.questionId] = v.value;
+        })
+        // 2. Store in the backend
+        // 3. @todo retrieve response through promise.
+        AwareModule.storeQuestionnaire(questionnaireId, map);
+
+        // Store in local db for long-time retrieval (to be able to display graphs)
+        return new Promise((resolve, reject) => {
             // resolve promise once all items have been resolved (or once an
             // exception has been thrown).
             let _i = 0;
@@ -35,9 +48,6 @@ class QuestionnaireAnswer {
             }
 
             // store as a list = easier to retrieve
-            // either
-            // - set id as yy/mm/dd
-            // - set id as incremental
 
             // @todo use multiSet instead!
             values.forEach((v) => {

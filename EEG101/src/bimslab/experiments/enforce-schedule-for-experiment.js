@@ -45,15 +45,20 @@ const enforceScheduleForExperiment = () => {
 
 // Method useful to set the default state in the redux store when the app opens.
 const shouldExperimentBeEnabled = () => {
-    // Always return true on dev so we can test.
-    if (__DEV__) {
-        return true;
-    }
 
     // Get the hour (0-23)
     let currentHour = new Date().getHours();
 
-    return currentHour >= OPENING_HOUR && currentHour < CLOSING_HOUR;
+    let shouldExperimentBeEnabled = currentHour >= OPENING_HOUR && currentHour < CLOSING_HOUR;
+    console.log('currentHour', currentHour, 'shouldExperimentBeEnabled', shouldExperimentBeEnabled, 'OPENING_HOUR', OPENING_HOUR, 'CLOSING_HOUR', CLOSING_HOUR);
+
+    // Always return true on dev so we can test.
+    if (__DEV__) {
+        return true;
+    }
+    else {
+        return shouldExperimentBeEnabled;
+    }
 };
 
 export default enforceScheduleForExperiment;

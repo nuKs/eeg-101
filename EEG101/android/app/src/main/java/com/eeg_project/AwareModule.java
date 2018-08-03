@@ -26,6 +26,7 @@ import com.choosemuse.libmuse.MuseDataPacketType;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.ReadableMap;
 
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Array;
@@ -37,6 +38,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
     private final ContentResolver _contentResolver;
     private ReactApplicationContext _reactContext;
     private Plugin _plugin;
+    private com.aware.plugin.bimsquestionnaire.Plugin _bimsQuestionnairePlugin;
     private Muse _muse;
     private ConcurrentCircularBuffer<MuseDataPacket> _dataBuffer = new ConcurrentCircularBuffer<MuseDataPacket>(MuseDataPacket.class, 220);
 
@@ -64,10 +66,32 @@ public class AwareModule extends ReactContextBaseJavaModule {
         // @todo fix db location @warning breaks launch time // may have been done
         Log.i("AwareModule", "start com.aware.plugin.eegmuse");
         Aware.startPlugin(reactContext, "com.aware.plugin.eegmuse");
+        Log.i("AwareModule", "start com.aware.plugin.bimsquestionnaire");
+        Aware.startPlugin(reactContext, "com.aware.plugin.bimsquestionnaire");
 
         WeakReference<AwareModule> weakPlugin = new WeakReference<AwareModule>(this);
         dataListener = new DataListener(weakPlugin);
         _contentResolver = this._reactContext.getContentResolver();
+
+        // Retrieve bims questionnaire plugin instance
+        ComponentName componentName;
+        componentName = new ComponentName(_reactContext.getPackageName(), "com.aware.plugin.bimsquestionnaire.Plugin");
+        if (Aware.DEBUG)
+            Log.d(Aware.TAG, "Initializing bundled: " + componentName.toString());
+        Intent pluginIntent = new Intent();
+        pluginIntent.setComponent(componentName);
+        _reactContext.bindService(pluginIntent, mServerConnBQ, Context.BIND_AUTO_CREATE);
+    }
+
+    @ReactMethod
+    public void storeQuestionnaire(String questionnaireId, ReadableMap content) {
+        Map<String, Object> processingContent = content.toHashMap();
+        Map<String, Double> parsedContent = new HashMap<String, Double>();
+        for (String key : processingContent.keySet()) {
+            parsedContent.put(key, (Double) processingContent.get(key));
+        }
+
+        _bimsQuestionnairePlugin.storeQuestionnaire(questionnaireId, parsedContent);
     }
 
     @Override
@@ -88,7 +112,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
     protected ServiceConnection mServerConn = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder binder) {
-            Log.d("AwareModule", "onServiceConnected");
+            Log.d("AwareModule", "onServiceConnected/eegmuse");
             Plugin.LocalBinder castedBinder = (Plugin.LocalBinder) binder;
             _plugin = castedBinder.getService();
             startRecording();
@@ -96,7 +120,22 @@ public class AwareModule extends ReactContextBaseJavaModule {
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            Log.d("AwareModule", "onServiceDisconnected");
+            Log.d("AwareModule", "onServiceDisconnected/eegmuse");
+        }
+    };
+
+
+    protected ServiceConnection mServerConnBQ = new ServiceConnection() {
+        @Override
+        public void onServiceConnected(ComponentName name, IBinder binder) {
+            Log.d("AwareModule", "onServiceConnected/bimsquestionnaire");
+            com.aware.plugin.bimsquestionnaire.Plugin.LocalBinder castedBinder = (com.aware.plugin.bimsquestionnaire.Plugin.LocalBinder) binder;
+            _bimsQuestionnairePlugin = castedBinder.getService();
+        }
+
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            Log.d("AwareModule", "onServiceDisconnected/bimsquestionnaire");
         }
     };
 
@@ -166,7 +205,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
         // _plugin.stopRecording(_muse);
         _muse.unregisterDataListener(dataListener, MuseDataPacketType.EEG);
 
-        bufferConsumerThread.stop(); // @todo fix
+        bufferConsumerThread.stop(); // @todo fix / safe stop
 
         if (dataHandler != null) {
             // Removes all runnables and things from the Handler
@@ -174,7 +213,6 @@ public class AwareModule extends ReactContextBaseJavaModule {
             dataThread.quit();
         }
     }
-
 
     private DataListener dataListener;
     class DataListener extends MuseDataListener {
@@ -207,39 +245,6 @@ public class AwareModule extends ReactContextBaseJavaModule {
         // dataHandler.post(new ProcessorRunnable(p));
         _dataBuffer.add(p);
     }
-    /*
-    public class ProcessorRunnable implements Runnable {
-
-        private final MuseDataPacket[] _p;
-
-        public ProcessorRunnable(MuseDataPacket[] p) {
-            _p = p;
-        }
-
-        @Override
-        public void run() {
-            for(MuseDataPacket p : _p) {
-                // doesn't slow down
-                ContentValues context_data = new ContentValues();
-                context_data.put(Provider.EEGMuse_Data.TIMESTAMP, p.timestamp());
-                context_data.put(Provider.EEGMuse_Data.DEVICE_ID, "test"); // deviceId
-                context_data.put(Provider.EEGMuse_Data.EEG1, p.getEegChannelValue(Eeg.EEG1));
-                context_data.put(Provider.EEGMuse_Data.EEG2, p.getEegChannelValue(Eeg.EEG2));
-                context_data.put(Provider.EEGMuse_Data.EEG3, p.getEegChannelValue(Eeg.EEG3));
-                context_data.put(Provider.EEGMuse_Data.EEG4, p.getEegChannelValue(Eeg.EEG4));
-
-                // slows down
-                try {
-                    _contentResolver.insert(Provider.EEGMuse_Data.CONTENT_URI, context_data);
-                } catch (SQLiteException e) {
-                    if (Aware.DEBUG) Log.d("AwareModule", e.getMessage());
-                } catch (SQLException e) {
-                    if (Aware.DEBUG) Log.d("AwareModule", e.getMessage());
-                }
-            }
-        }
-    }
-    */
 
     public class BufferConsumer extends Thread {
 
