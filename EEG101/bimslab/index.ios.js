@@ -1,145 +1,84 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import { Container, Header, Content, Footer, FooterTab, StyleProvider } from 'native-base';
+import getTheme from '../native-base-theme/components';
 import { View, AppRegistry, StatusBar } from "react-native";
-import {
-  NativeRouter,
-  Route,
-  Switch
-} from "react-router-native";
-import { Provider, connect } from "react-redux";
-import { createStore, applyMiddleware, bindActionCreators } from "redux";
-import { withRouter } from "react-router";
-import { setMenu } from "./src/redux/actions";
-import Drawer from "react-native-drawer";
-import thunk from "redux-thunk";
-import NavBar from "./src/components/NavBar";
-import SideMenu from "./src/components/SideMenu";
-import * as colors from "./src/styles/colors.js";
+import styled from "styled-components";
 
-// Scenes
-import Landing from "./src/scenes/begin-landing";
-import ConnectorOne from "./src/scenes/connector-01";
-import ConnectorTwo from "./src/scenes/connector-02";
-import ConnectorThree from "./src/scenes/connector-03";
-import SlideOne from "./src/scenes/slide-01";
-import SlideTwo from "./src/scenes/slide-02";
-import SlideThree from "./src/scenes/slide-03";
-import SlideFour from "./src/scenes/slide-04";
-import SlideFive from "./src/scenes/slide-05";
-import SlideSix from "./src/scenes/slide-06";
-import SlideSeven from "./src/scenes/slide-07";
-import SlideEight from "./src/scenes/slide-08";
-import SlideNine from "./src/scenes/slide-09";
-import Sandbox from "./src/scenes/sandbox";
-import End from "./src/scenes/slide-end";
-import BCIOne from "./src/scenes/bci-01.js";
-import BCITwo from "./src/scenes/bci-02.js";
-import BCIRun from "./src/scenes/bci-run.js";
-import BCITrain from "./src/scenes/bci-train.js";
-import OfflineSlideOne from "./src/scenes/offlineMode/slide-01";
-import OfflineSlideThree from "./src/scenes/offlineMode/slide-03";
-import OfflineSlideFour from "./src/scenes/offlineMode/slide-04";
-import OfflineSlideEight from "./src/scenes/offlineMode/slide-08";
-import OfflineSlideNine from "./src/scenes/offlineMode/slide-09";
+import { NativeRouter, AndroidBackButton, Route, Redirect, Switch } from "react-router-native";
 
-// reducer is a function
-import reducer from "./src/redux/reducer";
-
-function mapStateToProps(state) {
-  return {
-    open: state.isMenuOpen
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(
-    {
-      onClose: () => setMenu(false)
-    },
-    dispatch
-  );
-}
-
-// Connect SideMenu to Redux
-const DrawerWithRedux = withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(Drawer)
-);
-
+import ExperimentScene from "../src/bimslab/experiments/ExperimentScene";
+import ExperimentQAScene from "../src/bimslab/experiments/ExperimentQAScene";
+import ExperimentFilmScene from "../src/bimslab/experiments/ExperimentFilmScene";
+import ExperimentEndScene from "../src/bimslab/experiments/ExperimentEndScene";
+// import ExperimentConnector1Scene from "../src/bimslab/experiments/ExperimentConnector1Scene";
+import ExperimentConnector2Scene from "../src/bimslab/experiments/ExperimentConnector2Scene";
+import ExperimentConnector3Scene from "../src/bimslab/experiments/ExperimentConnector3Scene";
+import AnalysisRootScene from "../src/bimslab/analysis/AnalysisRootScene";
+import AnalysisRootMenu from "../src/bimslab/analysis/AnalysisRootMenu";
+import Menu from "./Menu";
 // Create store
+import { createStore, applyMiddleware } from "redux";
+import { Provider } from "react-redux";
+import reducer from "../src/bimslab/experiments/reducer";
+import thunk from "redux-thunk";
 const store = createStore(reducer, applyMiddleware(thunk));
 
-const mainViewStyle = { flex: 1 };
+// Set business rules
+import enforceScheduleForExperiment from "../src/bimslab/experiments/enforce-schedule-for-experiment";
+store.dispatch(enforceScheduleForExperiment());
 
-class EEG101 extends Component {
+// Disable in-app errors
+console.disableYellowBox = true;
+
+// Style container to allow content to be centered
+const Content_ = styled(Content)
+  .attrs({
+    // contentContainerStyle -- https://github.com/GeekyAnts/NativeBase/issues/1336
+    contentContainerStyle: { flexGrow: 1 }
+  })`
+    flex: 1;
+  `;
+
+// @todo sync redux<->router
+
+// uses ionicons from https://ionicframework.com/docs/ionicons/
+export default class EEG101 extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <NativeRouter>
-            <View style={mainViewStyle}>
-              <StatusBar backgroundColor={colors.mariner} />
-              <DrawerWithRedux
-                content={<SideMenu drawer={this.ref} />}
-                type="overlay"
-                tapToClose={true}
-                openDrawerOffset={0.2} // 20% gap on the right side of drawer
-                panCloseMask={0.2}
-                closedDrawerOffset={-5}
-                captureGestures="open"
-                styles={{
-                  drawer: { elevation: 3 },
-                  main: { paddingLeft: 3 }
-                }}
-                tweenHandler={ratio => ({
-                  main: { opacity: (2 - ratio) / 2, backgroundColor: "black" }
-                })}
-              >
-                <NavBar />
+      <StyleProvider style={getTheme()}>
+        <Provider store={store}>
+          <NativeRouter>
+            {/*<View style={{flex: 1}}>*/}
+            <AndroidBackButton>
+              <StatusBar backgroundColor="black" />
+              <Container>
                 <Switch>
-                  <Route exact path="/" component={Landing} />
-                  <Route path="/connectorOne" component={ConnectorOne} />
-                  <Route path="/connectorTwo" component={ConnectorTwo} />
-                  <Route path="/connectorThree" component={ConnectorThree} />
-                  <Route path="/slideOne" component={SlideOne} />
-                  <Route path="/slideTwo" component={SlideTwo} />
-                  <Route path="/slideThree" component={SlideThree} />
-                  <Route path="/slideFour" component={SlideFour} />
-                  <Route path="/slideFive" component={SlideFive} />
-                  <Route path="/slideSix" component={SlideSix} />
-                  <Route path="/slideSeven" component={SlideSeven} />
-                  <Route path="/slideEight" component={SlideEight} />
-                  <Route path="/slideNine" component={SlideNine} />
-                  <Route path="/sandbox" component={Sandbox} />
-                  <Route path="/end" component={End} />
-                  <Route path="/bciOne" component={BCIOne} />
-                  <Route path="/bciTwo" component={BCITwo} />
-                  <Route path="/bciRun" component={BCIRun} />
-                  <Route path="/bciTrain" component={BCITrain} />
-                  <Route path="/offline/slideOne" component={OfflineSlideOne} />
-                  <Route path="/offline/slideTwo" component={SlideTwo} />
-                  <Route
-                    path="/offline/slideThree"
-                    component={OfflineSlideThree}
-                  />
-
-                  <Route
-                    path="/offline/slideFour"
-                    component={OfflineSlideFour}
-                  />
-                  <Route path="/offline/slideFive" component={SlideFive} />
-                  <Route path="/offline/slideSix" component={SlideSix} />
-                  <Route path="/offline/slideSeven" component={SlideSeven} />
-                  <Route
-                    path="/offline/slideEight"
-                    component={OfflineSlideEight}
-                  />
-                  <Route
-                    path="/offline/slideNine"
-                    component={OfflineSlideNine}
-                  />
+                  <Route path="/analysis" component={AnalysisRootMenu} />
                 </Switch>
-              </DrawerWithRedux>
-            </View>
-        </NativeRouter>
-      </Provider>
+                <Content_>
+                  <Switch>
+                    <Route exact path="/" render={() => (
+                      <Redirect to="/analysis" />
+                    )}/>
+                    <Route exact path="/experiment" component={ExperimentScene} />
+                    <Route exact path="/experiment/qa" component={ExperimentQAScene} />
+                    <Route exact path="/experiment/connector/1" render={() => (
+                      <Redirect to="/experiment/connector/2" />
+                    )} />
+                    <Route exact path="/experiment/connector/2" component={ExperimentConnector2Scene} />
+                    <Route exact path="/experiment/connector/3" component={ExperimentConnector3Scene} />
+                    <Route exact path="/experiment/film" component={ExperimentFilmScene} />
+                    <Route exact path="/experiment/end" component={ExperimentEndScene} />
+                    <Route path="/analysis" component={AnalysisRootScene} />
+                  </Switch>
+                </Content_>
+                <Menu />
+              </Container>
+            </AndroidBackButton>
+            {/*</View>*/}
+          </NativeRouter>
+        </Provider>
+      </StyleProvider>
     );
   }
 }
