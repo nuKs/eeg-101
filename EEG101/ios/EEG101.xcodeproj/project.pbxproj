@@ -48,6 +48,8 @@
 		D48418C949304240B74D6BAE /* libRNI18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71381AC0F0E74E01A9091143 /* libRNI18n.a */; };
 		D48C2B47D4704E2386EC234F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A096D8D2EC04308833E86D7 /* MaterialIcons.ttf */; };
 		D9BA5F7C986D49509305F798 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E92F85BF454271B9DB8209 /* Zocial.ttf */; };
+		DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF03ED792117B62000FAD02B /* Roboto-Black.ttf */; };
+		DF03ED7C2117B6CE00FAD02B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */; };
 		DFC0691F21172F2D00765503 /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068DB2116248400765503 /* libLottie.a */; };
 		DFC06920211732FA00765503 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068B421161F5800765503 /* libRNVectorIcons.a */; };
 		E2A1B759199542F1B542F7D9 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E73E5FA5B464AA2ACA74D36 /* rubicon-icon-font.ttf */; };
@@ -461,6 +463,8 @@
 		C0D2218AB49C49458B9CF514 /* libRCTVideo.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVideo.a; sourceTree = "<group>"; };
 		CE4AAB8135834DA889B47C92 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		CE4D51939CB046328D4114FD /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		DF03ED792117B62000FAD02B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		DFC068BE2116242D00765503 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		DFC068C72116244D00765503 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/lib/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		DFC068CD2116248400765503 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
@@ -699,6 +703,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */,
+				DF03ED792117B62000FAD02B /* Roboto-Black.ttf */,
 				13B07FAE1A68108700A75B9A /* EEG101 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* EEG101Tests */,
@@ -1323,6 +1329,8 @@
 				8EE7931677FE4803A34ABC2E /* Ionicons.ttf in Resources */,
 				D414075558254E72BFA77CC6 /* MaterialIcons.ttf in Resources */,
 				611C25DB5502471A9C19A91A /* Octicons.ttf in Resources */,
+				DF03ED7C2117B6CE00FAD02B /* Roboto-Thin.ttf in Resources */,
+				DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */,
 				5A08DD066E4F4783BCCD3552 /* Roboto_medium.ttf in Resources */,
 				6042D6F5AF5740D8B54FAB45 /* Roboto.ttf in Resources */,
 				E71CB0D823034EDB836C71E1 /* SimpleLineIcons.ttf in Resources */,

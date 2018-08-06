@@ -24,7 +24,7 @@ const CleanButton = ({onPress, children, icon}) => (
                 fontWeight: '400',
                 fontSize: 14,
                 color: '#555',
-                fontFamily: 'Roboto-thin',
+                fontFamily: 'Roboto',
                 letterSpacing: 0
             }}>
                 {children}
