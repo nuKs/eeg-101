@@ -235,7 +235,7 @@ const styles = MediaQueryStyleSheet.create(
   // Base styles
   {
     body: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 17,
       color: colors.white,
       textAlign: "center",
@@ -255,7 +255,7 @@ const styles = MediaQueryStyleSheet.create(
     viewPager: { flex: 8 },
 
     header: {
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.white,
       fontSize: 20,
       margin: 15
@@ -315,7 +315,7 @@ const styles = MediaQueryStyleSheet.create(
 
     link: {
       color: colors.white,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       textDecorationLine: "underline"
     },
 

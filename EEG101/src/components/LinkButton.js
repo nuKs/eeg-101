@@ -19,7 +19,7 @@ export default class WhiteButton extends Component {
           <Text
             style={{
               color: colors.white,
-              fontFamily: "Roboto-Bold",
+              fontFamily: "Roboto",
               fontSize: 15
             }}
           >
@@ -34,7 +34,7 @@ export default class WhiteButton extends Component {
             <Text
               style={{
                 color: colors.white,
-                fontFamily: "Roboto-Bold",
+                fontFamily: "Roboto",
                 fontSize: 15
               }}
             >

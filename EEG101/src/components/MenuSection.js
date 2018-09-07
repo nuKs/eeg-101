@@ -57,7 +57,7 @@ const styles = MediaQueryStyleSheet.create(
 
     title: {
       paddingLeft: 16,
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.white,
       fontSize: 18
     },
@@ -83,13 +83,13 @@ const styles = MediaQueryStyleSheet.create(
 
     itemValue: {
       color: colors.white,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 15
     },
 
     disabledItemValue: {
       color: colors.heather,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 15
     },
 
@@ -101,13 +101,13 @@ const styles = MediaQueryStyleSheet.create(
 
     itemLabel: {
       color: colors.white,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 15
     },
 
     disabledItemLabel: {
       color: colors.heather,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 15
     }
   },

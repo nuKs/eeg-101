@@ -338,7 +338,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     body: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 16,
       color: colors.black,
       textAlign: "center"
@@ -467,14 +467,14 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     modalText: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 15,
       margin: 5
     },
 
     modalTitle: {
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 20,
       margin: 5

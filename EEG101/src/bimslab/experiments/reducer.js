@@ -44,7 +44,7 @@ const initialState = {
   isMenuOpen: false,
   isOfflineMode: false,
   notchFrequency: 60,
-  noise: ["1", "2", "3", "4"],
+  noise: ["0", "1", "2", "3"],
   classifierData: new Array(30).fill(1),
   nativeEventEmitter: {},
   isBCIRunning: false

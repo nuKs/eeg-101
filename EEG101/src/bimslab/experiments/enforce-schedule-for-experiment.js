@@ -8,8 +8,11 @@
 
 import { executeAtTimeOfDay } from "../utilities";
 
-const OPENING_HOUR = 18;
-const CLOSING_HOUR = 21;
+const OPENING_HOUR = 10;
+const CLOSING_HOUR = 22;
+
+// const OPENING_HOUR = 18;
+// const CLOSING_HOUR = 21;
 
 const enforceScheduleForExperiment = () => {
     return (dispatch, getState) => {

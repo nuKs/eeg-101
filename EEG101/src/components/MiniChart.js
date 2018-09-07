@@ -44,7 +44,7 @@ export default class MiniChart extends Component {
               bottom: 75,
               fontWeight: "100",
               color: colors.black,
-              fontFamily: "Roboto-Light",
+              fontFamily: "Roboto",
               fontSize: 11,
               transform: [{ rotate: "270deg" }]
             }}

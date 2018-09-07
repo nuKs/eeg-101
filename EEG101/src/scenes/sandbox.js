@@ -258,7 +258,7 @@ const styles = MediaQueryStyleSheet.create(
 
     body: {
       padding: 5,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 17
     },
@@ -276,7 +276,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     filterText: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 14
     },

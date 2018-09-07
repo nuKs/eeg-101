@@ -1,0 +1,1537 @@
+2018-08-23 18:54:41 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7ffbb34b0b10; archive(resolved)='<IDEArchive: 0x7ffbaa58f280>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team(resolved)='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7ffbb34b0b10; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionProcessingPipelineContext: 0x7ffbc0ca4ae0; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbb358f6f0; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbb250d9c0; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbb34b4e80; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbafca48b0; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbb3c88360; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbc33e1080; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbd394e310; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='<IDEProvisioningBasicTeam 0x7ffbc1d703d0: teamID: BBT48V5R86, teamName: PIRONT Thibault>'>
+	<IDEDistributionContext: 0x7ffbb4008e50; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='<IDEDistributionMethodAdHoc: 0x7ffbc1c7bed0>', team='(null)'>
+	<IDEDistributionContext: 0x7ffbb3cb00a0; archive = '<IDEArchive: 0x7ffbaa58f280>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7ffbb34b0b10>
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionCreateDestRootStep
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionCopyItemStep
+2018-08-23 18:54:41 +0000  Running /usr/bin/ditto '-V' '/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app'
+2018-08-23 18:54:41 +0000  >>> Copying /Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app 
+2018-08-23 18:54:41 +0000  copying file ./_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  78073 bytes for ./_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Octicons.ttf ... 
+2018-08-23 18:54:41 +0000  27520 bytes for ./Octicons.ttf
+2018-08-23 18:54:41 +0000  copying file ./Feather.ttf ... 
+2018-08-23 18:54:41 +0000  55288 bytes for ./Feather.ttf
+2018-08-23 18:54:41 +0000  copying file ./Roboto-Light.ttf ... 
+2018-08-23 18:54:41 +0000  170420 bytes for ./Roboto-Light.ttf
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/14_2.jpg ... 
+2018-08-23 18:54:41 +0000  23174 bytes for ./AWAREFramework.bundle/14_2.jpg
+copying file ./AWAREFramework.bundle/16_1.jpg ... 
+2018-08-23 18:54:41 +0000  16620 bytes for ./AWAREFramework.bundle/16_1.jpg
+copying file ./AWAREFramework.bundle/14_3.jpg ... 
+2018-08-23 18:54:41 +0000  6342 bytes for ./AWAREFramework.bundle/14_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/8_1.jpg ... 
+2018-08-23 18:54:41 +0000  23719 bytes for ./AWAREFramework.bundle/8_1.jpg
+copying file ./AWAREFramework.bundle/8_3.jpg ... 
+2018-08-23 18:54:41 +0000  25090 bytes for ./AWAREFramework.bundle/8_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/14_1.jpg ... 
+2018-08-23 18:54:41 +0000  19622 bytes for ./AWAREFramework.bundle/14_1.jpg
+copying file ./AWAREFramework.bundle/16_3.jpg ... 
+2018-08-23 18:54:41 +0000  5158 bytes for ./AWAREFramework.bundle/16_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/16_2.jpg ... 
+2018-08-23 18:54:41 +0000  3846 bytes for ./AWAREFramework.bundle/16_2.jpg
+copying file ./AWAREFramework.bundle/8_2.jpg ... 
+2018-08-23 18:54:41 +0000  18448 bytes for ./AWAREFramework.bundle/8_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/12_2.jpg ... 
+2018-08-23 18:54:41 +0000  20661 bytes for ./AWAREFramework.bundle/12_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/12_3.jpg ... 
+2018-08-23 18:54:41 +0000  24057 bytes for ./AWAREFramework.bundle/12_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/10_1.jpg ... 
+2018-08-23 18:54:41 +0000  18185 bytes for ./AWAREFramework.bundle/10_1.jpg
+copying file ./AWAREFramework.bundle/10_3.jpg ... 
+2018-08-23 18:54:41 +0000  22841 bytes for ./AWAREFramework.bundle/10_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/12_1.jpg ... 
+2018-08-23 18:54:41 +0000  18856 bytes for ./AWAREFramework.bundle/12_1.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/10_2.jpg ... 
+2018-08-23 18:54:41 +0000  21837 bytes for ./AWAREFramework.bundle/10_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/9_3.jpg ... 
+2018-08-23 18:54:41 +0000  18590 bytes for ./AWAREFramework.bundle/9_3.jpg
+copying file ./AWAREFramework.bundle/15_1.jpg ... 
+2018-08-23 18:54:41 +0000  19296 bytes for ./AWAREFramework.bundle/15_1.jpg
+copying file ./AWAREFramework.bundle/9_2.jpg ... 
+2018-08-23 18:54:41 +0000  18912 bytes for ./AWAREFramework.bundle/9_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/15_2.jpg ... 
+2018-08-23 18:54:41 +0000  4056 bytes for ./AWAREFramework.bundle/15_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/15_3.jpg ... 
+2018-08-23 18:54:41 +0000  4209 bytes for ./AWAREFramework.bundle/15_3.jpg
+copying file ./AWAREFramework.bundle/9_1.jpg ... 
+2018-08-23 18:54:41 +0000  3133 bytes for ./AWAREFramework.bundle/9_1.jpg
+copying file ./AWAREFramework.bundle/13_1.jpg ... 
+2018-08-23 18:54:41 +0000  17782 bytes for ./AWAREFramework.bundle/13_1.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/11_3.jpg ... 
+2018-08-23 18:54:41 +0000  19427 bytes for ./AWAREFramework.bundle/11_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/11_2.jpg ... 
+2018-08-23 18:54:41 +0000  15640 bytes for ./AWAREFramework.bundle/11_2.jpg
+copying file ./AWAREFramework.bundle/13_2.jpg ... 
+2018-08-23 18:54:41 +0000  16407 bytes for ./AWAREFramework.bundle/13_2.jpg
+copying file ./AWAREFramework.bundle/11_1.jpg ... 
+2018-08-23 18:54:41 +0000  16504 bytes for ./AWAREFramework.bundle/11_1.jpg
+copying file ./AWAREFramework.bundle/13_3.jpg ... 
+2018-08-23 18:54:41 +0000  3309 bytes for ./AWAREFramework.bundle/13_3.jpg
+copying file ./AWAREFramework.bundle/1_3.jpg ... 
+2018-08-23 18:54:41 +0000  19872 bytes for ./AWAREFramework.bundle/1_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/3_1.jpg ... 
+2018-08-23 18:54:41 +0000  23224 bytes for ./AWAREFramework.bundle/3_1.jpg
+copying file ./AWAREFramework.bundle/1_2.jpg ... 
+2018-08-23 18:54:41 +0000  19713 bytes for ./AWAREFramework.bundle/1_2.jpg
+copying file ./AWAREFramework.bundle/Assets.car ... 
+2018-08-23 18:54:41 +0000  1909096 bytes for ./AWAREFramework.bundle/Assets.car
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/3_2.jpg ... 
+19050 bytes for ./AWAREFramework.bundle/3_2.jpg
+copying file ./AWAREFramework.bundle/3_3.jpg ... 
+19683 bytes for ./AWAREFramework.bundle/3_3.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/1_1.jpg ... 
+2018-08-23 18:54:41 +0000  20416 bytes for ./AWAREFramework.bundle/1_1.jpg
+copying file ./AWAREFramework.bundle/5_1.jpg ... 
+2018-08-23 18:54:41 +0000  18462 bytes for ./AWAREFramework.bundle/5_1.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/7_3.jpg ... 
+2018-08-23 18:54:41 +0000  25160 bytes for ./AWAREFramework.bundle/7_3.jpg
+copying file ./AWAREFramework.bundle/7_2.jpg ... 
+2018-08-23 18:54:41 +0000  22748 bytes for ./AWAREFramework.bundle/7_2.jpg
+copying file ./AWAREFramework.bundle/5_2.jpg ... 
+2018-08-23 18:54:41 +0000  21974 bytes for ./AWAREFramework.bundle/5_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/AWARE.momd/VersionInfo.plist ... 
+2018-08-23 18:54:41 +0000  17537 bytes for ./AWAREFramework.bundle/AWARE.momd/VersionInfo.plist
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/AWARE.momd/AWARE_v6.omo ... 
+2018-08-23 18:54:41 +0000  141392 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE_v6.omo
+copying file ./AWAREFramework.bundle/AWARE.momd/AWARE.mom ... 
+2018-08-23 18:54:41 +0000  42968 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE.mom
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/AWARE.momd/AWARE_v5.mom ... 
+2018-08-23 18:54:41 +0000  58026 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE_v5.mom
+copying file ./AWAREFramework.bundle/AWARE.momd/AWARE_v4.mom ... 
+2018-08-23 18:54:41 +0000  56948 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE_v4.mom
+copying file ./AWAREFramework.bundle/AWARE.momd/AWARE_v6.mom ... 
+2018-08-23 18:54:41 +0000  58704 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE_v6.mom
+copying file ./AWAREFramework.bundle/AWARE.momd/AWARE_v3.mom ... 
+2018-08-23 18:54:41 +0000  54271 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE_v3.mom
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/AWARE.momd/AWARE_v2.mom ... 
+2018-08-23 18:54:41 +0000  5160 bytes for ./AWAREFramework.bundle/AWARE.momd/AWARE_v2.mom
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/7_1.jpg ... 
+2018-08-23 18:54:41 +0000  22344 bytes for ./AWAREFramework.bundle/7_1.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/5_3.jpg ... 
+2018-08-23 18:54:41 +0000  17617 bytes for ./AWAREFramework.bundle/5_3.jpg
+copying file ./AWAREFramework.bundle/2_2.jpg ... 
+2018-08-23 18:54:41 +0000  19150 bytes for ./AWAREFramework.bundle/2_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/2_3.jpg ... 
+2018-08-23 18:54:41 +0000  20548 bytes for ./AWAREFramework.bundle/2_3.jpg
+copying file ./AWAREFramework.bundle/2_1.jpg ... 
+2018-08-23 18:54:41 +0000  17636 bytes for ./AWAREFramework.bundle/2_1.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/4_2.jpg ... 
+2018-08-23 18:54:41 +0000  13366 bytes for ./AWAREFramework.bundle/4_2.jpg
+copying file ./AWAREFramework.bundle/4_3.jpg ... 
+2018-08-23 18:54:41 +0000  7729 bytes for ./AWAREFramework.bundle/4_3.jpg
+copying file ./AWAREFramework.bundle/6_1.jpg ... 
+2018-08-23 18:54:41 +0000  20642 bytes for ./AWAREFramework.bundle/6_1.jpg
+copying file ./AWAREFramework.bundle/Info.plist ... 
+2018-08-23 18:54:41 +0000  724 bytes for ./AWAREFramework.bundle/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/6_3.jpg ... 
+2018-08-23 18:54:41 +0000  23436 bytes for ./AWAREFramework.bundle/6_3.jpg
+copying file ./AWAREFramework.bundle/4_1.jpg ... 
+2018-08-23 18:54:41 +0000  4382 bytes for ./AWAREFramework.bundle/4_1.jpg
+copying file ./AWAREFramework.bundle/6_2.jpg ... 
+2018-08-23 18:54:41 +0000  23903 bytes for ./AWAREFramework.bundle/6_2.jpg
+2018-08-23 18:54:41 +0000  copying file ./AWAREFramework.bundle/BaseESMView.nib ... 
+2018-08-23 18:54:41 +0000  5472 bytes for ./AWAREFramework.bundle/BaseESMView.nib
+copying file ./Roboto_medium.ttf ... 
+2018-08-23 18:54:41 +0000  137308 bytes for ./Roboto_medium.ttf
+copying file ./Entypo.ttf ... 
+2018-08-23 18:54:41 +0000  65584 bytes for ./Entypo.ttf
+copying file ./MaterialCommunityIcons.ttf ... 
+2018-08-23 18:54:41 +0000  322456 bytes for ./MaterialCommunityIcons.ttf
+2018-08-23 18:54:41 +0000  copying file ./Foundation.ttf ... 
+2018-08-23 18:54:41 +0000  56976 bytes for ./Foundation.ttf
+copying file ./Ionicons.ttf ... 
+2018-08-23 18:54:41 +0000  143936 bytes for ./Ionicons.ttf
+copying file ./rubicon-icon-font.ttf ... 
+2018-08-23 18:54:41 +0000  10208 bytes for ./rubicon-icon-font.ttf
+2018-08-23 18:54:41 +0000  copying file ./Base.lproj/LaunchScreen.nib ... 
+2018-08-23 18:54:41 +0000  3006 bytes for ./Base.lproj/LaunchScreen.nib
+copying file ./FontAwesome.ttf ... 
+2018-08-23 18:54:41 +0000  165548 bytes for ./FontAwesome.ttf
+2018-08-23 18:54:41 +0000  copying file ./archived-expanded-entitlements.xcent ... 
+2018-08-23 18:54:41 +0000  374 bytes for ./archived-expanded-entitlements.xcent
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  723 bytes for ./GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings
+copying file ./GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  748 bytes for ./GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  823 bytes for ./GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  871 bytes for ./GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  765 bytes for ./GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  658 bytes for ./GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  874 bytes for ./GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  665 bytes for ./GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings
+copying file ./GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  702 bytes for ./GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  670 bytes for ./GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  724 bytes for ./GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  717 bytes for ./GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  670 bytes for ./GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  671 bytes for ./GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  753 bytes for ./GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  725 bytes for ./GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings
+copying file ./GoogleSignIn.bundle/google@3x.png ... 
+2018-08-23 18:54:41 +0000  1622 bytes for ./GoogleSignIn.bundle/google@3x.png
+copying file ./GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  687 bytes for ./GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  687 bytes for ./GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  735 bytes for ./GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/google@2x.png ... 
+2018-08-23 18:54:41 +0000  987 bytes for ./GoogleSignIn.bundle/google@2x.png
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  719 bytes for ./GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  748 bytes for ./GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  695 bytes for ./GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  697 bytes for ./GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  674 bytes for ./GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  658 bytes for ./GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  743 bytes for ./GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  844 bytes for ./GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  728 bytes for ./GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  709 bytes for ./GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  654 bytes for ./GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  683 bytes for ./GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  934 bytes for ./GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  717 bytes for ./GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/google.png ... 
+2018-08-23 18:54:41 +0000  572 bytes for ./GoogleSignIn.bundle/google.png
+copying file ./GoogleSignIn.bundle/Roboto-Bold.ttf ... 
+2018-08-23 18:54:41 +0000  127744 bytes for ./GoogleSignIn.bundle/Roboto-Bold.ttf
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  719 bytes for ./GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/Info.plist ... 
+2018-08-23 18:54:41 +0000  729 bytes for ./GoogleSignIn.bundle/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  697 bytes for ./GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:41 +0000  766 bytes for ./GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings
+2018-08-23 18:54:41 +0000  copying file ./Zocial.ttf ... 
+2018-08-23 18:54:41 +0000  25552 bytes for ./Zocial.ttf
+2018-08-23 18:54:41 +0000  copying file ./Roboto.ttf ... 
+2018-08-23 18:54:41 +0000  145348 bytes for ./Roboto.ttf
+2018-08-23 18:54:41 +0000  copying file ./MuseAwareSensor.momd/MuseAwareSensor.mom ... 
+2018-08-23 18:54:41 +0000  6021 bytes for ./MuseAwareSensor.momd/MuseAwareSensor.mom
+2018-08-23 18:54:41 +0000  copying file ./MuseAwareSensor.momd/VersionInfo.plist ... 
+2018-08-23 18:54:41 +0000  531 bytes for ./MuseAwareSensor.momd/VersionInfo.plist
+copying file ./main.jsbundle.meta ... 
+2018-08-23 18:54:41 +0000  21 bytes for ./main.jsbundle.meta
+copying file ./EvilIcons.ttf ... 
+2018-08-23 18:54:41 +0000  13128 bytes for ./EvilIcons.ttf
+2018-08-23 18:54:41 +0000  copying file ./main.jsbundle ... 
+2018-08-23 18:54:41 +0000  2573439 bytes for ./main.jsbundle
+2018-08-23 18:54:41 +0000  copying file ./EEG101 ... 
+2018-08-23 18:54:41 +0000  10212048 bytes for ./EEG101
+2018-08-23 18:54:41 +0000  copying file ./AWARE.momd/VersionInfo.plist ... 
+17537 bytes for ./AWARE.momd/VersionInfo.plist
+copying file ./AWARE.momd/AWARE_v6.omo ... 
+141392 bytes for ./AWARE.momd/AWARE_v6.omo
+copying file ./AWARE.momd/AWARE.mom ... 
+42822 bytes for ./AWARE.momd/AWARE.mom
+copying file ./AWARE.momd/AWARE_v5.mom ... 
+2018-08-23 18:54:41 +0000  57880 bytes for ./AWARE.momd/AWARE_v5.mom
+2018-08-23 18:54:41 +0000  copying file ./AWARE.momd/AWARE_v4.mom ... 
+2018-08-23 18:54:41 +0000  56802 bytes for ./AWARE.momd/AWARE_v4.mom
+copying file ./AWARE.momd/AWARE_v6.mom ... 
+2018-08-23 18:54:41 +0000  58558 bytes for ./AWARE.momd/AWARE_v6.mom
+2018-08-23 18:54:41 +0000  copying file ./AWARE.momd/AWARE_v3.mom ... 
+54125 bytes for ./AWARE.momd/AWARE_v3.mom
+copying file ./AWARE.momd/AWARE_v2.mom ... 
+2018-08-23 18:54:41 +0000  5106 bytes for ./AWARE.momd/AWARE_v2.mom
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCoreImage.dylib ... 
+2018-08-23 18:54:41 +0000  208912 bytes for ./Frameworks/libswiftCoreImage.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+2018-08-23 18:54:41 +0000  258992 bytes for ./Frameworks/libswiftObjectiveC.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher ... 
+2018-08-23 18:54:41 +0000  931600 bytes for ./Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMSessionFetcher.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  758 bytes for ./Frameworks/GTMSessionFetcher.framework/Info.plist
+copying file ./Frameworks/libswiftCore.dylib ... 
+2018-08-23 18:54:41 +0000  21079648 bytes for ./Frameworks/libswiftCore.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+577808 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+361552 bytes for ./Frameworks/libswiftUIKit.dylib
+copying file ./Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  6110 bytes for ./Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD ... 
+400448 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png ... 
+2018-08-23 18:54:41 +0000  365 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png ... 
+2018-08-23 18:54:41 +0000  398 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png ... 
+2018-08-23 18:54:41 +0000  8319 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png ... 
+2018-08-23 18:54:41 +0000  4893 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png ... 
+2018-08-23 18:54:41 +0000  306 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png ... 
+2018-08-23 18:54:41 +0000  1200 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png ... 
+2018-08-23 18:54:41 +0000  462 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png ... 
+2018-08-23 18:54:41 +0000  714 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png ... 
+2018-08-23 18:54:41 +0000  816 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png
+copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png ... 
+2018-08-23 18:54:41 +0000  184 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png ... 
+2018-08-23 18:54:41 +0000  262 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png ... 
+2018-08-23 18:54:41 +0000  1845 bytes for ./Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png
+copying file ./Frameworks/SVProgressHUD.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  748 bytes for ./Frameworks/SVProgressHUD.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftMetal.dylib ... 
+2018-08-23 18:54:41 +0000  251312 bytes for ./Frameworks/libswiftMetal.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCoreData.dylib ... 
+2018-08-23 18:54:41 +0000  361632 bytes for ./Frameworks/libswiftCoreData.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/EARestrictedScrollView.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/EARestrictedScrollView.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/EARestrictedScrollView.framework/EARestrictedScrollView ... 
+2018-08-23 18:54:41 +0000  196304 bytes for ./Frameworks/EARestrictedScrollView.framework/EARestrictedScrollView
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/EARestrictedScrollView.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  768 bytes for ./Frameworks/EARestrictedScrollView.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftDispatch.dylib ... 
+2018-08-23 18:54:41 +0000  1009312 bytes for ./Frameworks/libswiftDispatch.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftos.dylib ... 
+2018-08-23 18:54:41 +0000  248960 bytes for ./Frameworks/libswiftos.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2018-08-23 18:54:41 +0000  208352 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/CocoaAsyncSocket.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/CocoaAsyncSocket.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket ... 
+2018-08-23 18:54:41 +0000  971296 bytes for ./Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/CocoaAsyncSocket.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  756 bytes for ./Frameworks/CocoaAsyncSocket.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCallKit.dylib ... 
+2018-08-23 18:54:41 +0000  250032 bytes for ./Frameworks/libswiftCallKit.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftDarwin.dylib ... 
+2018-08-23 18:54:41 +0000  303120 bytes for ./Frameworks/libswiftDarwin.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac ... 
+2018-08-23 18:54:41 +0000  194016 bytes for ./Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac
+copying file ./Frameworks/GoogleToolboxForMac.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  762 bytes for ./Frameworks/GoogleToolboxForMac.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/TPCircularBuffer.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/TPCircularBuffer.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/TPCircularBuffer.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  756 bytes for ./Frameworks/TPCircularBuffer.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/TPCircularBuffer.framework/TPCircularBuffer ... 
+2018-08-23 18:54:41 +0000  195440 bytes for ./Frameworks/TPCircularBuffer.framework/TPCircularBuffer
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+2018-08-23 18:54:41 +0000  212256 bytes for ./Frameworks/libswiftQuartzCore.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/EAIntroView.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/EAIntroView.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/EAIntroView.framework/EAIntroView ... 
+2018-08-23 18:54:41 +0000  361632 bytes for ./Frameworks/EAIntroView.framework/EAIntroView
+copying file ./Frameworks/EAIntroView.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  744 bytes for ./Frameworks/EAIntroView.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/RingBuffer.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/RingBuffer.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/RingBuffer.framework/RingBuffer ... 
+2018-08-23 18:54:41 +0000  182176 bytes for ./Frameworks/RingBuffer.framework/RingBuffer
+copying file ./Frameworks/RingBuffer.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  736 bytes for ./Frameworks/RingBuffer.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SCNetworkReachability.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/SCNetworkReachability.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SCNetworkReachability.framework/SCNetworkReachability ... 
+2018-08-23 18:54:41 +0000  226000 bytes for ./Frameworks/SCNetworkReachability.framework/SCNetworkReachability
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/SCNetworkReachability.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  766 bytes for ./Frameworks/SCNetworkReachability.framework/Info.plist
+copying file ./Frameworks/libswiftCoreAudio.dylib ... 
+2018-08-23 18:54:41 +0000  353920 bytes for ./Frameworks/libswiftCoreAudio.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2512 bytes for ./Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMOAuth2.framework/GTMOAuth2 ... 
+2018-08-23 18:54:41 +0000  445408 bytes for ./Frameworks/GTMOAuth2.framework/GTMOAuth2
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib ... 
+2018-08-23 18:54:41 +0000  3494 bytes for ./Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/GTMOAuth2.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  740 bytes for ./Frameworks/GTMOAuth2.framework/Info.plist
+copying file ./Frameworks/libswiftAVFoundation.dylib ... 
+2018-08-23 18:54:41 +0000  504448 bytes for ./Frameworks/libswiftAVFoundation.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftModelIO.dylib ... 
+2018-08-23 18:54:41 +0000  308192 bytes for ./Frameworks/libswiftModelIO.dylib
+copying file ./Frameworks/libswiftAccelerate.dylib ... 
+2018-08-23 18:54:41 +0000  255664 bytes for ./Frameworks/libswiftAccelerate.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftFoundation.dylib ... 
+2018-08-23 18:54:41 +0000  8413344 bytes for ./Frameworks/libswiftFoundation.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCoreMedia.dylib ... 
+2018-08-23 18:54:41 +0000  253712 bytes for ./Frameworks/libswiftCoreMedia.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftCoreLocation.dylib ... 
+2018-08-23 18:54:41 +0000  253344 bytes for ./Frameworks/libswiftCoreLocation.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/libswiftGLKit.dylib ... 
+2018-08-23 18:54:41 +0000  209808 bytes for ./Frameworks/libswiftGLKit.dylib
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/ios_ntp.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/ios_ntp.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/ios_ntp.framework/ios_ntp ... 
+2018-08-23 18:54:41 +0000  180608 bytes for ./Frameworks/ios_ntp.framework/ios_ntp
+copying file ./Frameworks/ios_ntp.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  736 bytes for ./Frameworks/ios_ntp.framework/Info.plist
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/StudentLifeAudio.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:41 +0000  2202 bytes for ./Frameworks/StudentLifeAudio.framework/_CodeSignature/CodeResources
+2018-08-23 18:54:41 +0000  copying file ./Frameworks/StudentLifeAudio.framework/StudentLifeAudio ... 
+2018-08-23 18:54:41 +0000  3981184 bytes for ./Frameworks/StudentLifeAudio.framework/StudentLifeAudio
+copying file ./Frameworks/StudentLifeAudio.framework/Info.plist ... 
+2018-08-23 18:54:41 +0000  731 bytes for ./Frameworks/StudentLifeAudio.framework/Info.plist
+copying file ./Frameworks/libswiftsimd.dylib ... 
+2018-08-23 18:54:41 +0000  1361296 bytes for ./Frameworks/libswiftsimd.dylib
+2018-08-23 18:54:41 +0000  copying file ./SimpleLineIcons.ttf ... 
+2018-08-23 18:54:41 +0000  54056 bytes for ./SimpleLineIcons.ttf
+2018-08-23 18:54:41 +0000  copying file ./embedded.mobileprovision ... 
+2018-08-23 18:54:41 +0000  7806 bytes for ./embedded.mobileprovision
+copying file ./Roboto-Bold.ttf ... 
+2018-08-23 18:54:41 +0000  170760 bytes for ./Roboto-Bold.ttf
+2018-08-23 18:54:41 +0000  copying file ./assets/node_modules/react-native-elements/src/rating/images/bell.png ... 
+2018-08-23 18:54:41 +0000  2989 bytes for ./assets/node_modules/react-native-elements/src/rating/images/bell.png
+2018-08-23 18:54:41 +0000  copying file ./assets/node_modules/react-native-elements/src/rating/images/heart.png ... 
+2018-08-23 18:54:41 +0000  1928 bytes for ./assets/node_modules/react-native-elements/src/rating/images/heart.png
+copying file ./assets/node_modules/react-native-elements/src/rating/images/rocket.png ... 
+2018-08-23 18:54:41 +0000  4050 bytes for ./assets/node_modules/react-native-elements/src/rating/images/rocket.png
+copying file ./assets/node_modules/react-native-elements/src/rating/images/star.png ... 
+2018-08-23 18:54:41 +0000  1961 bytes for ./assets/node_modules/react-native-elements/src/rating/images/star.png
+2018-08-23 18:54:41 +0000  copying file ./assets/src/assets/ok.png ... 
+2018-08-23 18:54:41 +0000  8979 bytes for ./assets/src/assets/ok.png
+2018-08-23 18:54:41 +0000  copying file ./assets/src/assets/resting-state.mp4 ... 
+2018-08-23 18:54:41 +0000  28686246 bytes for ./assets/src/assets/resting-state.mp4
+2018-08-23 18:54:41 +0000  copying file ./assets/src/assets/electrodediagram.png ... 
+55397 bytes for ./assets/src/assets/electrodediagram.png
+copying file ./assets/src/assets/noise.png ... 
+8899 bytes for ./assets/src/assets/noise.png
+copying file ./assets/src/assets/refresh.png ... 
+13946 bytes for ./assets/src/assets/refresh.png
+copying file ./Roboto-Thin.ttf ... 
+171904 bytes for ./Roboto-Thin.ttf
+copying file ./Roboto-Black.ttf ... 
+2018-08-23 18:54:41 +0000  171480 bytes for ./Roboto-Black.ttf
+copying file ./Info.plist ... 
+2018-08-23 18:54:41 +0000  3511 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+2018-08-23 18:54:41 +0000  8 bytes for ./PkgInfo
+copying file ./MaterialIcons.ttf ... 
+2018-08-23 18:54:41 +0000  128180 bytes for ./MaterialIcons.ttf
+2018-08-23 18:54:41 +0000  2018-08-23 18:54:41 +0000  
+
+2018-08-23 18:54:41 +0000  2018-08-23 18:54:41 +0000  /usr/bin/ditto exited with 0
+
+2018-08-23 18:54:41 +0000  2018-08-23 18:54:41 +0000  Processing step: IDEDistributionEmbedProfileStep
+
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbbc9ea700 'org.cocoapods.CocoaAsyncSocket' '<DVTFilePath:0x7ffbb359bae0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/CocoaAsyncSocket.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb372ec10 'org.cocoapods.EAIntroView' '<DVTFilePath:0x7ffbb3387420:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EAIntroView.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb227cac0 'org.cocoapods.EARestrictedScrollView' '<DVTFilePath:0x7ffbc78b1580:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EARestrictedScrollView.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb16b6a00 'org.cocoapods.GTMOAuth2' '<DVTFilePath:0x7ffbb32f3ff0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMOAuth2.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb34b3490 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7ffbb3b2f5e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMSessionFetcher.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb21f61f0 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7ffbd6f38ea0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GoogleToolboxForMac.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3736140 'as.4li.RingBuffer' '<DVTFilePath:0x7ffbb207c9e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/RingBuffer.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbafc79ae0 'org.cocoapods.SCNetworkReachability' '<DVTFilePath:0x7ffbb3768220:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SCNetworkReachability.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3aaa590 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7ffbbd837d20:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SVProgressHUD.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb33e3a20 'com.awareframework.ios.StudentLifeAudio' '<DVTFilePath:0x7ffbb3bd3890:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/StudentLifeAudio.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3739890 'org.cocoapods.TPCircularBuffer' '<DVTFilePath:0x7ffbb21ee4c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/TPCircularBuffer.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb373e7d0 'org.cocoapods.ios-ntp' '<DVTFilePath:0x7ffbb354caf0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/ios_ntp.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbd3f42260 'com.apple.dt.runtime.swiftAVFoundation' '<DVTFilePath:0x7ffbb37619c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAVFoundation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3734f10 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7ffbc2a60850:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAccelerate.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb373d140 'com.apple.dt.runtime.swiftCallKit' '<DVTFilePath:0x7ffbb3b484e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCallKit.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3cb1230 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffbc0ba6050:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCore.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb25aa800 'com.apple.dt.runtime.swiftCoreAudio' '<DVTFilePath:0x7ffbb3f15560:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreAudio.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3cb0210 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ffbbeb0b2a0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreData.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbc3961d90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffbb35a01b0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3729e20 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffbb402ba70:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbafcfa570 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffbb3b4c1d0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb36916f0 'com.apple.dt.runtime.swiftCoreLocation' '<DVTFilePath:0x7ffbb21f2570:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreLocation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3568be0 'com.apple.dt.runtime.swiftCoreMedia' '<DVTFilePath:0x7ffbc7e98780:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreMedia.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3de0f40 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffbb3b24e80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3b52670 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffbb3d144f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbc100f7a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffbbeb994e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3733c10 'com.apple.dt.runtime.swiftGLKit' '<DVTFilePath:0x7ffbb401b110:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftGLKit.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb21f0a50 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffbb3710a80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftMetal.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb248c4c0 'com.apple.dt.runtime.swiftModelIO' '<DVTFilePath:0x7ffbbfdeaca0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftModelIO.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3570970 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffbb3bddee0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3570900 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffba8cdf680:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb3b623f0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffbb3b705f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbaa9316a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffbb3b66300:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftos.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping profile for item: <IDEDistributionItem: 0x7ffbb25eabc0 'com.apple.dt.runtime.swiftsimd' '<DVTFilePath:0x7ffbafa19c00:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftsimd.dylib'>'>
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionSymbolsStep
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionAppThinningStep
+2018-08-23 18:54:41 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionODRStep
+2018-08-23 18:54:41 +0000  Processing step: IDEDistributionStripXattrsStep
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbbc9ea700 'org.cocoapods.CocoaAsyncSocket' '<DVTFilePath:0x7ffbb359bae0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/CocoaAsyncSocket.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb372ec10 'org.cocoapods.EAIntroView' '<DVTFilePath:0x7ffbb3387420:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EAIntroView.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb227cac0 'org.cocoapods.EARestrictedScrollView' '<DVTFilePath:0x7ffbc78b1580:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EARestrictedScrollView.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb16b6a00 'org.cocoapods.GTMOAuth2' '<DVTFilePath:0x7ffbb32f3ff0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMOAuth2.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb34b3490 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7ffbb3b2f5e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMSessionFetcher.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb21f61f0 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7ffbd6f38ea0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GoogleToolboxForMac.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3736140 'as.4li.RingBuffer' '<DVTFilePath:0x7ffbb207c9e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/RingBuffer.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbafc79ae0 'org.cocoapods.SCNetworkReachability' '<DVTFilePath:0x7ffbb3768220:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SCNetworkReachability.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3aaa590 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7ffbbd837d20:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SVProgressHUD.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb33e3a20 'com.awareframework.ios.StudentLifeAudio' '<DVTFilePath:0x7ffbb3bd3890:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/StudentLifeAudio.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3739890 'org.cocoapods.TPCircularBuffer' '<DVTFilePath:0x7ffbb21ee4c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/TPCircularBuffer.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb373e7d0 'org.cocoapods.ios-ntp' '<DVTFilePath:0x7ffbb354caf0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/ios_ntp.framework'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbd3f42260 'com.apple.dt.runtime.swiftAVFoundation' '<DVTFilePath:0x7ffbb37619c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAVFoundation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3734f10 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7ffbc2a60850:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAccelerate.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb373d140 'com.apple.dt.runtime.swiftCallKit' '<DVTFilePath:0x7ffbb3b484e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCallKit.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3cb1230 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffbc0ba6050:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCore.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb25aa800 'com.apple.dt.runtime.swiftCoreAudio' '<DVTFilePath:0x7ffbb3f15560:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreAudio.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3cb0210 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ffbbeb0b2a0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreData.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbc3961d90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffbb35a01b0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3729e20 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffbb402ba70:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbafcfa570 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffbb3b4c1d0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreImage.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb36916f0 'com.apple.dt.runtime.swiftCoreLocation' '<DVTFilePath:0x7ffbb21f2570:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreLocation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3568be0 'com.apple.dt.runtime.swiftCoreMedia' '<DVTFilePath:0x7ffbc7e98780:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreMedia.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3de0f40 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffbb3b24e80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDarwin.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3b52670 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffbb3d144f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDispatch.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbc100f7a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffbbeb994e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftFoundation.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3733c10 'com.apple.dt.runtime.swiftGLKit' '<DVTFilePath:0x7ffbb401b110:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftGLKit.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb21f0a50 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffbb3710a80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftMetal.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb248c4c0 'com.apple.dt.runtime.swiftModelIO' '<DVTFilePath:0x7ffbbfdeaca0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftModelIO.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3570970 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffbb3bddee0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3570900 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffba8cdf680:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb3b623f0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffbb3b705f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftUIKit.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbaa9316a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffbb3b66300:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftos.dylib'>'>
+2018-08-23 18:54:41 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7ffbb25eabc0 'com.apple.dt.runtime.swiftsimd' '<DVTFilePath:0x7ffbafa19c00:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftsimd.dylib'>'>
+2018-08-23 18:54:41 +0000  Running /usr/bin/xattr '-crs' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app'
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  
+
+2018-08-23 18:54:42 +0000  /usr/bin/xattr exited with 0
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Processing step: IDEDistributionCodesignStep
+
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbbc9ea700 'org.cocoapods.CocoaAsyncSocket' '<DVTFilePath:0x7ffbb359bae0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/CocoaAsyncSocket.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb21ba780>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbbc9ea700 'org.cocoapods.CocoaAsyncSocket' '<DVTFilePath:0x7ffbb359bae0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/CocoaAsyncSocket.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbbc9ea700 'org.cocoapods.CocoaAsyncSocket' '<DVTFilePath:0x7ffbb359bae0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/CocoaAsyncSocket.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsP25Erx
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsP25Erx' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework: replacing existing signature
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.CocoaAsyncSocket]
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:42 +0000  
+
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb372ec10 'org.cocoapods.EAIntroView' '<DVTFilePath:0x7ffbb3387420:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EAIntroView.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbae898b90>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb372ec10 'org.cocoapods.EAIntroView' '<DVTFilePath:0x7ffbb3387420:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EAIntroView.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb372ec10 'org.cocoapods.EAIntroView' '<DVTFilePath:0x7ffbb3387420:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EAIntroView.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsfaHgty
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsfaHgty' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/EAIntroView.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/EAIntroView.framework: replacing existing signature
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/EAIntroView.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.EAIntroView]
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb227cac0 'org.cocoapods.EARestrictedScrollView' '<DVTFilePath:0x7ffbc78b1580:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EARestrictedScrollView.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb3bb3d70>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb227cac0 'org.cocoapods.EARestrictedScrollView' '<DVTFilePath:0x7ffbc78b1580:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EARestrictedScrollView.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb227cac0 'org.cocoapods.EARestrictedScrollView' '<DVTFilePath:0x7ffbc78b1580:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/EARestrictedScrollView.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsZTUKqL
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsZTUKqL' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework: replacing existing signature
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.EARestrictedScrollView]
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb16b6a00 'org.cocoapods.GTMOAuth2' '<DVTFilePath:0x7ffbb32f3ff0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMOAuth2.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbab6b49a0>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb16b6a00 'org.cocoapods.GTMOAuth2' '<DVTFilePath:0x7ffbb32f3ff0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMOAuth2.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb16b6a00 'org.cocoapods.GTMOAuth2' '<DVTFilePath:0x7ffbb32f3ff0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMOAuth2.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsST3x5s
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsST3x5s' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GTMOAuth2.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GTMOAuth2.framework: replacing existing signature
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GTMOAuth2.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.GTMOAuth2]
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb34b3490 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7ffbb3b2f5e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMSessionFetcher.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb3552250>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb34b3490 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7ffbb3b2f5e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMSessionFetcher.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb34b3490 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7ffbb3b2f5e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GTMSessionFetcher.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements5esIel
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements5esIel' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework: replacing existing signature
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.GTMSessionFetcher]
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb21f61f0 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7ffbd6f38ea0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GoogleToolboxForMac.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbaffcc310>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb21f61f0 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7ffbd6f38ea0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GoogleToolboxForMac.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb21f61f0 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7ffbd6f38ea0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/GoogleToolboxForMac.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsJ6tojW
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsJ6tojW' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework: replacing existing signature
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.GoogleToolboxForMac]
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  2018-08-23 18:54:42 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:42 +0000  
+
+2018-08-23 18:54:42 +0000  
+2018-08-23 18:54:42 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3736140 'as.4li.RingBuffer' '<DVTFilePath:0x7ffbb207c9e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/RingBuffer.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbab5ecc00>: {
+}
+2018-08-23 18:54:42 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3736140 'as.4li.RingBuffer' '<DVTFilePath:0x7ffbb207c9e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/RingBuffer.framework'>'>: {
+}
+2018-08-23 18:54:42 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3736140 'as.4li.RingBuffer' '<DVTFilePath:0x7ffbb207c9e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/RingBuffer.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsdBQ5sX
+2018-08-23 18:54:42 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsdBQ5sX' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/RingBuffer.framework'
+2018-08-23 18:54:42 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/RingBuffer.framework: replacing existing signature
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/RingBuffer.framework: signed bundle with Mach-O universal (armv7 arm64) [as.4li.RingBuffer]
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+
+2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbafc79ae0 'org.cocoapods.SCNetworkReachability' '<DVTFilePath:0x7ffbb3768220:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SCNetworkReachability.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbc20fb790>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbafc79ae0 'org.cocoapods.SCNetworkReachability' '<DVTFilePath:0x7ffbb3768220:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SCNetworkReachability.framework'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbafc79ae0 'org.cocoapods.SCNetworkReachability' '<DVTFilePath:0x7ffbb3768220:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SCNetworkReachability.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsroOjcO
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsroOjcO' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/SCNetworkReachability.framework'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/SCNetworkReachability.framework: replacing existing signature
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/SCNetworkReachability.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.SCNetworkReachability]
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+
+2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3aaa590 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7ffbbd837d20:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SVProgressHUD.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb18be530>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3aaa590 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7ffbbd837d20:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SVProgressHUD.framework'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3aaa590 'org.cocoapods.SVProgressHUD' '<DVTFilePath:0x7ffbbd837d20:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/SVProgressHUD.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsJrd8DZ
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsJrd8DZ' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/SVProgressHUD.framework'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/SVProgressHUD.framework: replacing existing signature
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/SVProgressHUD.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.SVProgressHUD]
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb33e3a20 'com.awareframework.ios.StudentLifeAudio' '<DVTFilePath:0x7ffbb3bd3890:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/StudentLifeAudio.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb2aa2a10>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb33e3a20 'com.awareframework.ios.StudentLifeAudio' '<DVTFilePath:0x7ffbb3bd3890:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/StudentLifeAudio.framework'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb33e3a20 'com.awareframework.ios.StudentLifeAudio' '<DVTFilePath:0x7ffbb3bd3890:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/StudentLifeAudio.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementstBKazY
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementstBKazY' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/StudentLifeAudio.framework'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/StudentLifeAudio.framework: signed bundle with Mach-O universal (armv7 arm64) [com.awareframework.ios.StudentLifeAudio]
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+
+2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3739890 'org.cocoapods.TPCircularBuffer' '<DVTFilePath:0x7ffbb21ee4c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/TPCircularBuffer.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbc36d8530>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3739890 'org.cocoapods.TPCircularBuffer' '<DVTFilePath:0x7ffbb21ee4c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/TPCircularBuffer.framework'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3739890 'org.cocoapods.TPCircularBuffer' '<DVTFilePath:0x7ffbb21ee4c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/TPCircularBuffer.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsttl4SJ
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsttl4SJ' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/TPCircularBuffer.framework'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/TPCircularBuffer.framework: replacing existing signature
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/TPCircularBuffer.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.TPCircularBuffer]
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb373e7d0 'org.cocoapods.ios-ntp' '<DVTFilePath:0x7ffbb354caf0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/ios_ntp.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb2c07060>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb373e7d0 'org.cocoapods.ios-ntp' '<DVTFilePath:0x7ffbb354caf0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/ios_ntp.framework'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb373e7d0 'org.cocoapods.ios-ntp' '<DVTFilePath:0x7ffbb354caf0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/ios_ntp.framework'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsEwj8XH
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsEwj8XH' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/ios_ntp.framework'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/ios_ntp.framework: replacing existing signature
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/ios_ntp.framework: signed bundle with Mach-O universal (armv7 arm64) [org.cocoapods.ios-ntp]
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  
+
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbd3f42260 'com.apple.dt.runtime.swiftAVFoundation' '<DVTFilePath:0x7ffbb37619c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAVFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb4045f20>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbd3f42260 'com.apple.dt.runtime.swiftAVFoundation' '<DVTFilePath:0x7ffbb37619c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAVFoundation.dylib'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbd3f42260 'com.apple.dt.runtime.swiftAVFoundation' '<DVTFilePath:0x7ffbb37619c0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAVFoundation.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementszJusIK
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementszJusIK' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftAVFoundation.dylib'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftAVFoundation.dylib: replacing existing signature
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftAVFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftAVFoundation]
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  2018-08-23 18:54:43 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  
+2018-08-23 18:54:43 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3734f10 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7ffbc2a60850:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAccelerate.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb3506a40>: {
+}
+2018-08-23 18:54:43 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3734f10 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7ffbc2a60850:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAccelerate.dylib'>'>: {
+}
+2018-08-23 18:54:43 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3734f10 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7ffbc2a60850:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftAccelerate.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsJsRo7L
+2018-08-23 18:54:43 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsJsRo7L' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftAccelerate.dylib'
+2018-08-23 18:54:43 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftAccelerate.dylib: replacing existing signature
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftAccelerate.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftAccelerate]
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  /usr/bin/codesign exited with 02018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb373d140 'com.apple.dt.runtime.swiftCallKit' '<DVTFilePath:0x7ffbb3b484e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCallKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb2aa2e00>: {
+}
+2018-08-23 18:54:44 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb373d140 'com.apple.dt.runtime.swiftCallKit' '<DVTFilePath:0x7ffbb3b484e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCallKit.dylib'>'>: {
+}
+2018-08-23 18:54:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb373d140 'com.apple.dt.runtime.swiftCallKit' '<DVTFilePath:0x7ffbb3b484e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCallKit.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsjUdNhX
+2018-08-23 18:54:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsjUdNhX' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCallKit.dylib'
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCallKit.dylib: replacing existing signature
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCallKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCallKit]
+2018-08-23 18:54:44 +0000  
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:44 +0000  
+2018-08-23 18:54:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3cb1230 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffbc0ba6050:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbaf89bbf0>: {
+}
+2018-08-23 18:54:44 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3cb1230 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffbc0ba6050:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCore.dylib'>'>: {
+}
+2018-08-23 18:54:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3cb1230 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7ffbc0ba6050:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements3Jqg6A
+2018-08-23 18:54:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements3Jqg6A' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCore.dylib'
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb25aa800 'com.apple.dt.runtime.swiftCoreAudio' '<DVTFilePath:0x7ffbb3f15560:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreAudio.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb21cd390>: {
+}
+2018-08-23 18:54:44 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb25aa800 'com.apple.dt.runtime.swiftCoreAudio' '<DVTFilePath:0x7ffbb3f15560:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreAudio.dylib'>'>: {
+}
+2018-08-23 18:54:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb25aa800 'com.apple.dt.runtime.swiftCoreAudio' '<DVTFilePath:0x7ffbb3f15560:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreAudio.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementso05DK3
+2018-08-23 18:54:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementso05DK3' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreAudio.dylib'
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreAudio.dylib: replacing existing signature
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreAudio.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreAudio]
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3cb0210 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ffbbeb0b2a0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreData.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbab6e6aa0>: {
+}
+2018-08-23 18:54:44 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3cb0210 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ffbbeb0b2a0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreData.dylib'>'>: {
+}
+2018-08-23 18:54:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3cb0210 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7ffbbeb0b2a0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreData.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsp8KnPB
+2018-08-23 18:54:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsp8KnPB' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreData.dylib'
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreData.dylib: replacing existing signature
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreData.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreData]
+2018-08-23 18:54:44 +0000  
+2018-08-23 18:54:44 +0000  
+2018-08-23 18:54:44 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  
+
+2018-08-23 18:54:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbc3961d90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffbb35a01b0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbbfe33d50>: {
+}
+2018-08-23 18:54:44 +0000  Entitlements for <IDEDistributionItem: 0x7ffbc3961d90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffbb35a01b0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
+}
+2018-08-23 18:54:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbc3961d90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7ffbb35a01b0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementslhfpEC
+2018-08-23 18:54:44 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementslhfpEC' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreFoundation.dylib'
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2018-08-23 18:54:44 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2018-08-23 18:54:44 +0000  
+2018-08-23 18:54:44 +0000  2018-08-23 18:54:44 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:44 +0000  
+2018-08-23 18:54:44 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3729e20 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffbb402ba70:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreGraphics.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb2130310>: {
+}
+2018-08-23 18:54:44 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3729e20 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffbb402ba70:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+}
+2018-08-23 18:54:44 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3729e20 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7ffbb402ba70:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements1wluT5
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements1wluT5' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreGraphics.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  2018-08-23 18:54:45 +0000  /usr/bin/codesign exited with 02018-08-23 18:54:45 +0000  
+
+
+2018-08-23 18:54:45 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbafcfa570 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffbb3b4c1d0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreImage.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbab5037e0>: {
+}
+2018-08-23 18:54:45 +0000  Entitlements for <IDEDistributionItem: 0x7ffbafcfa570 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffbb3b4c1d0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreImage.dylib'>'>: {
+}
+2018-08-23 18:54:45 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbafcfa570 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7ffbb3b4c1d0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements6XNGWJ
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements6XNGWJ' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreImage.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2018-08-23 18:54:45 +0000  2018-08-23 18:54:45 +0000  
+
+2018-08-23 18:54:45 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb36916f0 'com.apple.dt.runtime.swiftCoreLocation' '<DVTFilePath:0x7ffbb21f2570:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreLocation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb3b2f660>: {
+}
+2018-08-23 18:54:45 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb36916f0 'com.apple.dt.runtime.swiftCoreLocation' '<DVTFilePath:0x7ffbb21f2570:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreLocation.dylib'>'>: {
+}
+2018-08-23 18:54:45 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb36916f0 'com.apple.dt.runtime.swiftCoreLocation' '<DVTFilePath:0x7ffbb21f2570:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreLocation.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsyn2e41
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsyn2e41' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreLocation.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreLocation.dylib: replacing existing signature
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreLocation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreLocation]
+2018-08-23 18:54:45 +0000  2018-08-23 18:54:45 +0000  
+
+2018-08-23 18:54:45 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3568be0 'com.apple.dt.runtime.swiftCoreMedia' '<DVTFilePath:0x7ffbc7e98780:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreMedia.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbc193fea0>: {
+}
+2018-08-23 18:54:45 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3568be0 'com.apple.dt.runtime.swiftCoreMedia' '<DVTFilePath:0x7ffbc7e98780:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreMedia.dylib'>'>: {
+}
+2018-08-23 18:54:45 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3568be0 'com.apple.dt.runtime.swiftCoreMedia' '<DVTFilePath:0x7ffbc7e98780:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftCoreMedia.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements7EeGPV
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements7EeGPV' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreMedia.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreMedia.dylib: replacing existing signature
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftCoreMedia.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreMedia]
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  2018-08-23 18:54:45 +0000  /usr/bin/codesign exited with 02018-08-23 18:54:45 +0000  
+
+
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3de0f40 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffbb3b24e80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDarwin.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb2a51790>: {
+}
+2018-08-23 18:54:45 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3de0f40 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffbb3b24e80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDarwin.dylib'>'>: {
+}
+2018-08-23 18:54:45 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3de0f40 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7ffbb3b24e80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsXGFdem
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsXGFdem' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftDarwin.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2018-08-23 18:54:45 +0000  2018-08-23 18:54:45 +0000  
+
+2018-08-23 18:54:45 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3b52670 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffbb3d144f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDispatch.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb3bb7810>: {
+}
+2018-08-23 18:54:45 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3b52670 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffbb3d144f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2018-08-23 18:54:45 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3b52670 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7ffbb3d144f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsPOV0el
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsPOV0el' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftDispatch.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  2018-08-23 18:54:45 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:45 +0000  
+2018-08-23 18:54:45 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbc100f7a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffbbeb994e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbaec80020>: {
+}
+2018-08-23 18:54:45 +0000  Entitlements for <IDEDistributionItem: 0x7ffbc100f7a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffbbeb994e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftFoundation.dylib'>'>: {
+}
+2018-08-23 18:54:45 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbc100f7a0 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7ffbbeb994e0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsuvgUiP
+2018-08-23 18:54:45 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsuvgUiP' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftFoundation.dylib'
+2018-08-23 18:54:45 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3733c10 'com.apple.dt.runtime.swiftGLKit' '<DVTFilePath:0x7ffbb401b110:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftGLKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbc2727bd0>: {
+}
+2018-08-23 18:54:46 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3733c10 'com.apple.dt.runtime.swiftGLKit' '<DVTFilePath:0x7ffbb401b110:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftGLKit.dylib'>'>: {
+}
+2018-08-23 18:54:46 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3733c10 'com.apple.dt.runtime.swiftGLKit' '<DVTFilePath:0x7ffbb401b110:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftGLKit.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements0gxuUu
+2018-08-23 18:54:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements0gxuUu' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftGLKit.dylib'
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftGLKit.dylib: replacing existing signature
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftGLKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftGLKit]
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb21f0a50 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffbb3710a80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftMetal.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb3acf2d0>: {
+}
+2018-08-23 18:54:46 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb21f0a50 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffbb3710a80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftMetal.dylib'>'>: {
+}
+2018-08-23 18:54:46 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb21f0a50 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7ffbb3710a80:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsYfhstU
+2018-08-23 18:54:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsYfhstU' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftMetal.dylib'
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb248c4c0 'com.apple.dt.runtime.swiftModelIO' '<DVTFilePath:0x7ffbbfdeaca0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftModelIO.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffba8f9c420>: {
+}
+2018-08-23 18:54:46 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb248c4c0 'com.apple.dt.runtime.swiftModelIO' '<DVTFilePath:0x7ffbbfdeaca0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftModelIO.dylib'>'>: {
+}
+2018-08-23 18:54:46 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb248c4c0 'com.apple.dt.runtime.swiftModelIO' '<DVTFilePath:0x7ffbbfdeaca0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftModelIO.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementspKvnoA
+2018-08-23 18:54:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementspKvnoA' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftModelIO.dylib'
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftModelIO.dylib: replacing existing signature
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftModelIO.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftModelIO]
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3570970 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffbb3bddee0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftObjectiveC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbaee60730>: {
+}
+2018-08-23 18:54:46 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3570970 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffbb3bddee0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
+}
+2018-08-23 18:54:46 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3570970 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7ffbb3bddee0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements4sCTP8
+2018-08-23 18:54:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlements4sCTP8' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftObjectiveC.dylib'
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  /usr/bin/codesign exited with 02018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3570900 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffba8cdf680:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftQuartzCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbd33d34d0>: {
+}
+2018-08-23 18:54:46 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3570900 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffba8cdf680:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
+}
+2018-08-23 18:54:46 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3570900 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7ffba8cdf680:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsMcjIVv
+2018-08-23 18:54:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsMcjIVv' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftQuartzCore.dylib'
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2018-08-23 18:54:46 +0000  
+2018-08-23 18:54:46 +0000  2018-08-23 18:54:46 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:46 +0000  
+
+2018-08-23 18:54:46 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb3b623f0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffbb3b705f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftUIKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbc03ba940>: {
+}
+2018-08-23 18:54:46 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb3b623f0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffbb3b705f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftUIKit.dylib'>'>: {
+}
+2018-08-23 18:54:46 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb3b623f0 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7ffbb3b705f0:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementszxKe0g
+2018-08-23 18:54:46 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementszxKe0g' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftUIKit.dylib'
+2018-08-23 18:54:46 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  2018-08-23 18:54:47 +0000  /usr/bin/codesign exited with 0
+2018-08-23 18:54:47 +0000  
+
+2018-08-23 18:54:47 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbaa9316a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffbb3b66300:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftos.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbc03ccf40>: {
+}
+2018-08-23 18:54:47 +0000  Entitlements for <IDEDistributionItem: 0x7ffbaa9316a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffbb3b66300:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftos.dylib'>'>: {
+}
+2018-08-23 18:54:47 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbaa9316a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7ffbb3b66300:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsfkoai9
+2018-08-23 18:54:47 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsfkoai9' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftos.dylib'
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftos.dylib: replacing existing signature
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  /usr/bin/codesign exited with 02018-08-23 18:54:47 +0000  
+
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbb25eabc0 'com.apple.dt.runtime.swiftsimd' '<DVTFilePath:0x7ffbafa19c00:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftsimd.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffba8fde010>: {
+}
+2018-08-23 18:54:47 +0000  Entitlements for <IDEDistributionItem: 0x7ffbb25eabc0 'com.apple.dt.runtime.swiftsimd' '<DVTFilePath:0x7ffbafa19c00:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftsimd.dylib'>'>: {
+}
+2018-08-23 18:54:47 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbb25eabc0 'com.apple.dt.runtime.swiftsimd' '<DVTFilePath:0x7ffbafa19c00:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app/Frameworks/libswiftsimd.dylib'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementskCswRv
+2018-08-23 18:54:47 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementskCswRv' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftsimd.dylib'
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftsimd.dylib: replacing existing signature
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app/Frameworks/libswiftsimd.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftsimd]
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  2018-08-23 18:54:47 +0000  /usr/bin/codesign exited with 0
+
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7ffbc7c03080 'org.bimslab.EEG101' '<DVTFilePath:0x7ffbb3f27b90:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7ffbb35214b0>: {
+}
+2018-08-23 18:54:47 +0000  Entitlements for <IDEDistributionItem: 0x7ffbc7c03080 'org.bimslab.EEG101' '<DVTFilePath:0x7ffbb3f27b90:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app'>'>: {
+    "application-identifier" = "BBT48V5R86.org.bimslab.EEG101";
+    "com.apple.developer.team-identifier" = BBT48V5R86;
+    "get-task-allow" = 0;
+    "keychain-access-groups" =     (
+        "BBT48V5R86.org.bimslab.EEG101"
+    );
+}
+2018-08-23 18:54:47 +0000  Writing entitlements for <IDEDistributionItem: 0x7ffbc7c03080 'org.bimslab.EEG101' '<DVTFilePath:0x7ffbb3f27b90:'/Users/medullosuprarenal/Library/Developer/Xcode/Archives/2018-08-23/EEG101 23-08-2018, 20.54.xcarchive/Products/Applications/EEG101.app'>'> to: /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsWkRGGZ
+2018-08-23 18:54:47 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '430DDBDC0582D917841D7062821D200BE1528DA2' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/entitlementsWkRGGZ' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app'
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app: replacing existing signature
+2018-08-23 18:54:47 +0000  /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root/Payload/EEG101.app: signed app bundle with Mach-O universal (armv7 arm64) [org.bimslab.EEG101]
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  /usr/bin/codesign exited with 02018-08-23 18:54:47 +0000  
+
+2018-08-23 18:54:47 +0000  
+2018-08-23 18:54:47 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2018-08-23 18:54:47 +0000  Processing step: IDEDistributionCreateIPAStep
+2018-08-23 18:54:47 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root' '/var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Packages/EEG101.ipa'
+2018-08-23 18:54:47 +0000  >>> Copying /var/folders/25/xxy24sqs0n736mg7kj3gsxyr0000gp/T/XcodeDistPipeline.oVD/Root 
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:47 +0000  78073 bytes for ./Payload/EEG101.app/_CodeSignature/CodeResources
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/Octicons.ttf ... 
+2018-08-23 18:54:47 +0000  27520 bytes for ./Payload/EEG101.app/Octicons.ttf
+copying file ./Payload/EEG101.app/Feather.ttf ... 
+2018-08-23 18:54:47 +0000  55288 bytes for ./Payload/EEG101.app/Feather.ttf
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/Roboto-Light.ttf ... 
+2018-08-23 18:54:47 +0000  170420 bytes for ./Payload/EEG101.app/Roboto-Light.ttf
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/14_2.jpg ... 
+2018-08-23 18:54:47 +0000  23174 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/14_2.jpg
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/16_1.jpg ... 
+2018-08-23 18:54:47 +0000  16620 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/16_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/14_3.jpg ... 
+2018-08-23 18:54:47 +0000  6342 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/14_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/8_1.jpg ... 
+2018-08-23 18:54:47 +0000  23719 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/8_1.jpg
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/8_3.jpg ... 
+2018-08-23 18:54:47 +0000  25090 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/8_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/14_1.jpg ... 
+2018-08-23 18:54:47 +0000  19622 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/14_1.jpg
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/16_3.jpg ... 
+5158 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/16_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/16_2.jpg ... 
+2018-08-23 18:54:47 +0000  3846 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/16_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/8_2.jpg ... 
+2018-08-23 18:54:47 +0000  18448 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/8_2.jpg
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/12_2.jpg ... 
+2018-08-23 18:54:47 +0000  20661 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/12_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/12_3.jpg ... 
+2018-08-23 18:54:47 +0000  24057 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/12_3.jpg
+2018-08-23 18:54:47 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/10_1.jpg ... 
+2018-08-23 18:54:47 +0000  18185 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/10_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/10_3.jpg ... 
+2018-08-23 18:54:48 +0000  22841 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/10_3.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/12_1.jpg ... 
+2018-08-23 18:54:48 +0000  18856 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/12_1.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/10_2.jpg ... 
+2018-08-23 18:54:48 +0000  21837 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/10_2.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/9_3.jpg ... 
+2018-08-23 18:54:48 +0000  18590 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/9_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/15_1.jpg ... 
+2018-08-23 18:54:48 +0000  19296 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/15_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/9_2.jpg ... 
+2018-08-23 18:54:48 +0000  18912 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/9_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/15_2.jpg ... 
+2018-08-23 18:54:48 +0000  4056 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/15_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/15_3.jpg ... 
+2018-08-23 18:54:48 +0000  4209 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/15_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/9_1.jpg ... 
+2018-08-23 18:54:48 +0000  3133 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/9_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/13_1.jpg ... 
+2018-08-23 18:54:48 +0000  17782 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/13_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/11_3.jpg ... 
+2018-08-23 18:54:48 +0000  19427 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/11_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/11_2.jpg ... 
+2018-08-23 18:54:48 +0000  15640 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/11_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/13_2.jpg ... 
+2018-08-23 18:54:48 +0000  16407 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/13_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/11_1.jpg ... 
+2018-08-23 18:54:48 +0000  16504 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/11_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/13_3.jpg ... 
+2018-08-23 18:54:48 +0000  3309 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/13_3.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/1_3.jpg ... 
+2018-08-23 18:54:48 +0000  19872 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/1_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/3_1.jpg ... 
+2018-08-23 18:54:48 +0000  23224 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/3_1.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/1_2.jpg ... 
+2018-08-23 18:54:48 +0000  19713 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/1_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/Assets.car ... 
+2018-08-23 18:54:48 +0000  1909096 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/Assets.car
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/3_2.jpg ... 
+2018-08-23 18:54:48 +0000  19050 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/3_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/3_3.jpg ... 
+19683 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/3_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/1_1.jpg ... 
+20416 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/1_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/5_1.jpg ... 
+2018-08-23 18:54:48 +0000  18462 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/5_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/7_3.jpg ... 
+2018-08-23 18:54:48 +0000  25160 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/7_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/7_2.jpg ... 
+2018-08-23 18:54:48 +0000  22748 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/7_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/5_2.jpg ... 
+2018-08-23 18:54:48 +0000  21974 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/5_2.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/VersionInfo.plist ... 
+2018-08-23 18:54:48 +0000  17537 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/VersionInfo.plist
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v6.omo ... 
+2018-08-23 18:54:48 +0000  141392 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v6.omo
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE.mom ... 
+2018-08-23 18:54:48 +0000  42968 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE.mom
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v5.mom ... 
+2018-08-23 18:54:48 +0000  58026 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v5.mom
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v4.mom ... 
+2018-08-23 18:54:48 +0000  56948 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v4.mom
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v6.mom ... 
+2018-08-23 18:54:48 +0000  58704 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v6.mom
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v3.mom ... 
+2018-08-23 18:54:48 +0000  54271 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v3.mom
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v2.mom ... 
+5160 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/AWARE.momd/AWARE_v2.mom
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/7_1.jpg ... 
+2018-08-23 18:54:48 +0000  22344 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/7_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/5_3.jpg ... 
+2018-08-23 18:54:48 +0000  17617 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/5_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/2_2.jpg ... 
+2018-08-23 18:54:48 +0000  19150 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/2_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/2_3.jpg ... 
+2018-08-23 18:54:48 +0000  20548 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/2_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/2_1.jpg ... 
+2018-08-23 18:54:48 +0000  17636 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/2_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/4_2.jpg ... 
+2018-08-23 18:54:48 +0000  13366 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/4_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/4_3.jpg ... 
+2018-08-23 18:54:48 +0000  7729 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/4_3.jpg
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWAREFramework.bundle/6_1.jpg ... 
+2018-08-23 18:54:48 +0000  20642 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/6_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/Info.plist ... 
+2018-08-23 18:54:48 +0000  724 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/Info.plist
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/6_3.jpg ... 
+2018-08-23 18:54:48 +0000  23436 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/6_3.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/4_1.jpg ... 
+2018-08-23 18:54:48 +0000  4382 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/4_1.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/6_2.jpg ... 
+2018-08-23 18:54:48 +0000  23903 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/6_2.jpg
+copying file ./Payload/EEG101.app/AWAREFramework.bundle/BaseESMView.nib ... 
+2018-08-23 18:54:48 +0000  5472 bytes for ./Payload/EEG101.app/AWAREFramework.bundle/BaseESMView.nib
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/Roboto_medium.ttf ... 
+2018-08-23 18:54:48 +0000  137308 bytes for ./Payload/EEG101.app/Roboto_medium.ttf
+copying file ./Payload/EEG101.app/Entypo.ttf ... 
+2018-08-23 18:54:48 +0000  65584 bytes for ./Payload/EEG101.app/Entypo.ttf
+copying file ./Payload/EEG101.app/MaterialCommunityIcons.ttf ... 
+2018-08-23 18:54:48 +0000  322456 bytes for ./Payload/EEG101.app/MaterialCommunityIcons.ttf
+copying file ./Payload/EEG101.app/Foundation.ttf ... 
+2018-08-23 18:54:48 +0000  56976 bytes for ./Payload/EEG101.app/Foundation.ttf
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/Ionicons.ttf ... 
+2018-08-23 18:54:48 +0000  143936 bytes for ./Payload/EEG101.app/Ionicons.ttf
+copying file ./Payload/EEG101.app/rubicon-icon-font.ttf ... 
+2018-08-23 18:54:48 +0000  10208 bytes for ./Payload/EEG101.app/rubicon-icon-font.ttf
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/Base.lproj/LaunchScreen.nib ... 
+3006 bytes for ./Payload/EEG101.app/Base.lproj/LaunchScreen.nib
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/FontAwesome.ttf ... 
+2018-08-23 18:54:48 +0000  165548 bytes for ./Payload/EEG101.app/FontAwesome.ttf
+copying file ./Payload/EEG101.app/archived-expanded-entitlements.xcent ... 
+2018-08-23 18:54:48 +0000  374 bytes for ./Payload/EEG101.app/archived-expanded-entitlements.xcent
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings ... 
+723 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/de.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings ... 
+748 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/he.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  823 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ar.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  871 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/el.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  765 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ja.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings ... 
+658 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/en.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  874 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/uk.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings ... 
+665 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/es_MX.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  702 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/zh_CN.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings ... 
+670 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/nb.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings ... 
+724 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/es.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  717 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/pt_BR.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings ... 
+670 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/da.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings ... 
+671 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/it.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings ... 
+753 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/sk.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings ... 
+725 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/pt_PT.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/google@3x.png ... 
+2018-08-23 18:54:48 +0000  1622 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/google@3x.png
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings ... 
+687 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ms.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings ... 
+687 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/sv.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  735 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/cs.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/google@2x.png ... 
+2018-08-23 18:54:48 +0000  987 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/google@2x.png
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  719 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ko.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  748 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/hu.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings ... 
+695 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/tr.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings ... 
+697 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/pl.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings ... 
+674 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/zh_TW.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  658 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/en_GB.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  743 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/vi.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings ... 
+844 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ru.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  728 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/fr.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  709 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/fi.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings ... 
+654 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/id.lproj/GoogleSignIn.strings
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings ... 
+683 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/nl.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  934 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/th.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings ... 
+717 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/pt.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/google.png ... 
+2018-08-23 18:54:48 +0000  572 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/google.png
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/Roboto-Bold.ttf ... 
+2018-08-23 18:54:48 +0000  127744 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/Roboto-Bold.ttf
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings ... 
+719 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ro.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/Info.plist ... 
+2018-08-23 18:54:48 +0000  729 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/Info.plist
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings ... 
+697 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/hr.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings ... 
+2018-08-23 18:54:48 +0000  766 bytes for ./Payload/EEG101.app/GoogleSignIn.bundle/ca.lproj/GoogleSignIn.strings
+copying file ./Payload/EEG101.app/Zocial.ttf ... 
+2018-08-23 18:54:48 +0000  25552 bytes for ./Payload/EEG101.app/Zocial.ttf
+copying file ./Payload/EEG101.app/Roboto.ttf ... 
+2018-08-23 18:54:48 +0000  145348 bytes for ./Payload/EEG101.app/Roboto.ttf
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/MuseAwareSensor.momd/MuseAwareSensor.mom ... 
+6021 bytes for ./Payload/EEG101.app/MuseAwareSensor.momd/MuseAwareSensor.mom
+copying file ./Payload/EEG101.app/MuseAwareSensor.momd/VersionInfo.plist ... 
+2018-08-23 18:54:48 +0000  531 bytes for ./Payload/EEG101.app/MuseAwareSensor.momd/VersionInfo.plist
+copying file ./Payload/EEG101.app/main.jsbundle.meta ... 
+21 bytes for ./Payload/EEG101.app/main.jsbundle.meta
+copying file ./Payload/EEG101.app/EvilIcons.ttf ... 
+2018-08-23 18:54:48 +0000  13128 bytes for ./Payload/EEG101.app/EvilIcons.ttf
+copying file ./Payload/EEG101.app/main.jsbundle ... 
+2018-08-23 18:54:48 +0000  2573439 bytes for ./Payload/EEG101.app/main.jsbundle
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/EEG101 ... 
+2018-08-23 18:54:48 +0000  10212048 bytes for ./Payload/EEG101.app/EEG101
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWARE.momd/VersionInfo.plist ... 
+17537 bytes for ./Payload/EEG101.app/AWARE.momd/VersionInfo.plist
+copying file ./Payload/EEG101.app/AWARE.momd/AWARE_v6.omo ... 
+141392 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE_v6.omo
+copying file ./Payload/EEG101.app/AWARE.momd/AWARE.mom ... 
+42822 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE.mom
+copying file ./Payload/EEG101.app/AWARE.momd/AWARE_v5.mom ... 
+2018-08-23 18:54:48 +0000  57880 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE_v5.mom
+copying file ./Payload/EEG101.app/AWARE.momd/AWARE_v4.mom ... 
+2018-08-23 18:54:48 +0000  56802 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE_v4.mom
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/AWARE.momd/AWARE_v6.mom ... 
+2018-08-23 18:54:48 +0000  58558 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE_v6.mom
+copying file ./Payload/EEG101.app/AWARE.momd/AWARE_v3.mom ... 
+2018-08-23 18:54:48 +0000  54125 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE_v3.mom
+copying file ./Payload/EEG101.app/AWARE.momd/AWARE_v2.mom ... 
+2018-08-23 18:54:48 +0000  5106 bytes for ./Payload/EEG101.app/AWARE.momd/AWARE_v2.mom
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/Frameworks/libswiftCoreImage.dylib ... 
+2018-08-23 18:54:48 +0000  209264 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreImage.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftObjectiveC.dylib ... 
+2018-08-23 18:54:48 +0000  259344 bytes for ./Payload/EEG101.app/Frameworks/libswiftObjectiveC.dylib
+2018-08-23 18:54:48 +0000  copying file ./Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher ... 
+2018-08-23 18:54:48 +0000  931904 bytes for ./Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher
+copying file ./Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework/Info.plist ... 
+2018-08-23 18:54:48 +0000  758 bytes for ./Payload/EEG101.app/Frameworks/GTMSessionFetcher.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftCore.dylib ... 
+2018-08-23 18:54:49 +0000  21080000 bytes for ./Payload/EEG101.app/Frameworks/libswiftCore.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2018-08-23 18:54:49 +0000  578160 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreGraphics.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftUIKit.dylib ... 
+2018-08-23 18:54:49 +0000  361904 bytes for ./Payload/EEG101.app/Frameworks/libswiftUIKit.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources ... 
+6110 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD ... 
+2018-08-23 18:54:49 +0000  400752 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png ... 
+365 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png ... 
+398 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@3x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png ... 
+2018-08-23 18:54:49 +0000  8319 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@3x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png ... 
+2018-08-23 18:54:49 +0000  4893 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask@2x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png ... 
+2018-08-23 18:54:49 +0000  306 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error@2x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png ... 
+1200 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@3x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png ... 
+2018-08-23 18:54:49 +0000  462 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@2x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png ... 
+714 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success@3x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png ... 
+2018-08-23 18:54:49 +0000  816 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/info@2x.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png ... 
+184 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/error.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png ... 
+262 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/success.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png ... 
+2018-08-23 18:54:49 +0000  1845 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/SVProgressHUD.bundle/angle-mask.png
+copying file ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  748 bytes for ./Payload/EEG101.app/Frameworks/SVProgressHUD.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftMetal.dylib ... 
+2018-08-23 18:54:49 +0000  251664 bytes for ./Payload/EEG101.app/Frameworks/libswiftMetal.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftCoreData.dylib ... 
+2018-08-23 18:54:49 +0000  394752 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreData.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework/EARestrictedScrollView ... 
+2018-08-23 18:54:49 +0000  196608 bytes for ./Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework/EARestrictedScrollView
+copying file ./Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  768 bytes for ./Payload/EEG101.app/Frameworks/EARestrictedScrollView.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftDispatch.dylib ... 
+2018-08-23 18:54:49 +0000  1009664 bytes for ./Payload/EEG101.app/Frameworks/libswiftDispatch.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftos.dylib ... 
+2018-08-23 18:54:49 +0000  249312 bytes for ./Payload/EEG101.app/Frameworks/libswiftos.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2018-08-23 18:54:49 +0000  208704 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreFoundation.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket ... 
+2018-08-23 18:54:49 +0000  971600 bytes for ./Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket
+copying file ./Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  756 bytes for ./Payload/EEG101.app/Frameworks/CocoaAsyncSocket.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftCallKit.dylib ... 
+2018-08-23 18:54:49 +0000  250384 bytes for ./Payload/EEG101.app/Frameworks/libswiftCallKit.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftDarwin.dylib ... 
+2018-08-23 18:54:49 +0000  303472 bytes for ./Payload/EEG101.app/Frameworks/libswiftDarwin.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac ... 
+2018-08-23 18:54:49 +0000  194320 bytes for ./Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework/Info.plist ... 
+762 bytes for ./Payload/EEG101.app/Frameworks/GoogleToolboxForMac.framework/Info.plist
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/TPCircularBuffer.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/EEG101.app/Frameworks/TPCircularBuffer.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/TPCircularBuffer.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  756 bytes for ./Payload/EEG101.app/Frameworks/TPCircularBuffer.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/TPCircularBuffer.framework/TPCircularBuffer ... 
+2018-08-23 18:54:49 +0000  195744 bytes for ./Payload/EEG101.app/Frameworks/TPCircularBuffer.framework/TPCircularBuffer
+copying file ./Payload/EEG101.app/Frameworks/libswiftQuartzCore.dylib ... 
+2018-08-23 18:54:49 +0000  212624 bytes for ./Payload/EEG101.app/Frameworks/libswiftQuartzCore.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/EAIntroView.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/EEG101.app/Frameworks/EAIntroView.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/EAIntroView.framework/EAIntroView ... 
+2018-08-23 18:54:49 +0000  361936 bytes for ./Payload/EEG101.app/Frameworks/EAIntroView.framework/EAIntroView
+copying file ./Payload/EEG101.app/Frameworks/EAIntroView.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  744 bytes for ./Payload/EEG101.app/Frameworks/EAIntroView.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/RingBuffer.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:49 +0000  2202 bytes for ./Payload/EEG101.app/Frameworks/RingBuffer.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/RingBuffer.framework/RingBuffer ... 
+2018-08-23 18:54:49 +0000  182480 bytes for ./Payload/EEG101.app/Frameworks/RingBuffer.framework/RingBuffer
+copying file ./Payload/EEG101.app/Frameworks/RingBuffer.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  736 bytes for ./Payload/EEG101.app/Frameworks/RingBuffer.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/SCNetworkReachability.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:49 +0000  2202 bytes for ./Payload/EEG101.app/Frameworks/SCNetworkReachability.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/SCNetworkReachability.framework/SCNetworkReachability ... 
+2018-08-23 18:54:49 +0000  242688 bytes for ./Payload/EEG101.app/Frameworks/SCNetworkReachability.framework/SCNetworkReachability
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/SCNetworkReachability.framework/Info.plist ... 
+766 bytes for ./Payload/EEG101.app/Frameworks/SCNetworkReachability.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftCoreAudio.dylib ... 
+2018-08-23 18:54:49 +0000  354272 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreAudio.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources ... 
+2512 bytes for ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/GTMOAuth2 ... 
+2018-08-23 18:54:49 +0000  445712 bytes for ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/GTMOAuth2
+copying file ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib ... 
+2018-08-23 18:54:49 +0000  3494 bytes for ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/GTMOAuth2ViewTouch.nib
+copying file ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/Info.plist ... 
+2018-08-23 18:54:49 +0000  740 bytes for ./Payload/EEG101.app/Frameworks/GTMOAuth2.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftAVFoundation.dylib ... 
+2018-08-23 18:54:49 +0000  504800 bytes for ./Payload/EEG101.app/Frameworks/libswiftAVFoundation.dylib
+2018-08-23 18:54:49 +0000  copying file ./Payload/EEG101.app/Frameworks/libswiftModelIO.dylib ... 
+2018-08-23 18:54:49 +0000  308544 bytes for ./Payload/EEG101.app/Frameworks/libswiftModelIO.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftAccelerate.dylib ... 
+2018-08-23 18:54:49 +0000  256016 bytes for ./Payload/EEG101.app/Frameworks/libswiftAccelerate.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftFoundation.dylib ... 
+2018-08-23 18:54:50 +0000  8413696 bytes for ./Payload/EEG101.app/Frameworks/libswiftFoundation.dylib
+2018-08-23 18:54:50 +0000  copying file ./Payload/EEG101.app/Frameworks/libswiftCoreMedia.dylib ... 
+254064 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreMedia.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftCoreLocation.dylib ... 
+2018-08-23 18:54:50 +0000  253712 bytes for ./Payload/EEG101.app/Frameworks/libswiftCoreLocation.dylib
+copying file ./Payload/EEG101.app/Frameworks/libswiftGLKit.dylib ... 
+2018-08-23 18:54:50 +0000  210160 bytes for ./Payload/EEG101.app/Frameworks/libswiftGLKit.dylib
+2018-08-23 18:54:50 +0000  copying file ./Payload/EEG101.app/Frameworks/ios_ntp.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:50 +0000  2202 bytes for ./Payload/EEG101.app/Frameworks/ios_ntp.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/ios_ntp.framework/ios_ntp ... 
+2018-08-23 18:54:50 +0000  180912 bytes for ./Payload/EEG101.app/Frameworks/ios_ntp.framework/ios_ntp
+copying file ./Payload/EEG101.app/Frameworks/ios_ntp.framework/Info.plist ... 
+2018-08-23 18:54:50 +0000  736 bytes for ./Payload/EEG101.app/Frameworks/ios_ntp.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/StudentLifeAudio.framework/_CodeSignature/CodeResources ... 
+2018-08-23 18:54:50 +0000  2202 bytes for ./Payload/EEG101.app/Frameworks/StudentLifeAudio.framework/_CodeSignature/CodeResources
+copying file ./Payload/EEG101.app/Frameworks/StudentLifeAudio.framework/StudentLifeAudio ... 
+2018-08-23 18:54:50 +0000  3948512 bytes for ./Payload/EEG101.app/Frameworks/StudentLifeAudio.framework/StudentLifeAudio
+copying file ./Payload/EEG101.app/Frameworks/StudentLifeAudio.framework/Info.plist ... 
+2018-08-23 18:54:50 +0000  731 bytes for ./Payload/EEG101.app/Frameworks/StudentLifeAudio.framework/Info.plist
+copying file ./Payload/EEG101.app/Frameworks/libswiftsimd.dylib ... 
+2018-08-23 18:54:50 +0000  1361648 bytes for ./Payload/EEG101.app/Frameworks/libswiftsimd.dylib
+copying file ./Payload/EEG101.app/SimpleLineIcons.ttf ... 
+2018-08-23 18:54:50 +0000  54056 bytes for ./Payload/EEG101.app/SimpleLineIcons.ttf
+copying file ./Payload/EEG101.app/embedded.mobileprovision ... 
+2018-08-23 18:54:50 +0000  7813 bytes for ./Payload/EEG101.app/embedded.mobileprovision
+copying file ./Payload/EEG101.app/Roboto-Bold.ttf ... 
+2018-08-23 18:54:50 +0000  170760 bytes for ./Payload/EEG101.app/Roboto-Bold.ttf
+2018-08-23 18:54:50 +0000  copying file ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/bell.png ... 
+2018-08-23 18:54:50 +0000  2989 bytes for ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/bell.png
+copying file ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/heart.png ... 
+1928 bytes for ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/heart.png
+copying file ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/rocket.png ... 
+2018-08-23 18:54:50 +0000  4050 bytes for ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/rocket.png
+copying file ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/star.png ... 
+2018-08-23 18:54:50 +0000  1961 bytes for ./Payload/EEG101.app/assets/node_modules/react-native-elements/src/rating/images/star.png
+copying file ./Payload/EEG101.app/assets/src/assets/ok.png ... 
+2018-08-23 18:54:50 +0000  8979 bytes for ./Payload/EEG101.app/assets/src/assets/ok.png
+copying file ./Payload/EEG101.app/assets/src/assets/resting-state.mp4 ... 
+2018-08-23 18:54:51 +0000  28686246 bytes for ./Payload/EEG101.app/assets/src/assets/resting-state.mp4
+copying file ./Payload/EEG101.app/assets/src/assets/electrodediagram.png ... 
+2018-08-23 18:54:51 +0000  55397 bytes for ./Payload/EEG101.app/assets/src/assets/electrodediagram.png
+copying file ./Payload/EEG101.app/assets/src/assets/noise.png ... 
+2018-08-23 18:54:51 +0000  8899 bytes for ./Payload/EEG101.app/assets/src/assets/noise.png
+copying file ./Payload/EEG101.app/assets/src/assets/refresh.png ... 
+2018-08-23 18:54:51 +0000  13946 bytes for ./Payload/EEG101.app/assets/src/assets/refresh.png
+2018-08-23 18:54:51 +0000  copying file ./Payload/EEG101.app/Roboto-Thin.ttf ... 
+2018-08-23 18:54:51 +0000  171904 bytes for ./Payload/EEG101.app/Roboto-Thin.ttf
+copying file ./Payload/EEG101.app/Roboto-Black.ttf ... 
+2018-08-23 18:54:51 +0000  171480 bytes for ./Payload/EEG101.app/Roboto-Black.ttf
+copying file ./Payload/EEG101.app/Info.plist ... 
+2018-08-23 18:54:51 +0000  3511 bytes for ./Payload/EEG101.app/Info.plist
+copying file ./Payload/EEG101.app/PkgInfo ... 
+8 bytes for ./Payload/EEG101.app/PkgInfo
+copying file ./Payload/EEG101.app/MaterialIcons.ttf ... 
+2018-08-23 18:54:51 +0000  128180 bytes for ./Payload/EEG101.app/MaterialIcons.ttf
+2018-08-23 18:54:51 +0000  2018-08-23 18:54:51 +0000  
+
+2018-08-23 18:54:51 +0000  /usr/bin/ditto exited with 0
+2018-08-23 18:54:51 +0000  
+2018-08-23 18:54:51 +0000  2018-08-23 18:54:51 +0000  Processing step: IDEDistributionCreateManifestStep
+

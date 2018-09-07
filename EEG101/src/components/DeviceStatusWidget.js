@@ -88,19 +88,19 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     connected: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 20,
       color: colors.white
     },
 
     disconnected: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 20,
       color: colors.white
     },
 
     connecting: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 20,
       color: colors.turquoise
     }

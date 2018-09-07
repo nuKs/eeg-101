@@ -61,8 +61,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
         Aware.DEBUG = true;
         Aware.setSetting(reactContext, Aware_Preferences.DEBUG_FLAG, "true");
         Aware.setSetting(reactContext, Aware_Preferences.DEBUG_TAG, "AWARE");
-        Aware.joinStudy(reactContext, "https://api.awareframework.com/index.php/webservice/index/1801/C7DzyHpq2phjd"); //TODO: UPDATE to UCLA server dashboard study endpoint
-
+        Aware.joinStudy(reactContext, "https://api.awareframework.com/index.php/webservice/index/1939/lA3beuWw3aYD");
         // @todo fix db location @warning breaks launch time // may have been done
         Log.i("AwareModule", "start com.aware.plugin.eegmuse");
         Aware.startPlugin(reactContext, "com.aware.plugin.eegmuse");

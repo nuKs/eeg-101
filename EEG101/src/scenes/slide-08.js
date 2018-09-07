@@ -104,7 +104,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     body: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 17
     },
@@ -124,7 +124,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     header: {
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 20
     },

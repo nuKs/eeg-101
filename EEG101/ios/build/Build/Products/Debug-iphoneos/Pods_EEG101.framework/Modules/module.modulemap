@@ -1,0 +1,6 @@
+framework module Pods_EEG101 {
+  umbrella header "Pods-EEG101-umbrella.h"
+
+  export *
+  module * { export * }
+}

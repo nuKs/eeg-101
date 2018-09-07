@@ -24,7 +24,7 @@ export default class WhiteButton extends Component {
         onPress={this.props.onPress}
       >
         <View style={dynamicStyle}>
-           <Text style={{color: '#6CCBEF', fontFamily: 'Roboto-Bold', fontSize: 15}}>{this.props.children}</Text>
+           <Text style={{color: '#6CCBEF', fontFamily: 'Roboto', fontSize: 15}}>{this.props.children}</Text>
         </View>
       </TouchableOpacity>
     )

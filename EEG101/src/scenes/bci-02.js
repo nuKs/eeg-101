@@ -203,7 +203,7 @@ const styles = MediaQueryStyleSheet.create(
   // Base styles
   {
     body: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 18,
       color: colors.white,
       textAlign: "center"
@@ -265,7 +265,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     header: {
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       fontSize: 18,
       margin: 20,
       color: colors.white,

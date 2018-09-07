@@ -37,7 +37,7 @@ const styles = MediaQueryStyleSheet.create(
     // Base styles
     textStyle: {
       color: "white",
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       fontSize: 15
     },
 

@@ -1,0 +1,6 @@
+framework module Pods_EEG101Tests {
+  umbrella header "Pods-EEG101Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

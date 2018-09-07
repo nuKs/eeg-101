@@ -60,7 +60,7 @@ const styles = MediaQueryStyleSheet.create(
     // Base styles
     title: {
       paddingLeft: 16,
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.white,
       fontSize: 18
     },

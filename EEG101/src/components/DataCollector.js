@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
 
   body: {
     textAlign: "center",
-    fontFamily: "Roboto-Light",
+    fontFamily: "Roboto",
     fontSize: 18,
     color: colors.white,
     marginBottom: 30

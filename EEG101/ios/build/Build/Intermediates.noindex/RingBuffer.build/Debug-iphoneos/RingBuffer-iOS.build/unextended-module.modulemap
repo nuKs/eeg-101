@@ -1,0 +1,10 @@
+framework module RingBuffer {
+  umbrella header "RingBuffer.h"
+
+  export *
+  module * { export * }
+}
+
+module RingBuffer.__Swift {
+    exclude header "RingBuffer-Swift.h"
+}

@@ -48,7 +48,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     modalTitle: {
-      fontFamily: 'Roboto-Bold',
+      fontFamily: 'Roboto',
       color: colors.black,
       fontSize: 20,
       margin: 5,

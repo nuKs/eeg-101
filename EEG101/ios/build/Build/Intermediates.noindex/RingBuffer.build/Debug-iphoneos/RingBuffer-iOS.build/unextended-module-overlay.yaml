@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Intermediates.noindex/RingBuffer.build/Debug-iphoneos/RingBuffer-iOS.build/unextended-module.modulemap',
+    }]
+  }]
+}

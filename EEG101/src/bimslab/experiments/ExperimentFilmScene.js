@@ -46,11 +46,11 @@ class ExperimentFilmScene extends Component {
   }
 
   next() {
-    console.log('onEnd');
+    console.log('Video: onEnd');
 
     // go to location 
     // @warning router is not fully sync w/ redux!
-    this.props.history.push('/experiment/film');
+    this.props.history.push('/experiment');
   }
 
   // @todo set state change
@@ -61,11 +61,11 @@ class ExperimentFilmScene extends Component {
         {/* doc: https://github.com/react-native-community/react-native-video */}
         {/* @note resizeMode cover could be stretched instead */}
         <Video 
-          source={Platform.OS === 'ios' ? {uri: 'resting-state'} : require('../../assets/resting-state.mp4')}
+          source={require('../../assets/resting-state.mp4')}
           volume={0.0}                 // 0 is muted, 1 is normal.
           paused={false}
-          onEnd={e => this.next}           // Callback when playback finishes
-          onError={e => console.error('onError', e)}    // Callback when video cannot be loaded
+          onEnd={e => this.next()}           // Callback when playback finishes
+          onError={e => console.error('Video: onError', e)}    // Callback when video cannot be loaded
           resizeMode="cover"
 
           style={{

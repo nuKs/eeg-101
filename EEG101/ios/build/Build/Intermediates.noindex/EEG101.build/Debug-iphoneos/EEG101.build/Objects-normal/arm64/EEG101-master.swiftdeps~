@@ -1,0 +1,14 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "2d80a6ce7e3936307627caf57cac3631"
+build_time: [1534554200, 85953000]
+inputs:
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/AppDelegate.swift": [1534434713, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Event Emitter/AppNativeEventEmitter.swift": [1533683059, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Connector Module/MuseConnectorModule.swift": [1533683625, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Event Emitter/EventEmitter.swift": [1533682023, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Classifier Module/EpochBuffer.swift": [1533682023, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Event Emitter/NativeEventNames.swift": [1533763145, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Classifier Module/ClassifierModule.swift": [1534552559, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/MuseConnectionManager.swift": [1533762769, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101/Signal/CircularBuffer.swift": [1533682023, 0]
+  "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/BimslabUtilityModule.swift": [1533763163, 0]

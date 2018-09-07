@@ -7,12 +7,15 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
+/*
 #import <UIKit/UIKit.h>
 
-#import "AppDelegate.h"
+// #import "AppDelegate.h"
+#import "EEG101-Swift.h"
 
 int main(int argc, char * argv[]) {
   @autoreleasepool {
     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
   }
 }
+*/

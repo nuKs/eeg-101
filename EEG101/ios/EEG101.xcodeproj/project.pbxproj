@@ -12,7 +12,6 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* EEG101Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EEG101Tests.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -20,13 +19,13 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		140FBD5461D047AFBFE5B901 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0AEA4D2CFE04BEFAFD502A3 /* FontAwesome.ttf */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		181FFAFC2293438180FB011F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837BC2D057204EE596660183 /* FontAwesome.ttf */; };
 		1AD73122C20C49AE8EE618AF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18C40D6CCE23487D854C22AC /* SimpleLineIcons.ttf */; };
 		1E7583C296004BF99EC73F16 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96443E4022084396ABCD14BA /* Entypo.ttf */; };
 		2326F0636085458CA113DA48 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66561BBE84E34A6785B33901 /* Feather.ttf */; };
+		25E61664E7051AF9A0A2C5C5 /* Pods_EEG101.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463405559A796182A93DCEDD /* Pods_EEG101.framework */; };
 		29F37CE27DB641A18A4D2ADF /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A9CDFEB4847C49F17E441 /* MaterialCommunityIcons.ttf */; };
 		3AB7F0928D2E497DAD4D0E48 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30C716F9967A4CF9A68A5B51 /* MaterialCommunityIcons.ttf */; };
 		4BBF3F44CBD84CB3A59F1975 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6553BD832826406C97AD3640 /* Ionicons.ttf */; };
@@ -50,8 +49,43 @@
 		D9BA5F7C986D49509305F798 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E92F85BF454271B9DB8209 /* Zocial.ttf */; };
 		DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF03ED792117B62000FAD02B /* Roboto-Black.ttf */; };
 		DF03ED7C2117B6CE00FAD02B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */; };
+		DF2FD2CF211B93BD0020B728 /* BimslabUtilityBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2FD2CD211B93BA0020B728 /* BimslabUtilityBridge.m */; };
+		DF2FD2D0211B93BD0020B728 /* BimslabUtilityModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2FD2CE211B93BD0020B728 /* BimslabUtilityModule.swift */; };
+		DF2FD2D2211CC0480020B728 /* ClassifierModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2FD2D1211CC0480020B728 /* ClassifierModule.swift */; };
+		DF2FD2D4211CC0710020B728 /* ClassifierBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2FD2D3211CC0710020B728 /* ClassifierBridge.m */; };
+		DF505BCB2128F0A100F56EF3 /* AwareBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF505BCA2128F0A100F56EF3 /* AwareBridge.m */; };
+		DF505BCD2128F0BF00F56EF3 /* AwareModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505BCC2128F0BF00F56EF3 /* AwareModule.swift */; };
+		DF505BD02129D2BF00F56EF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF505BCE2129D2BE00F56EF3 /* Roboto-Bold.ttf */; };
+		DF505C22212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF505C20212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld */; };
+		DF505C85212C351600F56EF3 /* MuseSensorDrlRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C77212C351400F56EF3 /* MuseSensorDrlRef.swift */; };
+		DF505C86212C351600F56EF3 /* MuseStreamHsi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C78212C351400F56EF3 /* MuseStreamHsi.swift */; };
+		DF505C87212C351600F56EF3 /* MuseStreamAccelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C79212C351400F56EF3 /* MuseStreamAccelerometer.swift */; };
+		DF505C88212C351600F56EF3 /* MuseStreamDrlRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C7A212C351400F56EF3 /* MuseStreamDrlRef.swift */; };
+		DF505C89212C351600F56EF3 /* MuseSensorAccelerometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C7B212C351400F56EF3 /* MuseSensorAccelerometer.swift */; };
+		DF505C8A212C351600F56EF3 /* MuseStreamIsGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C7C212C351500F56EF3 /* MuseStreamIsGood.swift */; };
+		DF505C8B212C351600F56EF3 /* MuseStreamGyro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C7D212C351500F56EF3 /* MuseStreamGyro.swift */; };
+		DF505C8C212C351600F56EF3 /* MuseSensorHsiPrecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C7E212C351500F56EF3 /* MuseSensorHsiPrecision.swift */; };
+		DF505C8D212C351600F56EF3 /* MuseSensorHsi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C7F212C351500F56EF3 /* MuseSensorHsi.swift */; };
+		DF505C8E212C351600F56EF3 /* MuseSensorEeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C80212C351500F56EF3 /* MuseSensorEeg.swift */; };
+		DF505C8F212C351600F56EF3 /* MuseSensorIsGood.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C81212C351500F56EF3 /* MuseSensorIsGood.swift */; };
+		DF505C90212C351600F56EF3 /* MuseStreamHsiPrecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C82212C351600F56EF3 /* MuseStreamHsiPrecision.swift */; };
+		DF505C91212C351600F56EF3 /* MuseStreamEeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C83212C351600F56EF3 /* MuseStreamEeg.swift */; };
+		DF505C92212C351600F56EF3 /* MuseSensorGyro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C84212C351600F56EF3 /* MuseSensorGyro.swift */; };
+		DF6B9A71212C77820067FA6B /* RingBuffer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFF307E3212C52D100D3B281 /* RingBuffer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DFC0691F21172F2D00765503 /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068DB2116248400765503 /* libLottie.a */; };
 		DFC06920211732FA00765503 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068B421161F5800765503 /* libRNVectorIcons.a */; };
+		DFD28B942118F6D300C7F70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD28B932118F6D300C7F70C /* AppDelegate.swift */; };
+		DFF3ABB9211A5AE700459038 /* Muse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3AB83211A5A4B00459038 /* Muse.framework */; };
+		DFF3ABDD211A5C9700459038 /* EpochBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD1211A5C9600459038 /* EpochBuffer.swift */; };
+		DFF3ABDE211A5C9700459038 /* CircularBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD3211A5C9600459038 /* CircularBuffer.swift */; };
+		DFF3ABDF211A5C9700459038 /* MuseConnectorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD5211A5C9600459038 /* MuseConnectorModule.swift */; };
+		DFF3ABE0211A5C9700459038 /* ConnectorBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD6211A5C9600459038 /* ConnectorBridge.m */; };
+		DFF3ABE1211A5C9700459038 /* MuseConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD7211A5C9600459038 /* MuseConnectionManager.swift */; };
+		DFF3ABE2211A5C9700459038 /* AppNativeEventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD9211A5C9600459038 /* AppNativeEventEmitter.swift */; };
+		DFF3ABE3211A5C9700459038 /* NativeEventNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABDA211A5C9600459038 /* NativeEventNames.swift */; };
+		DFF3ABE4211A5C9700459038 /* EventEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABDB211A5C9600459038 /* EventEmitter.swift */; };
+		DFF3ABE5211A5C9700459038 /* AppNativeEventEmitterBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABDC211A5C9600459038 /* AppNativeEventEmitterBridge.m */; };
+		DFF3AC29211A612B00459038 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AC28211A612700459038 /* Roboto-Light.ttf */; };
 		E2A1B759199542F1B542F7D9 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E73E5FA5B464AA2ACA74D36 /* rubicon-icon-font.ttf */; };
 		E584A25C2B1E4C1EB51E13AF /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0EA346D7A464FC5A000512E /* Foundation.ttf */; };
 		E71CB0D823034EDB836C71E1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE4AAB8135834DA889B47C92 /* SimpleLineIcons.ttf */; };
@@ -96,13 +130,6 @@
 			remoteGlobalIDString = 832C81801AAF6DEF007FA2F7;
 			remoteInfo = RCTVibration;
 		};
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = EEG101;
-		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
@@ -137,6 +164,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
+		};
+		DF6B9A72212C77820067FA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBB55AB11C8F80020050DDA9;
+			remoteInfo = "RingBuffer-iOS";
 		};
 		DFC0684821161F5300765503 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -404,7 +438,98 @@
 			remoteGlobalIDString = 84FE12EF1E4C1485009B157C;
 			remoteInfo = LottieLibraryIOS;
 		};
+		DFF307D1212C4CF300D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		DFF307D3212C4D4F00D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFC068CD2116248400765503 /* Lottie.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CA59B71E3C173B002D7188;
+			remoteInfo = Lottie_iOS;
+		};
+		DFF307D5212C4D4F00D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFC068CD2116248400765503 /* Lottie.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84FE12EE1E4C1485009B157C;
+			remoteInfo = LottieLibraryIOS;
+		};
+		DFF307E2212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AB21C8F80020050DDA9;
+			remoteInfo = "RingBuffer-iOS";
+		};
+		DFF307E4212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AD41C8F88F20050DDA9;
+			remoteInfo = "RingBuffer-macOS";
+		};
+		DFF307E6212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AFE1C8F8CBB0050DDA9;
+			remoteInfo = "RingBuffer-tvOS";
+		};
+		DFF307E8212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55AF11C8F8BE00050DDA9;
+			remoteInfo = "RingBuffer-watchOS";
+		};
+		DFF307EA212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55ABC1C8F80020050DDA9;
+			remoteInfo = "RingBuffer-iOS-Tests";
+		};
+		DFF307EC212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55ADD1C8F88F20050DDA9;
+			remoteInfo = "RingBuffer-macOS-Tests";
+		};
+		DFF307EE212C52D100D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BBB55B071C8F8CBB0050DDA9;
+			remoteInfo = "RingBuffer-tvOS-Tests";
+		};
+		DFF307F0212C52DC00D3B281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BBB55AB11C8F80020050DDA9;
+			remoteInfo = "RingBuffer-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFEA6966212C43A200D36AAE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DF6B9A71212C77820067FA6B /* RingBuffer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -413,7 +538,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* EEG101Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EEG101Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EEG101Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EEG101Tests.m; sourceTree = "<group>"; };
 		0480B3798E374118B5AA1929 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -429,6 +553,8 @@
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		18C40D6CCE23487D854C22AC /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		1B1C7C85EB8A49F1B9363E85 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
+		1D01CE9F7F436D3B638E7931 /* Pods_EEG101Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EEG101Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5BDAD6A636E7B5B349B71D /* Pods-EEG101Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEG101Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EEG101Tests/Pods-EEG101Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		23FCEDE15DB74B0BA5582220 /* RCTTorch.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTTorch.xcodeproj; path = "../node_modules/react-native-torch/ios/RCTTorch.xcodeproj"; sourceTree = "<group>"; };
 		2904C65026FE464184B4930C /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		30C716F9967A4CF9A68A5B51 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
@@ -436,6 +562,7 @@
 		38E69633E4394330A21C96E8 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		3E73E5FA5B464AA2ACA74D36 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
 		454A1C9E9B4C442AA94C37D0 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = BVLinearGradient.xcodeproj; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; };
+		463405559A796182A93DCEDD /* Pods_EEG101.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EEG101.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C482F706943491D86B5B661 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		52E257353FC846A1B71BF56C /* libLottieReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottieReactNative.a; sourceTree = "<group>"; };
 		5587515EE20D4FBB9F9D7ADD /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "../node_modules/react-native-video/ios/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
@@ -447,14 +574,17 @@
 		659CEC5C340B4A71B23F9D36 /* libRNSVG.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNSVG.a; sourceTree = "<group>"; };
 		65E92F85BF454271B9DB8209 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		66561BBE84E34A6785B33901 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		678650A01C642FFFFEAA7F78 /* Pods-EEG101Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEG101Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EEG101Tests/Pods-EEG101Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6D3D7CFB01F9471B9FC51746 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		6D8A9CDFEB4847C49F17E441 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		70699ED84D08BBDDBE637AED /* Pods-EEG101.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEG101.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EEG101/Pods-EEG101.debug.xcconfig"; sourceTree = "<group>"; };
 		71381AC0F0E74E01A9091143 /* libRNI18n.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNI18n.a; sourceTree = "<group>"; };
 		7694032B28D74886A27D7E9D /* libBVLinearGradient.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libBVLinearGradient.a; sourceTree = "<group>"; };
 		786D1ECBEFDA46FCB142CE4C /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		837BC2D057204EE596660183 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		938E24A16132990A12801EE5 /* Pods-EEG101.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EEG101.release.xcconfig"; path = "Pods/Target Support Files/Pods-EEG101/Pods-EEG101.release.xcconfig"; sourceTree = "<group>"; };
 		96443E4022084396ABCD14BA /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		9F97FD9EF5744993A63188C0 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
 		A0EA346D7A464FC5A000512E /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
@@ -465,22 +595,52 @@
 		CE4D51939CB046328D4114FD /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		DF03ED792117B62000FAD02B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		DF2FD2CD211B93BA0020B728 /* BimslabUtilityBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BimslabUtilityBridge.m; sourceTree = "<group>"; };
+		DF2FD2CE211B93BD0020B728 /* BimslabUtilityModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BimslabUtilityModule.swift; sourceTree = "<group>"; };
+		DF2FD2D1211CC0480020B728 /* ClassifierModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierModule.swift; sourceTree = "<group>"; };
+		DF2FD2D3211CC0710020B728 /* ClassifierBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifierBridge.m; sourceTree = "<group>"; };
+		DF505B982125D61300F56EF3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DF505BCA2128F0A100F56EF3 /* AwareBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwareBridge.m; sourceTree = "<group>"; };
+		DF505BCC2128F0BF00F56EF3 /* AwareModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AwareModule.swift; path = /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/AwareModule.swift; sourceTree = "<absolute>"; };
+		DF505BCE2129D2BE00F56EF3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		DF505BCF2129D2BE00F56EF3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		DF505C21212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MuseAwareSensor.xcdatamodel; sourceTree = "<group>"; };
+		DF505C77212C351400F56EF3 /* MuseSensorDrlRef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorDrlRef.swift; sourceTree = "<group>"; };
+		DF505C78212C351400F56EF3 /* MuseStreamHsi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamHsi.swift; sourceTree = "<group>"; };
+		DF505C79212C351400F56EF3 /* MuseStreamAccelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamAccelerometer.swift; sourceTree = "<group>"; };
+		DF505C7A212C351400F56EF3 /* MuseStreamDrlRef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamDrlRef.swift; sourceTree = "<group>"; };
+		DF505C7B212C351400F56EF3 /* MuseSensorAccelerometer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorAccelerometer.swift; sourceTree = "<group>"; };
+		DF505C7C212C351500F56EF3 /* MuseStreamIsGood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamIsGood.swift; sourceTree = "<group>"; };
+		DF505C7D212C351500F56EF3 /* MuseStreamGyro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamGyro.swift; sourceTree = "<group>"; };
+		DF505C7E212C351500F56EF3 /* MuseSensorHsiPrecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorHsiPrecision.swift; sourceTree = "<group>"; };
+		DF505C7F212C351500F56EF3 /* MuseSensorHsi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorHsi.swift; sourceTree = "<group>"; };
+		DF505C80212C351500F56EF3 /* MuseSensorEeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorEeg.swift; sourceTree = "<group>"; };
+		DF505C81212C351500F56EF3 /* MuseSensorIsGood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorIsGood.swift; sourceTree = "<group>"; };
+		DF505C82212C351600F56EF3 /* MuseStreamHsiPrecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamHsiPrecision.swift; sourceTree = "<group>"; };
+		DF505C83212C351600F56EF3 /* MuseStreamEeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamEeg.swift; sourceTree = "<group>"; };
+		DF505C84212C351600F56EF3 /* MuseSensorGyro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorGyro.swift; sourceTree = "<group>"; };
 		DFC068BE2116242D00765503 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		DFC068C72116244D00765503 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/lib/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		DFC068CD2116248400765503 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
+		DFD28B922118F6D300C7F70C /* EEG101-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEG101-Bridging-Header.h"; sourceTree = "<group>"; };
+		DFD28B932118F6D300C7F70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = EEG101/AppDelegate.swift; sourceTree = "<group>"; };
+		DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RingBuffer.xcodeproj; path = ../../../ios/RingBuffer/RingBuffer.xcodeproj; sourceTree = "<group>"; };
+		DFF3AB83211A5A4B00459038 /* Muse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Muse.framework; sourceTree = "<group>"; };
+		DFF3ABD1211A5C9600459038 /* EpochBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EpochBuffer.swift; sourceTree = "<group>"; };
+		DFF3ABD3211A5C9600459038 /* CircularBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularBuffer.swift; sourceTree = "<group>"; };
+		DFF3ABD5211A5C9600459038 /* MuseConnectorModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseConnectorModule.swift; sourceTree = "<group>"; };
+		DFF3ABD6211A5C9600459038 /* ConnectorBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectorBridge.m; sourceTree = "<group>"; };
+		DFF3ABD7211A5C9600459038 /* MuseConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuseConnectionManager.swift; path = EEG101/MuseConnectionManager.swift; sourceTree = "<group>"; };
+		DFF3ABD9211A5C9600459038 /* AppNativeEventEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNativeEventEmitter.swift; sourceTree = "<group>"; };
+		DFF3ABDA211A5C9600459038 /* NativeEventNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeEventNames.swift; sourceTree = "<group>"; };
+		DFF3ABDB211A5C9600459038 /* EventEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEmitter.swift; sourceTree = "<group>"; };
+		DFF3ABDC211A5C9600459038 /* AppNativeEventEmitterBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNativeEventEmitterBridge.m; sourceTree = "<group>"; };
+		DFF3AC28211A612700459038 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../node_modules/native-base/Fonts/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		E34518C5ED1F4230B84B5E59 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		FF6DD6FD7145429FB084F436 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,6 +663,8 @@
 				DFC06920211732FA00765503 /* libRNVectorIcons.a in Frameworks */,
 				D43A8354150847809B579C75 /* libRCTVideo.a in Frameworks */,
 				8BA3E913844D4C9EB783778A /* libBVLinearGradient.a in Frameworks */,
+				25E61664E7051AF9A0A2C5C5 /* Pods_EEG101.framework in Frameworks */,
+				DFF3ABB9211A5AE700459038 /* Muse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +730,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		09894A354DC0E6F8E9576C5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70699ED84D08BBDDBE637AED /* Pods-EEG101.debug.xcconfig */,
+				938E24A16132990A12801EE5 /* Pods-EEG101.release.xcconfig */,
+				1D5BDAD6A636E7B5B349B71D /* Pods-EEG101Tests.debug.xcconfig */,
+				678650A01C642FFFFEAA7F78 /* Pods-EEG101Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		12ED928818F64F078E7AD85B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +796,15 @@
 		13B07FAE1A68108700A75B9A /* EEG101 */ = {
 			isa = PBXGroup;
 			children = (
+				DF505BCA2128F0A100F56EF3 /* AwareBridge.m */,
+				DF505BCC2128F0BF00F56EF3 /* AwareModule.swift */,
+				DF2FD2CD211B93BA0020B728 /* BimslabUtilityBridge.m */,
+				DF2FD2CE211B93BD0020B728 /* BimslabUtilityModule.swift */,
+				DFF3ABD0211A5C9600459038 /* Classifier Module */,
+				DFF3ABD4211A5C9600459038 /* Connector Module */,
+				DFF3ABD8211A5C9600459038 /* Event Emitter */,
+				DFF3ABD7211A5C9600459038 /* MuseConnectionManager.swift */,
+				DFF3ABD2211A5C9600459038 /* Signal */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -630,6 +812,23 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				DFD28B932118F6D300C7F70C /* AppDelegate.swift */,
+				DFD28B922118F6D300C7F70C /* EEG101-Bridging-Header.h */,
+				DF505C20212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld */,
+				DF505C7B212C351400F56EF3 /* MuseSensorAccelerometer.swift */,
+				DF505C77212C351400F56EF3 /* MuseSensorDrlRef.swift */,
+				DF505C80212C351500F56EF3 /* MuseSensorEeg.swift */,
+				DF505C84212C351600F56EF3 /* MuseSensorGyro.swift */,
+				DF505C7F212C351500F56EF3 /* MuseSensorHsi.swift */,
+				DF505C7E212C351500F56EF3 /* MuseSensorHsiPrecision.swift */,
+				DF505C81212C351500F56EF3 /* MuseSensorIsGood.swift */,
+				DF505C79212C351400F56EF3 /* MuseStreamAccelerometer.swift */,
+				DF505C7A212C351400F56EF3 /* MuseStreamDrlRef.swift */,
+				DF505C83212C351600F56EF3 /* MuseStreamEeg.swift */,
+				DF505C7D212C351500F56EF3 /* MuseStreamGyro.swift */,
+				DF505C78212C351400F56EF3 /* MuseStreamHsi.swift */,
+				DF505C82212C351600F56EF3 /* MuseStreamHsiPrecision.swift */,
+				DF505C7C212C351500F56EF3 /* MuseStreamIsGood.swift */,
 			);
 			name = EEG101;
 			sourceTree = "<group>";
@@ -703,7 +902,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DF505BCE2129D2BE00F56EF3 /* Roboto-Bold.ttf */,
+				DF505BCF2129D2BE00F56EF3 /* Roboto-Light.ttf */,
+				DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */,
+				DFF3AB83211A5A4B00459038 /* Muse.framework */,
 				DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */,
+				DFF3AC28211A612700459038 /* Roboto-Light.ttf */,
 				DF03ED792117B62000FAD02B /* Roboto-Black.ttf */,
 				13B07FAE1A68108700A75B9A /* EEG101 */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -712,6 +916,7 @@
 				12ED928818F64F078E7AD85B /* Resources */,
 				DFC0684321161F5100765503 /* Recovered References */,
 				DFC0691E21172F2D00765503 /* Frameworks */,
+				09894A354DC0E6F8E9576C5D /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -721,7 +926,6 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* EEG101.app */,
-				00E356EE1AD99517003FC87E /* EEG101Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -814,43 +1018,93 @@
 		DFC0691E21172F2D00765503 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF505B982125D61300F56EF3 /* CoreBluetooth.framework */,
+				463405559A796182A93DCEDD /* Pods_EEG101.framework */,
+				1D01CE9F7F436D3B638E7931 /* Pods_EEG101Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFF307D9212C52D100D3B281 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFF307E3212C52D100D3B281 /* RingBuffer.framework */,
+				DFF307E5212C52D100D3B281 /* RingBuffer.framework */,
+				DFF307E7212C52D100D3B281 /* RingBuffer.framework */,
+				DFF307E9212C52D100D3B281 /* RingBuffer.framework */,
+				DFF307EB212C52D100D3B281 /* RingBufferTests.xctest */,
+				DFF307ED212C52D100D3B281 /* RingBufferTests.xctest */,
+				DFF307EF212C52D100D3B281 /* RingBufferTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFF3ABD0211A5C9600459038 /* Classifier Module */ = {
+			isa = PBXGroup;
+			children = (
+				DFF3ABD1211A5C9600459038 /* EpochBuffer.swift */,
+				DF2FD2D1211CC0480020B728 /* ClassifierModule.swift */,
+				DF2FD2D3211CC0710020B728 /* ClassifierBridge.m */,
+			);
+			name = "Classifier Module";
+			path = "EEG101/Classifier Module";
+			sourceTree = "<group>";
+		};
+		DFF3ABD2211A5C9600459038 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				DFF3ABD3211A5C9600459038 /* CircularBuffer.swift */,
+			);
+			name = Signal;
+			path = EEG101/Signal;
+			sourceTree = "<group>";
+		};
+		DFF3ABD4211A5C9600459038 /* Connector Module */ = {
+			isa = PBXGroup;
+			children = (
+				DFF3ABD5211A5C9600459038 /* MuseConnectorModule.swift */,
+				DFF3ABD6211A5C9600459038 /* ConnectorBridge.m */,
+			);
+			name = "Connector Module";
+			path = "EEG101/Connector Module";
+			sourceTree = "<group>";
+		};
+		DFF3ABD8211A5C9600459038 /* Event Emitter */ = {
+			isa = PBXGroup;
+			children = (
+				DFF3ABD9211A5C9600459038 /* AppNativeEventEmitter.swift */,
+				DFF3ABDA211A5C9600459038 /* NativeEventNames.swift */,
+				DFF3ABDB211A5C9600459038 /* EventEmitter.swift */,
+				DFF3ABDC211A5C9600459038 /* AppNativeEventEmitterBridge.m */,
+			);
+			name = "Event Emitter";
+			path = "EEG101/Event Emitter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* EEG101Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EEG101Tests" */;
-			buildPhases = (
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
-			);
-			name = EEG101Tests;
-			productName = EEG101Tests;
-			productReference = 00E356EE1AD99517003FC87E /* EEG101Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		13B07F861A680F5B00A75B9A /* EEG101 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EEG101" */;
 			buildPhases = (
+				E92925F836410681162FF088 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				F12E6C38A79D26A9DE598F8D /* [CP] Embed Pods Frameworks */,
+				18B047FC0BABEC88F8A4B9AD /* [CP] Copy Pods Resources */,
+				DFEA6966212C43A200D36AAE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DFF307D2212C4CF300D3B281 /* PBXTargetDependency */,
+				DFF307D4212C4D4F00D3B281 /* PBXTargetDependency */,
+				DFF307D6212C4D4F00D3B281 /* PBXTargetDependency */,
+				DFF307F1212C52DC00D3B281 /* PBXTargetDependency */,
+				DF6B9A73212C77820067FA6B /* PBXTargetDependency */,
 			);
 			name = EEG101;
 			productName = "Hello World";
@@ -866,13 +1120,15 @@
 				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = BBT48V5R86;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = BBT48V5R86;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -949,6 +1205,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = DFF307D9212C52D100D3B281 /* Products */;
+					ProjectRef = DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */;
+				},
+				{
 					ProductGroup = DFC068BF2116242D00765503 /* Products */;
 					ProjectRef = DFC068BE2116242D00765503 /* RNI18n.xcodeproj */;
 				},
@@ -964,7 +1224,6 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* EEG101 */,
-				00E356ED1AD99517003FC87E /* EEG101Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -1306,16 +1565,58 @@
 			remoteRef = DFC068DA2116248400765503 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		DFF307E3212C52D100D3B281 /* RingBuffer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RingBuffer.framework;
+			remoteRef = DFF307E2212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFF307E5212C52D100D3B281 /* RingBuffer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RingBuffer.framework;
+			remoteRef = DFF307E4212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFF307E7212C52D100D3B281 /* RingBuffer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RingBuffer.framework;
+			remoteRef = DFF307E6212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFF307E9212C52D100D3B281 /* RingBuffer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RingBuffer.framework;
+			remoteRef = DFF307E8212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFF307EB212C52D100D3B281 /* RingBufferTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RingBufferTests.xctest;
+			remoteRef = DFF307EA212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFF307ED212C52D100D3B281 /* RingBufferTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RingBufferTests.xctest;
+			remoteRef = DFF307EC212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DFF307EF212C52D100D3B281 /* RingBufferTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RingBufferTests.xctest;
+			remoteRef = DFF307EE212C52D100D3B281 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1330,6 +1631,8 @@
 				D414075558254E72BFA77CC6 /* MaterialIcons.ttf in Resources */,
 				611C25DB5502471A9C19A91A /* Octicons.ttf in Resources */,
 				DF03ED7C2117B6CE00FAD02B /* Roboto-Thin.ttf in Resources */,
+				DF505BD02129D2BF00F56EF3 /* Roboto-Bold.ttf in Resources */,
+				DFF3AC29211A612B00459038 /* Roboto-Light.ttf in Resources */,
 				DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */,
 				5A08DD066E4F4783BCCD3552 /* Roboto_medium.ttf in Resources */,
 				6042D6F5AF5740D8B54FAB45 /* Roboto.ttf in Resources */,
@@ -1367,35 +1670,155 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh index.bimslab.ios.js";
+		};
+		18B047FC0BABEC88F8A4B9AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-resources.sh",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Assets/AWARE.xcdatamodeld",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AWAREFramework/AWAREFramework.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWARE.momd",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AWAREFramework.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E92925F836410681162FF088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EEG101-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F12E6C38A79D26A9DE598F8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-frameworks.sh",
+				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
+				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SCNetworkReachability/SCNetworkReachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/TPCircularBuffer/TPCircularBuffer.framework",
+				"${BUILT_PRODUCTS_DIR}/ios-ntp/ios_ntp.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCNetworkReachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPCircularBuffer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ios_ntp.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				00E356F31AD99517003FC87E /* EEG101Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF505C88212C351600F56EF3 /* MuseStreamDrlRef.swift in Sources */,
+				DFD28B942118F6D300C7F70C /* AppDelegate.swift in Sources */,
+				DFF3ABE2211A5C9700459038 /* AppNativeEventEmitter.swift in Sources */,
+				DF505C89212C351600F56EF3 /* MuseSensorAccelerometer.swift in Sources */,
+				DF505C22212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld in Sources */,
+				DFF3ABDF211A5C9700459038 /* MuseConnectorModule.swift in Sources */,
+				DF505C8D212C351600F56EF3 /* MuseSensorHsi.swift in Sources */,
+				DF505C85212C351600F56EF3 /* MuseSensorDrlRef.swift in Sources */,
+				DFF3ABE4211A5C9700459038 /* EventEmitter.swift in Sources */,
+				DF505C8A212C351600F56EF3 /* MuseStreamIsGood.swift in Sources */,
+				DF505C86212C351600F56EF3 /* MuseStreamHsi.swift in Sources */,
+				DF505C8F212C351600F56EF3 /* MuseSensorIsGood.swift in Sources */,
+				DFF3ABDD211A5C9700459038 /* EpochBuffer.swift in Sources */,
+				DFF3ABE5211A5C9700459038 /* AppNativeEventEmitterBridge.m in Sources */,
+				DFF3ABE3211A5C9700459038 /* NativeEventNames.swift in Sources */,
+				DF505C90212C351600F56EF3 /* MuseStreamHsiPrecision.swift in Sources */,
+				DF505C8B212C351600F56EF3 /* MuseStreamGyro.swift in Sources */,
+				DF505BCB2128F0A100F56EF3 /* AwareBridge.m in Sources */,
+				DF2FD2D2211CC0480020B728 /* ClassifierModule.swift in Sources */,
+				DFF3ABE1211A5C9700459038 /* MuseConnectionManager.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				DF2FD2CF211B93BD0020B728 /* BimslabUtilityBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				DF505C91212C351600F56EF3 /* MuseStreamEeg.swift in Sources */,
+				DF505C8C212C351600F56EF3 /* MuseSensorHsiPrecision.swift in Sources */,
+				DFF3ABE0211A5C9700459038 /* ConnectorBridge.m in Sources */,
+				DF505C8E212C351600F56EF3 /* MuseSensorEeg.swift in Sources */,
+				DFF3ABDE211A5C9700459038 /* CircularBuffer.swift in Sources */,
+				DF505BCD2128F0BF00F56EF3 /* AwareModule.swift in Sources */,
+				DF505C92212C351600F56EF3 /* MuseSensorGyro.swift in Sources */,
+				DF505C87212C351600F56EF3 /* MuseStreamAccelerometer.swift in Sources */,
+				DF2FD2D0211B93BD0020B728 /* BimslabUtilityModule.swift in Sources */,
+				DF2FD2D4211CC0710020B728 /* ClassifierBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+		DF6B9A73212C77820067FA6B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* EEG101 */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+			name = "RingBuffer-iOS";
+			targetProxy = DF6B9A72212C77820067FA6B /* PBXContainerItemProxy */;
+		};
+		DFF307D2212C4CF300D3B281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = DFF307D1212C4CF300D3B281 /* PBXContainerItemProxy */;
+		};
+		DFF307D4212C4D4F00D3B281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Lottie_iOS;
+			targetProxy = DFF307D3212C4D4F00D3B281 /* PBXContainerItemProxy */;
+		};
+		DFF307D6212C4D4F00D3B281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LottieLibraryIOS;
+			targetProxy = DFF307D5212C4D4F00D3B281 /* PBXContainerItemProxy */;
+		};
+		DFF307F1212C52DC00D3B281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RingBuffer-iOS";
+			targetProxy = DFF307F0212C52DC00D3B281 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1412,66 +1835,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = BBT48V5R86;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EEG101Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEG101.app/EEG101";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = BBT48V5R86;
-				INFOPLIST_FILE = EEG101Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EEG101.app/EEG101";
-			};
-			name = Release;
-		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70699ED84D08BBDDBE637AED /* Pods-EEG101.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = BBT48V5R86;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/Librairies",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
-					"$(SRCROOT)......\node_modules\neact-native-i18nios",
+					"$(SRCROOT)......",
+					ode_modules,
+					"eact-native-i18nios",
 					"$(SRCROOT)/../node_modules/react-native-torch/ios",
 					"$(SRCROOT)/../node_modules/lottie-react-native/src/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1485,25 +1876,45 @@
 					"-ObjC",
 					"-lc++",
 				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.bimslab.EEG101;
 				PRODUCT_NAME = EEG101;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "EEG101-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938E24A16132990A12801EE5 /* Pods-EEG101.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BBT48V5R86;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../node_modules/react-native/React/**",
+					"$(SRCROOT)/../node_modules/react-native/Librairies",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
-					"$(SRCROOT)......\node_modules\neact-native-i18nios",
+					"$(SRCROOT)......",
+					ode_modules,
+					"eact-native-i18nios",
 					"$(SRCROOT)/../node_modules/react-native-torch/ios",
 					"$(SRCROOT)/../node_modules/lottie-react-native/src/ios/LottieReactNative",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1517,7 +1928,11 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.bimslab.EEG101;
 				PRODUCT_NAME = EEG101;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EEG101-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1529,6 +1944,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1540,8 +1956,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1563,11 +1979,14 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
-					"$(SRCROOT)......\node_modules\neact-native-i18nios",
+					"$(SRCROOT)......",
+					ode_modules,
+					"eact-native-i18nios",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1579,6 +1998,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1590,8 +2010,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1607,9 +2027,11 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 					"$(SRCROOT)/../node_modules/lottie-react-native/lib/ios/LottieReactNative",
-					"$(SRCROOT)......\node_modules\neact-native-i18nios",
+					"$(SRCROOT)......",
+					ode_modules,
+					"eact-native-i18nios",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -1619,15 +2041,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EEG101Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EEG101" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1647,6 +2060,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF505C20212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF505C21212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodel */,
+			);
+			currentVersion = DF505C21212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodel */;
+			path = MuseAwareSensor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }

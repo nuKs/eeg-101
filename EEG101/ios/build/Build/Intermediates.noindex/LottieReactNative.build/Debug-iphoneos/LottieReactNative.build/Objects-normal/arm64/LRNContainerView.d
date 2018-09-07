@@ -5,21 +5,20 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBorderStyle.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTComponent.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTPointerEvents.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Modules/module.modulemap \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTValueCallback.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTInterpolatorCallback.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTBlockCallback.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTAnimationCache.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTValueDelegate.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTKeypath.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTComposition.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTAnimationView_Compat.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTAnimationView.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTCacheProvider.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTAnimatedControl.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTAnimatedSwitch.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/LOTAnimationTransitionController.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/Lottie.framework/Headers/Lottie.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/Lottie.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationTransitionController.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimatedSwitch.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimatedControl.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTCacheProvider.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationView.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationView_Compat.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTComposition.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTKeypath.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTValueDelegate.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationCache.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTBlockCallback.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTInterpolatorCallback.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTValueCallback.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/UIView+React.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGEnums.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGMacros.h

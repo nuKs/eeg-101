@@ -42,7 +42,7 @@ const styles = MediaQueryStyleSheet.create(
       paddingVertical: 5
     },
     titleText: {
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 20,
       margin: 5
@@ -50,7 +50,7 @@ const styles = MediaQueryStyleSheet.create(
 
     bodyText: {
       padding: 5,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 15,
       margin: 5

@@ -82,7 +82,7 @@ const styles = MediaQueryStyleSheet.create(
   // Base styles
   {
     body: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 15,
       marginLeft: 40,
       marginRight: 40,
@@ -91,7 +91,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     instructions: {
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       fontSize: 18,
       margin: 20,
       color: colors.black,

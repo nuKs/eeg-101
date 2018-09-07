@@ -1,0 +1,739 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MuseStreamGyro"
+provides-nominal:
+- "6EEG10114MuseStreamGyroC"
+provides-member:
+- ["6EEG10114MuseStreamGyroC", ""]
+provides-dynamic-lookup:
+- "receive"
+depends-top-level:
+- !private "!="
+- !private "*"
+- !private "=="
+- !private ">="
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- !private "Float64"
+- !private "FloatLiteralType"
+- !private "IXNConnectionState"
+- !private "IXNGyro"
+- "IXNMuse"
+- "IXNMuseArtifactPacket"
+- "IXNMuseDataListener"
+- "IXNMuseDataPacket"
+- !private "IXNMuseDataPacketType"
+- !private "Int64"
+- !private "IntegerLiteralType"
+- "MuseStreamGyro"
+- !private "NSNumber"
+- "RingBuffer"
+- !private "StringLiteralType"
+- "UInt64"
+- !private "assert"
+- !private "assertionFailure"
+- !private "print"
+depends-member:
+- !private ["Sa", "insert"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "insert"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s19BinaryFloatingPointP", "bitPattern"]
+- !private ["s19BinaryFloatingPointP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "bitPattern"]
+- !private ["s7CVarArgP", "getConnectionState"]
+- !private ["s7CVarArgP", "getGyroValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insert"]
+- !private ["s7CVarArgP", "make"]
+- !private ["s7CVarArgP", "packetType"]
+- !private ["s7CVarArgP", "register"]
+- !private ["s7CVarArgP", "timestamp"]
+- !private ["s7CVarArgP", "unregisterDataListener"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "insert"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "bitPattern"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "availableCapacity"]
+- !private ["s28CustomDebugStringConvertibleP", "bitPattern"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "feed"]
+- !private ["s28CustomDebugStringConvertibleP", "free"]
+- !private ["s28CustomDebugStringConvertibleP", "getConnectionState"]
+- !private ["s28CustomDebugStringConvertibleP", "getGyroValue"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insert"]
+- !private ["s28CustomDebugStringConvertibleP", "make"]
+- !private ["s28CustomDebugStringConvertibleP", "packetType"]
+- !private ["s28CustomDebugStringConvertibleP", "register"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "tail"]
+- !private ["s28CustomDebugStringConvertibleP", "timestamp"]
+- !private ["s28CustomDebugStringConvertibleP", "unregisterDataListener"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "bitPattern"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "bitPattern"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "insert"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "availableCapacity"]
+- !private ["s23CustomStringConvertibleP", "bitPattern"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "feed"]
+- !private ["s23CustomStringConvertibleP", "free"]
+- !private ["s23CustomStringConvertibleP", "getConnectionState"]
+- !private ["s23CustomStringConvertibleP", "getGyroValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insert"]
+- !private ["s23CustomStringConvertibleP", "make"]
+- !private ["s23CustomStringConvertibleP", "packetType"]
+- !private ["s23CustomStringConvertibleP", "register"]
+- !private ["s23CustomStringConvertibleP", "tail"]
+- !private ["s23CustomStringConvertibleP", "timestamp"]
+- !private ["s23CustomStringConvertibleP", "unregisterDataListener"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "bitPattern"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "insert"]
+- !private ["Sd", "bitPattern"]
+- !private ["Sd", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "bitPattern"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "insert"]
+- !private ["s9EquatableP", "X"]
+- !private ["s9EquatableP", "Y"]
+- !private ["s9EquatableP", "Z"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "bitPattern"]
+- !private ["s9EquatableP", "connected"]
+- !private ["s9EquatableP", "getConnectionState"]
+- !private ["s9EquatableP", "getGyroValue"]
+- ["s9EquatableP", "gyro"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "make"]
+- !private ["s9EquatableP", "packetType"]
+- !private ["s9EquatableP", "rawValue"]
+- !private ["s9EquatableP", "register"]
+- !private ["s9EquatableP", "timestamp"]
+- !private ["s9EquatableP", "unregisterDataListener"]
+- !private ["s25ExpressibleByArrayLiteralP", "insert"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByBooleanLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "bitPattern"]
+- !private ["s25ExpressibleByFloatLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "bitPattern"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s13FloatingPointP", "bitPattern"]
+- !private ["s13FloatingPointP", "init"]
+- !private ["s8HashableP", "X"]
+- !private ["s8HashableP", "Y"]
+- !private ["s8HashableP", "Z"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "bitPattern"]
+- !private ["s8HashableP", "connected"]
+- !private ["s8HashableP", "getConnectionState"]
+- !private ["s8HashableP", "getGyroValue"]
+- ["s8HashableP", "gyro"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "make"]
+- !private ["s8HashableP", "packetType"]
+- !private ["s8HashableP", "rawValue"]
+- !private ["s8HashableP", "register"]
+- !private ["s8HashableP", "timestamp"]
+- !private ["s8HashableP", "unregisterDataListener"]
+- !private ["SC18IXNConnectionStateO", "connected"]
+- !private ["SC7IXNGyroO", "X"]
+- !private ["SC7IXNGyroO", "Y"]
+- !private ["SC7IXNGyroO", "Z"]
+- !private ["SC7IXNGyroO", "rawValue"]
+- !private ["So7IXNMuseC", "getConnectionState"]
+- !private ["So7IXNMuseC", "register"]
+- !private ["So7IXNMuseC", "unregisterDataListener"]
+- !private ["So19IXNMuseDataListenerP", "Float64"]
+- !private ["So19IXNMuseDataListenerP", "IXNConnectionState"]
+- !private ["So19IXNMuseDataListenerP", "IXNGyro"]
+- !private ["So19IXNMuseDataListenerP", "IXNMuseDataPacket"]
+- !private ["So19IXNMuseDataListenerP", "IXNMuseDataPacketType"]
+- !private ["So19IXNMuseDataListenerP", "Int64"]
+- !private ["So19IXNMuseDataListenerP", "NSNumber"]
+- !private ["So19IXNMuseDataListenerP", "RingBuffer"]
+- !private ["So19IXNMuseDataListenerP", "UInt64"]
+- !private ["So19IXNMuseDataListenerP", "assert"]
+- !private ["So19IXNMuseDataListenerP", "assertionFailure"]
+- !private ["So19IXNMuseDataListenerP", "gyroBuffer"]
+- !private ["So19IXNMuseDataListenerP", "isRecording"]
+- !private ["So19IXNMuseDataListenerP", "muse"]
+- !private ["So19IXNMuseDataListenerP", "print"]
+- ["So19IXNMuseDataListenerP", "receive"]
+- ["So19IXNMuseDataListenerP", "receiveMuseArtifactPacket"]
+- ["So19IXNMuseDataListenerP", "receiveMuseDataPacket"]
+- ["So19IXNMuseDataListenerP", ""]
+- !private ["So17IXNMuseDataPacketC", "getGyroValue"]
+- !private ["So17IXNMuseDataPacketC", "make"]
+- !private ["So17IXNMuseDataPacketC", "packetType"]
+- !private ["So17IXNMuseDataPacketC", "timestamp"]
+- ["SC21IXNMuseDataPacketTypeO", "gyro"]
+- !private ["s5Int64V", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "bitPattern"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- ["6EEG10114MuseStreamGyroC", "Bool"]
+- !private ["6EEG10114MuseStreamGyroC", "Float64"]
+- !private ["6EEG10114MuseStreamGyroC", "IXNConnectionState"]
+- !private ["6EEG10114MuseStreamGyroC", "IXNGyro"]
+- ["6EEG10114MuseStreamGyroC", "IXNMuse"]
+- ["6EEG10114MuseStreamGyroC", "IXNMuseArtifactPacket"]
+- ["6EEG10114MuseStreamGyroC", "IXNMuseDataPacket"]
+- !private ["6EEG10114MuseStreamGyroC", "IXNMuseDataPacketType"]
+- !private ["6EEG10114MuseStreamGyroC", "Int64"]
+- !private ["6EEG10114MuseStreamGyroC", "NSNumber"]
+- ["6EEG10114MuseStreamGyroC", "RingBuffer"]
+- ["6EEG10114MuseStreamGyroC", "UInt64"]
+- !private ["6EEG10114MuseStreamGyroC", "assert"]
+- !private ["6EEG10114MuseStreamGyroC", "assertionFailure"]
+- ["6EEG10114MuseStreamGyroC", "consume"]
+- ["6EEG10114MuseStreamGyroC", "deinit"]
+- !private ["6EEG10114MuseStreamGyroC", "gyroBuffer"]
+- ["6EEG10114MuseStreamGyroC", "init"]
+- ["6EEG10114MuseStreamGyroC", "isEmpty"]
+- !private ["6EEG10114MuseStreamGyroC", "isRecording"]
+- !private ["6EEG10114MuseStreamGyroC", "muse"]
+- !private ["6EEG10114MuseStreamGyroC", "print"]
+- ["6EEG10114MuseStreamGyroC", "receive"]
+- ["6EEG10114MuseStreamGyroC", "receiveMuseArtifactPacket"]
+- ["6EEG10114MuseStreamGyroC", "receiveMuseDataPacket"]
+- ["6EEG10114MuseStreamGyroC", "start"]
+- ["6EEG10114MuseStreamGyroC", "stop"]
+- !private ["s17MutableCollectionP", "insert"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So20NSFetchRequestResultP", "init"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSNumberC", "init"]
+- !private ["So8NSObjectC", "getConnectionState"]
+- !private ["So8NSObjectC", "getGyroValue"]
+- !private ["So8NSObjectC", "make"]
+- !private ["So8NSObjectC", "packetType"]
+- !private ["So8NSObjectC", "register"]
+- !private ["So8NSObjectC", "timestamp"]
+- !private ["So8NSObjectC", "unregisterDataListener"]
+- !private ["So16NSObjectProtocolP", "getConnectionState"]
+- !private ["So16NSObjectProtocolP", "getGyroValue"]
+- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "make"]
+- !private ["So16NSObjectProtocolP", "packetType"]
+- !private ["So16NSObjectProtocolP", "register"]
+- !private ["So16NSObjectProtocolP", "timestamp"]
+- !private ["So16NSObjectProtocolP", "unregisterDataListener"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So8NSStringC", "init"]
+- !private ["s7NumericP", "bitPattern"]
+- !private ["s7NumericP", "init"]
+- !private ["s22RandomAccessCollectionP", "insert"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "insert"]
+- !private ["s16RawRepresentableP", "X"]
+- !private ["s16RawRepresentableP", "Y"]
+- !private ["s16RawRepresentableP", "Z"]
+- !private ["s16RawRepresentableP", "connected"]
+- ["s16RawRepresentableP", "gyro"]
+- !private ["s16RawRepresentableP", "rawValue"]
+- !private ["10RingBufferAAC", "availableCapacity"]
+- !private ["10RingBufferAAC", "count"]
+- !private ["10RingBufferAAC", "feed"]
+- !private ["10RingBufferAAC", "free"]
+- !private ["10RingBufferAAC", "init"]
+- !private ["10RingBufferAAC", "tail"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "insert"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "bitPattern"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "bitPattern"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s6UInt64V", "init"]
+- !private ["SR", "subscript"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s14_ArrayProtocolP", "insert"]
+- !private ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "insert"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s15_CVarArgAlignedP", "bitPattern"]
+- !private ["s15_CVarArgAlignedP", "init"]
+- !private ["s22_CVarArgPassedAsDoubleP", "bitPattern"]
+- !private ["s22_CVarArgPassedAsDoubleP", "init"]
+- !private ["s24_DestructorSafeContainerP", "insert"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "bitPattern"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "bitPattern"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "insert"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "insert"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getConnectionState"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getGyroValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "make"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "packetType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "register"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timestamp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "unregisterDataListener"]
+- !private ["s17_MutableIndexableP", "insert"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "bitPattern"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "insert"]
+- !private ["s22_RandomAccessIndexableP", "insert"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "insert"]
+- !private ["s11_StrideableP", "bitPattern"]
+- !private ["s11_StrideableP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "s19BinaryFloatingPointP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "Sd"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "s13FloatingPointP"
+- "s8HashableP"
+- !private "SC18IXNConnectionStateO"
+- !private "SC7IXNGyroO"
+- !private "So7IXNMuseC"
+- "So19IXNMuseDataListenerP"
+- !private "So17IXNMuseDataPacketC"
+- "SC21IXNMuseDataPacketTypeO"
+- !private "s5Int64V"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- "6EEG10114MuseStreamGyroC"
+- !private "s17MutableCollectionP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So20NSFetchRequestResultP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSNumberC"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "s7NumericP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10RingBufferAAC"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s6UInt64V"
+- !private "SR"
+- !private "s15UnsignedIntegerP"
+- !private "s14_ArrayProtocolP"
+- !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s10_IndexableP"
+- !private "s14_IndexableBaseP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
+- !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules/RingBuffer.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ModelIO.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreData.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/GLKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CallKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Headers/VAD.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioPlotGL.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESM.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/IOSESM.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioiOS.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioFFT.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioOSX.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/yoga/Yoga.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressHUD-umbrella.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREFramework-umbrella.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/PamSchema.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNAnnotationData.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNDspData.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioFloatData.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/FitbitData.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioDevice.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/FitbitDevice.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNTimestampMode.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREStorage.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/JSONStorage.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/CSVStorage.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/SQLiteStorage.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/DeviceUsage.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityDeviceUsage.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridge.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BatteryCharge.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBatteryCharge.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BatteryDischarge.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBatteryDischarge.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseFile.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioFile.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMSchedule.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridgeModule.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBorderStyle.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/NTPTime.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityNTPTime.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Headers/AudioPipeline.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZMicrophone.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Timezone.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityTimezone.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Gyroscope.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityGyroscope.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMessageType.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTTextDecorationLineType.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTAnimationType.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNErrorType.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseDataPacketType.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWARECore.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AmbientNoise.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/Muse.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuse.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNReaderMuse.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BLEHeartRate.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBLEHeartRate.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTFrameUpdate.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREDelegate.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBridgeDelegate.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNConnectionState.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNDrlRef.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNEeg.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTInvalidating.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTLog.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Debug.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityDebug.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Bluetooth.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBluetooth.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/MobileWiFi.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Wifi.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/SensorWifi.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityWifi.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioDisplayLink.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Network.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/WiFiNetwork.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityNetwork.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseModel.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNResultLevel.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityCall.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMItem.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Screen.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityScreen.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/GoogleLogin.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseVersion.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNLibmuseVersion.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNApiVersion.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/PushNotification.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityPushNotification.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityLocation.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNComputingDeviceConfiguration.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseConfiguration.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Conversation.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Orientation.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Rotation.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityRotation.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNAction.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/IOSActivityRecognition.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudio.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Headers/StudentLifeAudio.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNGyro.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNEventLoop.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNRunEventLoop.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Calendar.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/EEG101-Bridging-Header.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseFileReader.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BRLineReader.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTJavaScriptLoader.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTBundleURLProvider.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNReaderMuseBuilder.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZRecorder.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Headers/RingBuffer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/TPCircularBuffer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMScheduleManager.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseManager.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNLogManager.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/WiFiManager.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWARESensorManager.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREDebugMessageLogger.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTEventDispatcher.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/OpenWeather.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityOpenWeather.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/TCQMaker.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/CoreDataHandler.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BaseCoreDataHandler.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ExternalCoreDataHandler.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMScrollViewController.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/CalendarESMScheduler.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseDataListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNLogListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNReaderPlaybackListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseConnectionListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNReaderListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseErrorListener.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BLEScanner.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Pedometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Barometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBarometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Accelerometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNAccelerometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/LinearAccelerometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityLinearAccelerometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityAccelerometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Magnetometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityMagnetometer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseFileWriter.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTEventEmitter.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESMAnswer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVRadialGradientLayer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioPlayer.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNError.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWARESensor.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREMotionSensor.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Processor.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityProcessor.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/DBTableCreator.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/SyncExecutor.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioUtilities.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESM+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityFitbitData+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityFitbitDevice+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityDeviceUsage+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBatteryCharge+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBatteryDischarge+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESMSchedule+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityNTPTime+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityTimezone+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityGyroscope+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityAmbientNoise+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBLEHeartRate+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityDebug+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBluetooth+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntitySensorWifi+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityWifi+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityNetwork+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityCall+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityScreen+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityPushNotification+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityLocation+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityConversation+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityRotation+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityIOSActivityRecognition+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityCalendar+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityOpenWeather+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBarometer+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityLinearAccelerometer+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityAccelerometer+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityMagnetometer+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESMAnswer+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityProcessor+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityContact+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityLocationVisit+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBattery+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityMemory+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESMAnswerHistory+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityProximity+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityGravity+CoreDataProperties.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTDefines.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Headers/jni_types.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BasicSettings.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNReaderMusePlaybackSettings.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AudioAnalysis.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREUtils.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTUtils.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Calls.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGEnums.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Locations.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/FusedLocations.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/VisitLocations.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseManagerIos.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/yoga/YGMacros.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWARESensors.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESM+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityFitbitData+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityFitbitDevice+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESMSchedule+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityAmbientNoise+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntitySensorWifi+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityConversation+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityIOSActivityRecognition+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityCalendar+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityContact+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityESMAnswerHistory+CoreDataClass.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNAdvertisingStats.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Contacts.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTPointerEvents.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREKeys.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNAnnotationFormat.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseDataPacket.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNLogPacket.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseConnectionPacket.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseArtifactPacket.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMusePreset.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Headers/RingBuffer-Swift.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREHealthKit.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Fitbit.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityLocationVisit.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNResult.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/WiFiDeviceClient.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/CalEvent.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZPlot.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZAudioPlot.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTAssert.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTConvert.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREHealthKitWorkout.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EZOutput.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMPAMView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/BaseESMView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMWebView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVIndefiniteAnimatedView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Headers/SVProgressAnimatedView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMScaleView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMLikertScaleView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMClockLineView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMPictureView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMVideoView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMRadioView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMAudioView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMNumberView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMDateTimePickerView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMClockTimePickerView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMQuickAnswerView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/React/RCTRootView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMFreeTextView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/ESMCheckBoxView.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNNotchFrequency.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREStudy.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNStringify.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Battery.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNBattery.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityBattery.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREHealthKitCategory.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Memory.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityMemory.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNMuseFileFactory.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNComputingDeviceConfigurationFactory.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Reachability.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Proximity.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityProximity.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Muse.framework/Headers/api/IXNSeverity.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/AWAREHealthKitQuantity.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/Gravity.h"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Headers/EntityGravity.h"
+- "/Users/medullosuprarenal/Documents/_eeg/ios/RingBuffer/TPCircularBuffer/module.modulemap"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/SVProgressHUD/SVProgressHUD.framework/Modules/module.modulemap"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/AWAREFramework/AWAREFramework.framework/Modules/module.modulemap"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Modules/module.modulemap"
+- "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules/module.modulemap"
+interface-hash: "9cd6a4ec44292589d3b8f088491416bb"

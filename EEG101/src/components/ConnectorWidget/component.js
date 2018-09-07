@@ -236,7 +236,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     body: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 15,
       marginBottom: 5,
       color: colors.white,
@@ -270,7 +270,7 @@ const styles = MediaQueryStyleSheet.create(
     },
 
     connectingName: {
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 18,
       color: colors.turquoise
     },
@@ -285,7 +285,7 @@ const styles = MediaQueryStyleSheet.create(
 
     modalTitle: {
       flex: 1,
-      fontFamily: "Roboto-Bold",
+      fontFamily: "Roboto",
       color: colors.black,
       fontSize: 20,
       margin: 5
@@ -343,7 +343,7 @@ const styles = MediaQueryStyleSheet.create(
 
     itemText: {
       color: colors.black,
-      fontFamily: "Roboto-Light",
+      fontFamily: "Roboto",
       fontSize: 19
     }
   },
