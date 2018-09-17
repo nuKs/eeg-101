@@ -58,16 +58,6 @@ public class AwareModule extends ReactContextBaseJavaModule {
 
         // @todo permission (or within js)
 
-        Aware.DEBUG = true;
-        Aware.setSetting(reactContext, Aware_Preferences.DEBUG_FLAG, "true");
-        Aware.setSetting(reactContext, Aware_Preferences.DEBUG_TAG, "AWARE");
-        Aware.joinStudy(reactContext, "https://api.awareframework.com/index.php/webservice/index/1939/lA3beuWw3aYD");
-        // @todo fix db location @warning breaks launch time // may have been done
-        Log.i("AwareModule", "start com.aware.plugin.eegmuse");
-        Aware.startPlugin(reactContext, "com.aware.plugin.eegmuse");
-        Log.i("AwareModule", "start com.aware.plugin.bimsquestionnaire");
-        Aware.startPlugin(reactContext, "com.aware.plugin.bimsquestionnaire");
-
         WeakReference<AwareModule> weakPlugin = new WeakReference<AwareModule>(this);
         dataListener = new DataListener(weakPlugin);
         _contentResolver = this._reactContext.getContentResolver();
@@ -165,10 +155,30 @@ public class AwareModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void stopPluginBindingAndRecording() {
-        this.stopRecording();
+    public void stopPluginAndRecording() {
+        // @warning this stops the Plugin's binding, not the plugin itself !
+
         // @pre-cond stopRecord()
         Log.i("AwareModule", "bridge/java: stopRecord");
+
+        //this.stopRecording();
+        // broke/merged stopRecording due to service binding timeout issue
+
+        // _plugin.stopRecording(_muse);
+        // @todo @warning check preconditions -- will crash without log if not !!!
+        _muse.unregisterDataListener(dataListener, MuseDataPacketType.EEG);
+
+        // Safely stop the thread
+        bufferConsumerThread.interrupt();
+
+        if (dataHandler != null) {
+            // Removes all runnables and things from the Handler
+            dataHandler.removeCallbacksAndMessages(null);
+            dataThread.quit();
+        }
+
+
+
         // Plugin is not stopped because it should be located in the background
         // Aware.stopPlugin(this._reactContext, "com.aware.plugin.eegmuse");
         _reactContext.unbindService(mServerConn);
@@ -199,18 +209,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
 
     // @ReactMethod
     public void stopRecording() {
-        // broke/merged stopRecording due to service binding timeout issue
 
-        // _plugin.stopRecording(_muse);
-        _muse.unregisterDataListener(dataListener, MuseDataPacketType.EEG);
-
-        bufferConsumerThread.stop(); // @todo fix / safe stop
-
-        if (dataHandler != null) {
-            // Removes all runnables and things from the Handler
-            dataHandler.removeCallbacksAndMessages(null);
-            dataThread.quit();
-        }
     }
 
     private DataListener dataListener;
@@ -255,7 +254,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
         }
 
         public void run(){
-            while(true) { // @todo handle stop condition instead
+            while(!this.isInterrupted()) {
                 MuseDataPacket[] _p = _circularBuffer.get().snapshot();
                 for (MuseDataPacket p : _p) {
                     // doesn't slow down

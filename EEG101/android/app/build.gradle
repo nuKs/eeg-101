@@ -183,6 +183,16 @@ android {
 
 
 project.ext {
+    mqtt_libs = (System.getenv("mqtt_libs") as String ?: "1.2.0")
+    ion_libs = (System.getenv("ion_libs") as String ?: "2.+")
+    support_libs = (System.getenv("support_libs") as String ?: "27.1.0")
+    google_libs = (System.getenv("google_libs") ?: "12.0.0")
+    version_code = (System.getenv("aware_revision") as Integer ?: 700)
+    version_readable = "4.0." + version_code + "." + (System.getenv("aware_label") as String ?: "selfie")
+    compile_sdk = (System.getenv("compile_sdk") as Integer ?: 26)
+    target_sdk = (System.getenv("target_sdk") as Integer ?: 25)
+    minimum_sdk = (System.getenv("minimum_sdk") as Integer ?: 19) //Android 4.0+
+    build_tools = (System.getenv("build_tools") ?: "27.0.3")
     aware_libs = (System.getenv("aware_libs") as String ?: "master-SNAPSHOT")
 }
 
@@ -222,14 +232,15 @@ dependencies {
 
     // { exclude module: 'libmuse_android' }
     //set by the project build.gradle/Jenkins
+
     //we add more plugins we want bundled after this. Let's compile now.
     //UCLA needs: activity recognition, fused location plugins, conversations
-    /*
-        api "com.github.denzilferreira:com.aware.plugin.google.activity_recognition:$aware_libs"
-        api "com.github.denzilferreira:com.aware.plugin.google.fused_location:$aware_libs"
-        api "com.github.denzilferreira:com.aware.plugin.studentlife.audio_final:$aware_libs"
-        api "com.github.denzilferreira:com.aware.plugin.esm.scheduler:$aware_libs"
-        */
+    api "com.github.denzilferreira:com.aware.plugin.google.activity_recognition:$aware_libs"
+    api "com.github.denzilferreira:com.aware.plugin.google.fused_location:$aware_libs"
+
+
+    // we don't use it anymore - it crashes the app at launch w/ "couldn't find "libaudioclassifier.so""
+    // api "com.github.denzilferreira:com.aware.plugin.studentlife.audio_final:$aware_libs"
 }
 
 // Run this once to be able to run the application with BUCK

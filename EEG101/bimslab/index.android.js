@@ -58,7 +58,7 @@ export default class EEG101 extends Component {
                 <Content_>
                   <Switch>
                     <Route exact path="/" render={() => (
-                      <Redirect to="/analysis" />
+                      <Redirect to="/experiment/connector/1" />
                     )}/>
                     <Route exact path="/experiment" component={ExperimentScene} />
                     <Route exact path="/experiment/qa" component={ExperimentQAScene} />
