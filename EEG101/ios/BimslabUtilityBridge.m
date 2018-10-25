@@ -1,7 +1,7 @@
 // #import <React/RCTEventEmitter.h>
 #import <React/RCTBridgeModule.h>
 
-#import "EEG101-Swift.h"
+#import "Flux-Swift.h"
 
 @interface BimslabUtility: NSObject <RCTBridgeModule>
 // @interface BimslabUtility: RCTEventEmitter <RCTBridgeModule>

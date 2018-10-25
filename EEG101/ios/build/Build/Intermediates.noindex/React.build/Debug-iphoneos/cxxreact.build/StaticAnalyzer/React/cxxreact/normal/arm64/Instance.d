@@ -388,12 +388,15 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/jschelpers/JSCHelpers.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSBigString.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSBundleType.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSExecutor.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/MessageQueueThread.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/MethodCall.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/NativeToJsBridge.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/RAMBundleRegistry.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/JSModulesUnbundle.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/RecoverableError.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/SystraceSection.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/JSIndexedRAMBundle.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/JSBigString.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Memory.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/MoveWrapper.h

@@ -1,9 +1,10 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- We are overriding the text that has been set in the library, so that it is contextualised for this specific standalone app. -->
-    <string name="app_name">EEG101</string>
-    <string name="aware_description">This accessibility service makes sure PNP application is running at all times.</string>
-    <string name="aware_activate_accessibility_title">PNP DGC</string>
-    <string name="aware_activate_accessibility">Please activate \"PNP DGC\" in the accessibility services.</string>
-    <string name="foreground_notification_title">PNP DGC</string>
-    <string name="foreground_notification_text">PNP application is active.</string>
+    <string name="app_name">Flux</string>
+    <string name="aware_description">Ce service d\'accessibilité permet à l\'application Flux de fonctionner continuellement.</string>
+    <string name="aware_activate_accessibility_title">Flux DGC</string>
+    <string name="aware_activate_accessibility">Veuillez activer \"Flux DGC\" dans les services d\'accessibilité.</string>
+    <string name="foreground_notification_title">Flux DGC</string>
+    <string name="foreground_notification_text" tools:ignore="DuplicateDefinition">L\'application Flux est active.</string>
+    <string name="provider_eegmuse">com.eeg_project.provider.eegmuse</string>
 </resources>

@@ -25,10 +25,12 @@ depends-top-level:
 - "Dictionary"
 - !private "DispatchQueue"
 - !private "ExternalCoreDataHandler"
+- !private "FloatLiteralType"
 - !private "IXNDrlRef"
 - "IXNMuse"
 - !private "IXNMuseDataPacket"
 - !private "InsertEntityCallBack"
+- !private "IntegerLiteralType"
 - "MuseSensorDrlRef"
 - "MuseStreamDrlRef"
 - !private "NSEntityDescription"
@@ -58,6 +60,7 @@ depends-member:
 - !private ["So11AWARESensorC", "NSManagedObject"]
 - !private ["So11AWARESensorC", "SQLiteStorage"]
 - ["So11AWARESensorC", "String"]
+- ["So11AWARESensorC", ""]
 - !private ["So11AWARESensorC", "assertionFailure"]
 - ["So11AWARESensorC", "createTable"]
 - ["So11AWARESensorC", "entityName"]
@@ -75,7 +78,6 @@ depends-member:
 - ["So11AWARESensorC", "stopSensor"]
 - !private ["So11AWARESensorC", "storage"]
 - ["So11AWARESensorC", "stream"]
-- ["So11AWARESensorC", ""]
 - !private ["So19AWARESensorDelegateP", "DispatchQueue"]
 - !private ["So19AWARESensorDelegateP", "ExternalCoreDataHandler"]
 - !private ["So19AWARESensorDelegateP", "IXNDrlRef"]
@@ -84,6 +86,7 @@ depends-member:
 - !private ["So19AWARESensorDelegateP", "NSEntityDescription"]
 - !private ["So19AWARESensorDelegateP", "NSManagedObject"]
 - !private ["So19AWARESensorDelegateP", "SQLiteStorage"]
+- ["So19AWARESensorDelegateP", ""]
 - !private ["So19AWARESensorDelegateP", "assertionFailure"]
 - !private ["So19AWARESensorDelegateP", "entityName"]
 - !private ["So19AWARESensorDelegateP", "getDeviceId"]
@@ -98,17 +101,19 @@ depends-member:
 - !private ["So19AWARESensorDelegateP", "stopSensor"]
 - !private ["So19AWARESensorDelegateP", "storage"]
 - !private ["So19AWARESensorDelegateP", "stream"]
-- ["So19AWARESensorDelegateP", ""]
 - !private ["So12AWAREStorageC", "createDBTableOnServer"]
+- !private ["So12AWAREStorageC", "init"]
 - !private ["So12AWAREStorageC", "init"]
 - !private ["So12AWAREStorageC", "saveData"]
 - !private ["So12AWAREStorageC", "setBufferSize"]
 - !private ["So20AWAREStorageDelegateP", "createDBTableOnServer"]
 - !private ["So20AWAREStorageDelegateP", "init"]
+- !private ["So20AWAREStorageDelegateP", "init"]
 - !private ["So20AWAREStorageDelegateP", "saveData"]
 - !private ["So20AWAREStorageDelegateP", "setBufferSize"]
 - !private ["So19BaseCoreDataHandlerC", "shared"]
-- ["s23BidirectionalCollectionP", "init"]
+- ["SK", "init"]
+- ["SK", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "ExternalCoreDataHandler"]
@@ -118,6 +123,8 @@ depends-member:
 - !private ["s7CVarArgP", "NSEntityDescription"]
 - !private ["s7CVarArgP", "NSManagedObject"]
 - !private ["s7CVarArgP", "SQLiteStorage"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "assertionFailure"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "createDBTableOnServer"]
@@ -127,6 +134,7 @@ depends-member:
 - !private ["s7CVarArgP", "getDrlRefValue"]
 - !private ["s7CVarArgP", "getMacAddress"]
 - !private ["s7CVarArgP", "global"]
+- ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isDebug"]
 - !private ["s7CVarArgP", "isRecording"]
@@ -145,10 +153,11 @@ depends-member:
 - !private ["s7CVarArgP", "stream"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "timestamp"]
-- ["s7CVarArgP", ""]
-- ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "subscript"]
-- ["s10ComparableP", "init"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- ["SL", "init"]
+- ["SL", "init"]
 - !private ["So23CoreDataHandlerDelegateP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - !private ["s28CustomDebugStringConvertibleP", "ExternalCoreDataHandler"]
@@ -158,6 +167,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NSEntityDescription"]
 - !private ["s28CustomDebugStringConvertibleP", "NSManagedObject"]
 - !private ["s28CustomDebugStringConvertibleP", "SQLiteStorage"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "assertionFailure"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "createDBTableOnServer"]
@@ -167,6 +177,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "getDrlRefValue"]
 - !private ["s28CustomDebugStringConvertibleP", "getMacAddress"]
 - !private ["s28CustomDebugStringConvertibleP", "global"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isDebug"]
 - !private ["s28CustomDebugStringConvertibleP", "isRecording"]
@@ -185,11 +196,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "stream"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "timestamp"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "createDBTableOnServer"]
 - ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "saveData"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "ExternalCoreDataHandler"]
@@ -199,6 +213,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NSEntityDescription"]
 - !private ["s23CustomStringConvertibleP", "NSManagedObject"]
 - !private ["s23CustomStringConvertibleP", "SQLiteStorage"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "assertionFailure"]
 - !private ["s23CustomStringConvertibleP", "async"]
@@ -209,6 +224,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "getDrlRefValue"]
 - !private ["s23CustomStringConvertibleP", "getMacAddress"]
 - !private ["s23CustomStringConvertibleP", "global"]
+- ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isDebug"]
 - !private ["s23CustomStringConvertibleP", "isRecording"]
@@ -227,115 +243,132 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "stream"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "timestamp"]
-- ["s23CustomStringConvertibleP", ""]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["So14DispatchObjectC", "async"]
-- !private ["So14DispatchObjectC", "global"]
-- !private ["So14DispatchObjectC", "main"]
-- !private ["So13DispatchQueueC", "async"]
-- !private ["So13DispatchQueueC", "global"]
-- !private ["So13DispatchQueueC", "main"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "DispatchQueue"]
-- !private ["s9EquatableP", "ExternalCoreDataHandler"]
-- !private ["s9EquatableP", "IXNDrlRef"]
-- !private ["s9EquatableP", "MuseSensorDrlRef"]
-- !private ["s9EquatableP", "MuseStreamDrlRef"]
-- !private ["s9EquatableP", "NSEntityDescription"]
-- !private ["s9EquatableP", "NSManagedObject"]
-- !private ["s9EquatableP", "SQLiteStorage"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "assertionFailure"]
-- !private ["s9EquatableP", "async"]
-- !private ["s9EquatableP", "background"]
-- !private ["s9EquatableP", "createDBTableOnServer"]
-- !private ["s9EquatableP", "drl"]
-- !private ["s9EquatableP", "entity"]
-- !private ["s9EquatableP", "entityName"]
-- !private ["s9EquatableP", "getDeviceId"]
-- !private ["s9EquatableP", "getDrlRefValue"]
-- !private ["s9EquatableP", "getMacAddress"]
-- !private ["s9EquatableP", "global"]
-- ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isDebug"]
-- !private ["s9EquatableP", "isRecording"]
-- !private ["s9EquatableP", "main"]
-- !private ["s9EquatableP", "os_log"]
-- !private ["s9EquatableP", "print"]
-- !private ["s9EquatableP", "ref"]
-- !private ["s9EquatableP", "saveData"]
-- !private ["s9EquatableP", "sensorName"]
-- !private ["s9EquatableP", "setBufferSize"]
-- !private ["s9EquatableP", "setValue"]
-- !private ["s9EquatableP", "shared"]
-- !private ["s9EquatableP", "sleep"]
-- !private ["s9EquatableP", "startSensor"]
-- !private ["s9EquatableP", "stopSensor"]
-- !private ["s9EquatableP", "storage"]
-- !private ["s9EquatableP", "stream"]
-- !private ["s9EquatableP", "timestamp"]
-- ["s9EquatableP", ""]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "createDBTableOnServer"]
+- ["Se", "init"]
+- ["Se", "init"]
+- !private ["Se", "saveData"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "global"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "global"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "createDBTableOnServer"]
+- ["SE", "init"]
+- ["SE", "init"]
+- !private ["SE", "saveData"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "DispatchQueue"]
+- !private ["SQ", "ExternalCoreDataHandler"]
+- !private ["SQ", "IXNDrlRef"]
+- !private ["SQ", "MuseSensorDrlRef"]
+- !private ["SQ", "MuseStreamDrlRef"]
+- !private ["SQ", "NSEntityDescription"]
+- !private ["SQ", "NSManagedObject"]
+- !private ["SQ", "SQLiteStorage"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "assertionFailure"]
+- !private ["SQ", "async"]
+- !private ["SQ", "background"]
+- !private ["SQ", "createDBTableOnServer"]
+- !private ["SQ", "drl"]
+- !private ["SQ", "entity"]
+- !private ["SQ", "entityName"]
+- !private ["SQ", "getDeviceId"]
+- !private ["SQ", "getDrlRefValue"]
+- !private ["SQ", "getMacAddress"]
+- !private ["SQ", "global"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- !private ["SQ", "isDebug"]
+- !private ["SQ", "isRecording"]
+- !private ["SQ", "main"]
+- !private ["SQ", "os_log"]
+- !private ["SQ", "print"]
+- !private ["SQ", "ref"]
+- !private ["SQ", "saveData"]
+- !private ["SQ", "sensorName"]
+- !private ["SQ", "setBufferSize"]
+- !private ["SQ", "setValue"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "sleep"]
+- !private ["SQ", "startSensor"]
+- !private ["SQ", "stopSensor"]
+- !private ["SQ", "storage"]
+- !private ["SQ", "stream"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "timestamp"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "createDBTableOnServer"]
+- !private ["s23ExpressibleByNilLiteralP", "saveData"]
+- ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So23ExternalCoreDataHandlerC", "shared"]
-- !private ["s8HashableP", "DispatchQueue"]
-- !private ["s8HashableP", "ExternalCoreDataHandler"]
-- !private ["s8HashableP", "IXNDrlRef"]
-- !private ["s8HashableP", "MuseSensorDrlRef"]
-- !private ["s8HashableP", "MuseStreamDrlRef"]
-- !private ["s8HashableP", "NSEntityDescription"]
-- !private ["s8HashableP", "NSManagedObject"]
-- !private ["s8HashableP", "SQLiteStorage"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "assertionFailure"]
-- !private ["s8HashableP", "async"]
-- !private ["s8HashableP", "background"]
-- !private ["s8HashableP", "createDBTableOnServer"]
-- !private ["s8HashableP", "drl"]
-- !private ["s8HashableP", "entity"]
-- !private ["s8HashableP", "entityName"]
-- !private ["s8HashableP", "getDeviceId"]
-- !private ["s8HashableP", "getDrlRefValue"]
-- !private ["s8HashableP", "getMacAddress"]
-- !private ["s8HashableP", "global"]
-- ["s8HashableP", "init"]
-- !private ["s8HashableP", "isDebug"]
-- !private ["s8HashableP", "isRecording"]
-- !private ["s8HashableP", "main"]
-- !private ["s8HashableP", "os_log"]
-- !private ["s8HashableP", "print"]
-- !private ["s8HashableP", "ref"]
-- !private ["s8HashableP", "saveData"]
-- !private ["s8HashableP", "sensorName"]
-- !private ["s8HashableP", "setBufferSize"]
-- !private ["s8HashableP", "setValue"]
-- !private ["s8HashableP", "shared"]
-- !private ["s8HashableP", "sleep"]
-- !private ["s8HashableP", "startSensor"]
-- !private ["s8HashableP", "stopSensor"]
-- !private ["s8HashableP", "storage"]
-- !private ["s8HashableP", "stream"]
-- !private ["s8HashableP", "timestamp"]
-- ["s8HashableP", ""]
-- !private ["SC9IXNDrlRefO", "drl"]
-- !private ["SC9IXNDrlRefO", "ref"]
+- !private ["SH", "DispatchQueue"]
+- !private ["SH", "ExternalCoreDataHandler"]
+- !private ["SH", "IXNDrlRef"]
+- !private ["SH", "MuseSensorDrlRef"]
+- !private ["SH", "MuseStreamDrlRef"]
+- !private ["SH", "NSEntityDescription"]
+- !private ["SH", "NSManagedObject"]
+- !private ["SH", "SQLiteStorage"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "assertionFailure"]
+- !private ["SH", "async"]
+- !private ["SH", "background"]
+- !private ["SH", "createDBTableOnServer"]
+- !private ["SH", "drl"]
+- !private ["SH", "entity"]
+- !private ["SH", "entityName"]
+- !private ["SH", "getDeviceId"]
+- !private ["SH", "getDrlRefValue"]
+- !private ["SH", "getMacAddress"]
+- !private ["SH", "global"]
+- ["SH", "init"]
+- ["SH", "init"]
+- !private ["SH", "isDebug"]
+- !private ["SH", "isRecording"]
+- !private ["SH", "main"]
+- !private ["SH", "os_log"]
+- !private ["SH", "print"]
+- !private ["SH", "ref"]
+- !private ["SH", "saveData"]
+- !private ["SH", "sensorName"]
+- !private ["SH", "setBufferSize"]
+- !private ["SH", "setValue"]
+- !private ["SH", "shared"]
+- !private ["SH", "sleep"]
+- !private ["SH", "startSensor"]
+- !private ["SH", "stopSensor"]
+- !private ["SH", "storage"]
+- !private ["SH", "stream"]
+- !private ["SH", "subscript"]
+- !private ["SH", "timestamp"]
+- !private ["So9IXNDrlRefV", "drl"]
+- !private ["So9IXNDrlRefV", "ref"]
 - !private ["So7IXNMuseC", "getMacAddress"]
 - !private ["So19IXNMuseDataListenerP", "consume"]
 - !private ["So19IXNMuseDataListenerP", "init"]
 - !private ["So19IXNMuseDataListenerP", "isEmpty"]
+- !private ["So19IXNMuseDataListenerP", "start"]
 - !private ["So19IXNMuseDataListenerP", "stop"]
 - !private ["So17IXNMuseDataPacketC", "getDrlRefValue"]
 - !private ["So17IXNMuseDataPacketC", "timestamp"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["6EEG10116MuseSensorDrlRefC", "AWAREStorage"]
 - ["6EEG10116MuseSensorDrlRefC", "AWAREStudy"]
@@ -355,7 +388,7 @@ depends-member:
 - ["6EEG10116MuseSensorDrlRefC", "String"]
 - !private ["6EEG10116MuseSensorDrlRefC", "assertionFailure"]
 - ["6EEG10116MuseSensorDrlRefC", "createTable"]
-- ["6EEG10116MuseSensorDrlRefC", "deinit"]
+- !private ["6EEG10116MuseSensorDrlRefC", "deinit"]
 - !private ["6EEG10116MuseSensorDrlRefC", "entityName"]
 - !private ["6EEG10116MuseSensorDrlRefC", "getDeviceId"]
 - ["6EEG10116MuseSensorDrlRefC", "init"]
@@ -374,20 +407,16 @@ depends-member:
 - !private ["6EEG10116MuseStreamDrlRefC", "consume"]
 - !private ["6EEG10116MuseStreamDrlRefC", "init"]
 - !private ["6EEG10116MuseStreamDrlRefC", "isEmpty"]
+- !private ["6EEG10116MuseStreamDrlRefC", "start"]
 - !private ["6EEG10116MuseStreamDrlRefC", "stop"]
 - !private ["So8NSCodingP", "entity"]
-- ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "entity"]
-- ["So9NSCopyingP", "init"]
 - !private ["So19NSEntityDescriptionC", "entity"]
 - !private ["So17NSFastEnumerationP", "entity"]
 - !private ["So20NSFetchRequestResultP", "init"]
 - !private ["So20NSFetchRequestResultP", "setValue"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
 - !private ["So15NSManagedObjectC", "init"]
 - !private ["So15NSManagedObjectC", "setValue"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "AWAREStorage"]
 - ["So8NSObjectC", "AWAREStudy"]
 - ["So8NSObjectC", "AwareDBType"]
@@ -415,6 +444,7 @@ depends-member:
 - !private ["So8NSObjectC", "getMacAddress"]
 - !private ["So8NSObjectC", "global"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isDebug"]
 - ["So8NSObjectC", "isRecording"]
 - !private ["So8NSObjectC", "main"]
@@ -433,57 +463,66 @@ depends-member:
 - !private ["So8NSObjectC", "storage"]
 - ["So8NSObjectC", "stream"]
 - !private ["So8NSObjectC", "timestamp"]
-- !private ["So16NSObjectProtocolP", "DispatchQueue"]
-- !private ["So16NSObjectProtocolP", "ExternalCoreDataHandler"]
-- !private ["So16NSObjectProtocolP", "IXNDrlRef"]
-- !private ["So16NSObjectProtocolP", "MuseSensorDrlRef"]
-- !private ["So16NSObjectProtocolP", "MuseStreamDrlRef"]
-- !private ["So16NSObjectProtocolP", "NSEntityDescription"]
-- !private ["So16NSObjectProtocolP", "NSManagedObject"]
-- !private ["So16NSObjectProtocolP", "SQLiteStorage"]
-- !private ["So16NSObjectProtocolP", "assertionFailure"]
-- !private ["So16NSObjectProtocolP", "async"]
-- !private ["So16NSObjectProtocolP", "createDBTableOnServer"]
-- !private ["So16NSObjectProtocolP", "entity"]
-- !private ["So16NSObjectProtocolP", "entityName"]
-- !private ["So16NSObjectProtocolP", "getDeviceId"]
-- !private ["So16NSObjectProtocolP", "getDrlRefValue"]
-- !private ["So16NSObjectProtocolP", "getMacAddress"]
-- !private ["So16NSObjectProtocolP", "global"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isDebug"]
-- !private ["So16NSObjectProtocolP", "isRecording"]
-- !private ["So16NSObjectProtocolP", "main"]
-- !private ["So16NSObjectProtocolP", "os_log"]
-- !private ["So16NSObjectProtocolP", "print"]
-- !private ["So16NSObjectProtocolP", "saveData"]
-- !private ["So16NSObjectProtocolP", "sensorName"]
-- !private ["So16NSObjectProtocolP", "setBufferSize"]
-- !private ["So16NSObjectProtocolP", "setValue"]
-- !private ["So16NSObjectProtocolP", "shared"]
-- !private ["So16NSObjectProtocolP", "sleep"]
-- !private ["So16NSObjectProtocolP", "startSensor"]
-- !private ["So16NSObjectProtocolP", "stopSensor"]
-- !private ["So16NSObjectProtocolP", "storage"]
-- !private ["So16NSObjectProtocolP", "stream"]
-- !private ["So16NSObjectProtocolP", "timestamp"]
-- ["So16NSObjectProtocolP", ""]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
+- !private ["So8NSObjectP", "DispatchQueue"]
+- !private ["So8NSObjectP", "ExternalCoreDataHandler"]
+- !private ["So8NSObjectP", "IXNDrlRef"]
+- !private ["So8NSObjectP", "MuseSensorDrlRef"]
+- !private ["So8NSObjectP", "MuseStreamDrlRef"]
+- !private ["So8NSObjectP", "NSEntityDescription"]
+- !private ["So8NSObjectP", "NSManagedObject"]
+- !private ["So8NSObjectP", "SQLiteStorage"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "assertionFailure"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "createDBTableOnServer"]
+- !private ["So8NSObjectP", "entity"]
+- !private ["So8NSObjectP", "entityName"]
+- !private ["So8NSObjectP", "getDeviceId"]
+- !private ["So8NSObjectP", "getDrlRefValue"]
+- !private ["So8NSObjectP", "getMacAddress"]
+- !private ["So8NSObjectP", "global"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isDebug"]
+- !private ["So8NSObjectP", "isRecording"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "os_log"]
+- !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "saveData"]
+- !private ["So8NSObjectP", "sensorName"]
+- !private ["So8NSObjectP", "setBufferSize"]
+- !private ["So8NSObjectP", "setValue"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "sleep"]
+- !private ["So8NSObjectP", "startSensor"]
+- !private ["So8NSObjectP", "stopSensor"]
+- !private ["So8NSObjectP", "storage"]
+- !private ["So8NSObjectP", "stream"]
+- !private ["So8NSObjectP", "timestamp"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "global"]
 - !private ["So9OS_objectC", "main"]
+- !private ["Sq", "createDBTableOnServer"]
+- !private ["Sq", "saveData"]
 - !private ["8Dispatch0A3QoSV0B6SClassO", "background"]
-- ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s16RawRepresentableP", "drl"]
-- !private ["s16RawRepresentableP", "ref"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- !private ["SY", "drl"]
+- !private ["SY", "ref"]
 - !private ["So13SQLiteStorageC", "init"]
-- ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "subscript"]
+- !private ["So13SQLiteStorageC", "init"]
+- ["ST", "init"]
+- ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["s12StaticStringV", "init"]
 - !private ["s12StaticStringV", "init"]
 - ["SS", "init"]
-- ["s14StringProtocolP", "init"]
+- ["SS", "init"]
+- ["Sy", "init"]
+- ["Sy", "init"]
 - ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["So19UIAlertViewDelegateP", "DispatchQueue"]
 - !private ["So19UIAlertViewDelegateP", "ExternalCoreDataHandler"]
@@ -493,6 +532,7 @@ depends-member:
 - !private ["So19UIAlertViewDelegateP", "NSEntityDescription"]
 - !private ["So19UIAlertViewDelegateP", "NSManagedObject"]
 - !private ["So19UIAlertViewDelegateP", "SQLiteStorage"]
+- ["So19UIAlertViewDelegateP", ""]
 - !private ["So19UIAlertViewDelegateP", "assertionFailure"]
 - !private ["So19UIAlertViewDelegateP", "entityName"]
 - !private ["So19UIAlertViewDelegateP", "getDeviceId"]
@@ -507,19 +547,18 @@ depends-member:
 - !private ["So19UIAlertViewDelegateP", "stopSensor"]
 - !private ["So19UIAlertViewDelegateP", "storage"]
 - !private ["So19UIAlertViewDelegateP", "stream"]
-- ["So19UIAlertViewDelegateP", ""]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ExternalCoreDataHandler"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IXNDrlRef"]
@@ -528,6 +567,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSEntityDescription"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSManagedObject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SQLiteStorage"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "assertionFailure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "createDBTableOnServer"]
@@ -537,7 +577,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "getDrlRefValue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "getMacAddress"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "global"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isDebug"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isRecording"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
@@ -554,11 +595,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "storage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stream"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timestamp"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "createDBTableOnServer"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "saveData"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "So11AWARESensorC"
@@ -566,30 +609,31 @@ depends-nominal:
 - !private "So12AWAREStorageC"
 - !private "So20AWAREStorageDelegateP"
 - !private "So19BaseCoreDataHandlerC"
-- "s23BidirectionalCollectionP"
+- "SK"
 - !private "Sb"
 - "s7CVarArgP"
-- "s10CollectionP"
-- "s10ComparableP"
+- "Sl"
+- "SL"
 - !private "So23CoreDataHandlerDelegateP"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "So14DispatchObjectC"
-- !private "So13DispatchQueueC"
-- "s9EncodableP"
-- "s9EquatableP"
+- "Se"
+- !private "SD"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- "SE"
+- "SQ"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So23ExternalCoreDataHandlerC"
-- "s8HashableP"
-- !private "SC9IXNDrlRefO"
+- "SH"
+- !private "So9IXNDrlRefV"
 - !private "So7IXNMuseC"
 - !private "So19IXNMuseDataListenerP"
 - !private "So17IXNMuseDataPacketC"
@@ -597,48 +641,39 @@ depends-nominal:
 - "s10MirrorPathP"
 - "6EEG10116MuseSensorDrlRefC"
 - !private "6EEG10116MuseStreamDrlRefC"
-- "So8NSCodingP"
-- "So9NSCopyingP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
 - !private "So19NSEntityDescriptionC"
 - !private "So17NSFastEnumerationP"
 - !private "So20NSFetchRequestResultP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
 - !private "So15NSManagedObjectC"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
+- "So8NSObjectP"
 - !private "So9OS_objectC"
+- !private "Sq"
 - !private "8Dispatch0A3QoSV0B6SClassO"
-- "s26RangeReplaceableCollectionP"
-- !private "s16RawRepresentableP"
+- "Sm"
+- !private "SY"
 - !private "So13SQLiteStorageC"
-- "s8SequenceP"
+- "ST"
 - !private "s12StaticStringV"
 - "SS"
-- "s14StringProtocolP"
+- "Sy"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "So19UIAlertViewDelegateP"
-- "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules/RingBuffer.swiftmodule/arm64.swiftmodule"
@@ -960,4 +995,32 @@ depends-external:
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Modules/module.modulemap"
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules/module.modulemap"
-interface-hash: "c9cd56c8807acf8e4931df1c5ec8a9b0"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/NetworkExtension.framework/Headers/NetworkExtension.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CallKit.framework/Headers/CallKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "ad6f7294f3d3c0474342f9c5a3d1edb7"

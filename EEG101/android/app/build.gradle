@@ -83,8 +83,9 @@ def enableSeparateBuildPerCPUArchitecture = false
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
+ * @note I disabled it (nuKs) as it was working then failing then working ...
  */
-def enableProguardInReleaseBuilds = true
+def enableProguardInReleaseBuilds = false
 
 android {
     compileSdkVersion 26
@@ -190,11 +191,24 @@ project.ext {
     version_code = (System.getenv("aware_revision") as Integer ?: 700)
     version_readable = "4.0." + version_code + "." + (System.getenv("aware_label") as String ?: "selfie")
     compile_sdk = (System.getenv("compile_sdk") as Integer ?: 26)
-    target_sdk = (System.getenv("target_sdk") as Integer ?: 25)
+    target_sdk = (System.getenv("target_sdk") as Integer ?: 26)
     minimum_sdk = (System.getenv("minimum_sdk") as Integer ?: 19) //Android 4.0+
     build_tools = (System.getenv("build_tools") ?: "27.0.3")
     aware_libs = (System.getenv("aware_libs") as String ?: "master-SNAPSHOT")
 }
+
+// @note nuks edit..
+// fixes /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:89: AAPT: No resource identifier found for attribute 'appComponentFactory' in package 'android'
+// Execution failed for task ':app:processDebugResources'.
+// ........
+/*
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-v4:26+'
+        force 'com.android.support:appcompat-v7:28.0.0'
+    }
+}
+*/
 
 dependencies {
     compile project(':react-native-video')
@@ -223,8 +237,8 @@ dependencies {
     implementation 'com.androidplot:androidplot-core:1.5.1'
     implementation 'com.github.wendykierp:JTransforms:3.1'
     //adding AWARE now as a dependency
-    implementation 'com.github.denzilferreira:aware-client:master-SNAPSHOT'
-    implementation 'com.github.nuks:_a:126d1ae086'
+    implementation 'com.github.denzilferreira:aware-client:75552d101e'
+    // implementation 'com.github.nuks:_a:126d1ae086'
     implementation 'com.github.nuks:_b:38a1431e9b'
 
     // my attempt to fix https://stackoverflow.com/questions/15990075/the-import-com-google-android-gms-cannot-be-resolved
@@ -238,6 +252,7 @@ dependencies {
     api "com.github.denzilferreira:com.aware.plugin.google.activity_recognition:$aware_libs"
     api "com.github.denzilferreira:com.aware.plugin.google.fused_location:$aware_libs"
 
+    implementation files('./libs/libmuse_android.jar')
 
     // we don't use it anymore - it crashes the app at launch w/ "couldn't find "libaudioclassifier.so""
     // api "com.github.denzilferreira:com.aware.plugin.studentlife.audio_final:$aware_libs"

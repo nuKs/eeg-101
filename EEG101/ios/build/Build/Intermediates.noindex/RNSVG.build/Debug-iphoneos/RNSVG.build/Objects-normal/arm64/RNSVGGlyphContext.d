@@ -35,4 +35,5 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Elements/RNSVGPath.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/RNSVGRenderable.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Brushes/RNSVGBrush.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Utils/RNSVGPercentageConverter.h
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Utils/RNSVGPercentageConverter.h \
+  RNSVGNode.h

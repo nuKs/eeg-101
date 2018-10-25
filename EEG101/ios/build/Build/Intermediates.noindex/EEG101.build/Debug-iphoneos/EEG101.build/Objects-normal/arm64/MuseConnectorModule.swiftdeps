@@ -38,12 +38,14 @@ depends-top-level:
 - !private "Dictionary"
 - "EventEmitter"
 - !private "EventEmitterImpl"
+- !private "FloatLiteralType"
 - "IXNMuse"
 - "IXNMuseConnectionListener"
 - "IXNMuseConnectionPacket"
 - "IXNMuseListener"
 - "IXNMuseManagerIos"
 - "Int"
+- !private "IntegerLiteralType"
 - "MuseConnectionManager"
 - !private "MuseConnectionManagerImpl"
 - "MuseConnectorModule"
@@ -51,23 +53,27 @@ depends-top-level:
 - "NSObject"
 - "RCTPromiseRejectBlock"
 - "RCTPromiseResolveBlock"
-- !private "String"
+- "String"
 - !private "StringLiteralType"
-- !private "TernaryPrecedence"
+- "TernaryPrecedence"
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "map"]
 - !private ["Sa", "subscript"]
-- !private ["s23BidirectionalCollectionP", "count"]
-- !private ["s23BidirectionalCollectionP", "init"]
-- !private ["s23BidirectionalCollectionP", "map"]
-- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13ArrayProtocolP", "count"]
+- !private ["s13ArrayProtocolP", "map"]
+- !private ["s13ArrayProtocolP", "subscript"]
+- !private ["SK", "count"]
+- !private ["SK", "init"]
+- !private ["SK", "init"]
+- !private ["SK", "map"]
+- !private ["SK", "subscript"]
 - ["6EEG10116BluetoothManagerP", "CBCentralManagerDelegate"]
 - ["6EEG10116BluetoothManagerP", "CBManagerState"]
+- ["6EEG10116BluetoothManagerP", ""]
 - ["6EEG10116BluetoothManagerP", "delegate"]
 - !private ["6EEG10116BluetoothManagerP", "init"]
 - ["6EEG10116BluetoothManagerP", "state"]
-- ["6EEG10116BluetoothManagerP", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["So16CBCentralManagerC", "deinit"]
 - ["So16CBCentralManagerC", "delegate"]
@@ -77,6 +83,7 @@ depends-member:
 - !private ["So24CBCentralManagerDelegateP", "EventEmitterImpl"]
 - !private ["So24CBCentralManagerDelegateP", "IXNMuseManagerIos"]
 - !private ["So24CBCentralManagerDelegateP", "MuseConnectionManagerImpl"]
+- ["So24CBCentralManagerDelegateP", ""]
 - !private ["So24CBCentralManagerDelegateP", "bluetoothManager"]
 - ["So24CBCentralManagerDelegateP", "centralManager"]
 - ["So24CBCentralManagerDelegateP", "centralManagerDidUpdateState"]
@@ -92,15 +99,16 @@ depends-member:
 - ["So24CBCentralManagerDelegateP", "receiveMuseConnectionPacket"]
 - !private ["So24CBCentralManagerDelegateP", "refreshMuseList"]
 - !private ["So24CBCentralManagerDelegateP", "sendConnectionEvent"]
-- ["So24CBCentralManagerDelegateP", ""]
 - ["So9CBManagerC", "delegate"]
 - !private ["So9CBManagerC", "init"]
 - ["So9CBManagerC", "state"]
-- !private ["SC14CBManagerStateO", "poweredOn"]
+- !private ["So14CBManagerStateV", "poweredOn"]
 - !private ["s7CVarArgP", "CBCentralManager"]
 - !private ["s7CVarArgP", "EventEmitterImpl"]
 - !private ["s7CVarArgP", "IXNMuseManagerIos"]
 - !private ["s7CVarArgP", "MuseConnectionManagerImpl"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "bluetoothManager"]
 - ["s7CVarArgP", "centralManager"]
 - ["s7CVarArgP", "centralManagerDidUpdateState"]
@@ -113,6 +121,7 @@ depends-member:
 - !private ["s7CVarArgP", "getMuseParams"]
 - ["s7CVarArgP", "getMuses"]
 - !private ["s7CVarArgP", "getName"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isBluetoothEnabled"]
 - !private ["s7CVarArgP", "isLowEnergy"]
@@ -129,16 +138,18 @@ depends-member:
 - ["s7CVarArgP", "state"]
 - ["s7CVarArgP", "stopListening"]
 - !private ["s7CVarArgP", "subscript"]
-- ["s7CVarArgP", ""]
-- !private ["s10CollectionP", "count"]
-- !private ["s10CollectionP", "init"]
-- !private ["s10CollectionP", "map"]
-- !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "init"]
+- !private ["Sl", "count"]
+- !private ["Sl", "init"]
+- !private ["Sl", "init"]
+- !private ["Sl", "map"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "init"]
+- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "CBCentralManager"]
 - !private ["s28CustomDebugStringConvertibleP", "EventEmitterImpl"]
 - !private ["s28CustomDebugStringConvertibleP", "IXNMuseManagerIos"]
 - !private ["s28CustomDebugStringConvertibleP", "MuseConnectionManagerImpl"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "bluetoothManager"]
 - ["s28CustomDebugStringConvertibleP", "centralManager"]
 - ["s28CustomDebugStringConvertibleP", "centralManagerDidUpdateState"]
@@ -151,6 +162,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "getMuseParams"]
 - ["s28CustomDebugStringConvertibleP", "getMuses"]
 - !private ["s28CustomDebugStringConvertibleP", "getName"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isBluetoothEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "isLowEnergy"]
@@ -167,11 +179,12 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "state"]
 - ["s28CustomDebugStringConvertibleP", "stopListening"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -179,6 +192,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "EventEmitterImpl"]
 - !private ["s23CustomStringConvertibleP", "IXNMuseManagerIos"]
 - !private ["s23CustomStringConvertibleP", "MuseConnectionManagerImpl"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "bluetoothManager"]
 - ["s23CustomStringConvertibleP", "centralManager"]
@@ -192,6 +206,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "getMuseParams"]
 - ["s23CustomStringConvertibleP", "getMuses"]
 - !private ["s23CustomStringConvertibleP", "getName"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isBluetoothEnabled"]
 - !private ["s23CustomStringConvertibleP", "isLowEnergy"]
@@ -208,54 +223,59 @@ depends-member:
 - ["s23CustomStringConvertibleP", "state"]
 - ["s23CustomStringConvertibleP", "stopListening"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
-- ["s23CustomStringConvertibleP", ""]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "init"]
-- !private ["s9DecodableP", "map"]
-- !private ["s9DecodableP", "subscript"]
-- !private ["s10DictionaryV", "subscript"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "init"]
-- !private ["s9EncodableP", "map"]
-- !private ["s9EncodableP", "subscript"]
-- !private ["s9EquatableP", "CBCentralManager"]
-- !private ["s9EquatableP", "EventEmitterImpl"]
-- !private ["s9EquatableP", "IXNMuseManagerIos"]
-- !private ["s9EquatableP", "MuseConnectionManagerImpl"]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "bluetoothManager"]
-- ["s9EquatableP", "centralManager"]
-- ["s9EquatableP", "centralManagerDidUpdateState"]
-- ["s9EquatableP", "connected"]
-- ["s9EquatableP", "connecting"]
-- !private ["s9EquatableP", "connectionChanged"]
-- !private ["s9EquatableP", "connectionManager"]
-- !private ["s9EquatableP", "currentConnectionState"]
-- ["s9EquatableP", "delegate"]
-- ["s9EquatableP", "disconnected"]
-- !private ["s9EquatableP", "eventEmitter"]
-- !private ["s9EquatableP", "getAvailableMuseParamList"]
-- !private ["s9EquatableP", "getMuseParams"]
-- ["s9EquatableP", "getMuses"]
-- !private ["s9EquatableP", "getName"]
-- !private ["s9EquatableP", "init"]
-- !private ["s9EquatableP", "isBluetoothEnabled"]
-- !private ["s9EquatableP", "isLowEnergy"]
-- ["s9EquatableP", "museListChanged"]
-- ["s9EquatableP", "museListener"]
-- !private ["s9EquatableP", "museManager"]
-- !private ["s9EquatableP", "poweredOn"]
-- ["s9EquatableP", "receive"]
-- ["s9EquatableP", "receiveMuseConnectionPacket"]
-- !private ["s9EquatableP", "refreshMuseList"]
-- !private ["s9EquatableP", "sendConnectionEvent"]
-- !private ["s9EquatableP", "sharedManager"]
-- ["s9EquatableP", "startListening"]
-- ["s9EquatableP", "state"]
-- ["s9EquatableP", "stopListening"]
-- ["s9EquatableP", ""]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "subscript"]
+- !private ["SD", "subscript"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "CBCentralManager"]
+- !private ["SQ", "EventEmitterImpl"]
+- !private ["SQ", "IXNMuseManagerIos"]
+- !private ["SQ", "MuseConnectionManagerImpl"]
+- ["SQ", ""]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "bluetoothManager"]
+- ["SQ", "centralManager"]
+- ["SQ", "centralManagerDidUpdateState"]
+- ["SQ", "connected"]
+- ["SQ", "connecting"]
+- !private ["SQ", "connectionChanged"]
+- !private ["SQ", "connectionManager"]
+- !private ["SQ", "count"]
+- !private ["SQ", "currentConnectionState"]
+- ["SQ", "delegate"]
+- ["SQ", "disconnected"]
+- !private ["SQ", "eventEmitter"]
+- !private ["SQ", "getAvailableMuseParamList"]
+- !private ["SQ", "getMuseParams"]
+- ["SQ", "getMuses"]
+- !private ["SQ", "getName"]
+- !private ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isBluetoothEnabled"]
+- !private ["SQ", "isLowEnergy"]
+- !private ["SQ", "map"]
+- ["SQ", "museListChanged"]
+- ["SQ", "museListener"]
+- !private ["SQ", "museManager"]
+- !private ["SQ", "poweredOn"]
+- ["SQ", "receive"]
+- ["SQ", "receiveMuseConnectionPacket"]
+- !private ["SQ", "refreshMuseList"]
+- !private ["SQ", "sendConnectionEvent"]
+- !private ["SQ", "sharedManager"]
+- ["SQ", "startListening"]
+- ["SQ", "state"]
+- ["SQ", "stopListening"]
+- !private ["SQ", "subscript"]
 - !private ["6EEG10112EventEmitterP", "sendEvent"]
 - !private ["6EEG10112EventEmitterP", "sharedInstance"]
 - !private ["6EEG10116EventEmitterImplC", "deinit"]
@@ -266,53 +286,61 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s8HashableP", "CBCentralManager"]
-- !private ["s8HashableP", "EventEmitterImpl"]
-- !private ["s8HashableP", "IXNMuseManagerIos"]
-- !private ["s8HashableP", "MuseConnectionManagerImpl"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "bluetoothManager"]
-- ["s8HashableP", "centralManager"]
-- ["s8HashableP", "centralManagerDidUpdateState"]
-- ["s8HashableP", "connected"]
-- ["s8HashableP", "connecting"]
-- !private ["s8HashableP", "connectionChanged"]
-- !private ["s8HashableP", "connectionManager"]
-- !private ["s8HashableP", "currentConnectionState"]
-- ["s8HashableP", "delegate"]
-- ["s8HashableP", "disconnected"]
-- !private ["s8HashableP", "eventEmitter"]
-- !private ["s8HashableP", "getAvailableMuseParamList"]
-- !private ["s8HashableP", "getMuseParams"]
-- ["s8HashableP", "getMuses"]
-- !private ["s8HashableP", "getName"]
-- !private ["s8HashableP", "init"]
-- !private ["s8HashableP", "isBluetoothEnabled"]
-- !private ["s8HashableP", "isLowEnergy"]
-- ["s8HashableP", "museListChanged"]
-- ["s8HashableP", "museListener"]
-- !private ["s8HashableP", "museManager"]
-- !private ["s8HashableP", "poweredOn"]
-- ["s8HashableP", "receive"]
-- ["s8HashableP", "receiveMuseConnectionPacket"]
-- !private ["s8HashableP", "refreshMuseList"]
-- !private ["s8HashableP", "sendConnectionEvent"]
-- !private ["s8HashableP", "sharedManager"]
-- ["s8HashableP", "startListening"]
-- ["s8HashableP", "state"]
-- ["s8HashableP", "stopListening"]
-- ["s8HashableP", ""]
-- ["SC18IXNConnectionStateO", "connected"]
-- ["SC18IXNConnectionStateO", "connecting"]
-- ["SC18IXNConnectionStateO", "disconnected"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SH", "CBCentralManager"]
+- !private ["SH", "EventEmitterImpl"]
+- !private ["SH", "IXNMuseManagerIos"]
+- !private ["SH", "MuseConnectionManagerImpl"]
+- ["SH", ""]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "bluetoothManager"]
+- ["SH", "centralManager"]
+- ["SH", "centralManagerDidUpdateState"]
+- ["SH", "connected"]
+- ["SH", "connecting"]
+- !private ["SH", "connectionChanged"]
+- !private ["SH", "connectionManager"]
+- !private ["SH", "count"]
+- !private ["SH", "currentConnectionState"]
+- ["SH", "delegate"]
+- ["SH", "disconnected"]
+- !private ["SH", "eventEmitter"]
+- !private ["SH", "getAvailableMuseParamList"]
+- !private ["SH", "getMuseParams"]
+- ["SH", "getMuses"]
+- !private ["SH", "getName"]
+- !private ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "isBluetoothEnabled"]
+- !private ["SH", "isLowEnergy"]
+- !private ["SH", "map"]
+- ["SH", "museListChanged"]
+- ["SH", "museListener"]
+- !private ["SH", "museManager"]
+- !private ["SH", "poweredOn"]
+- ["SH", "receive"]
+- ["SH", "receiveMuseConnectionPacket"]
+- !private ["SH", "refreshMuseList"]
+- !private ["SH", "sendConnectionEvent"]
+- !private ["SH", "sharedManager"]
+- ["SH", "startListening"]
+- ["SH", "state"]
+- ["SH", "stopListening"]
+- !private ["SH", "subscript"]
+- ["So18IXNConnectionStateV", "connected"]
+- ["So18IXNConnectionStateV", "connecting"]
+- ["So18IXNConnectionStateV", "disconnected"]
 - !private ["So7IXNMuseC", "getName"]
 - !private ["So7IXNMuseC", "isLowEnergy"]
 - !private ["So25IXNMuseConnectionListenerP", "CBCentralManager"]
 - !private ["So25IXNMuseConnectionListenerP", "EventEmitterImpl"]
 - !private ["So25IXNMuseConnectionListenerP", "IXNMuseManagerIos"]
 - !private ["So25IXNMuseConnectionListenerP", "MuseConnectionManagerImpl"]
+- ["So25IXNMuseConnectionListenerP", ""]
 - !private ["So25IXNMuseConnectionListenerP", "bluetoothManager"]
 - ["So25IXNMuseConnectionListenerP", "centralManager"]
 - ["So25IXNMuseConnectionListenerP", "centralManagerDidUpdateState"]
@@ -328,12 +356,12 @@ depends-member:
 - ["So25IXNMuseConnectionListenerP", "receiveMuseConnectionPacket"]
 - !private ["So25IXNMuseConnectionListenerP", "refreshMuseList"]
 - !private ["So25IXNMuseConnectionListenerP", "sendConnectionEvent"]
-- ["So25IXNMuseConnectionListenerP", ""]
 - !private ["So23IXNMuseConnectionPacketC", "currentConnectionState"]
 - !private ["So15IXNMuseListenerP", "CBCentralManager"]
 - !private ["So15IXNMuseListenerP", "EventEmitterImpl"]
 - !private ["So15IXNMuseListenerP", "IXNMuseManagerIos"]
 - !private ["So15IXNMuseListenerP", "MuseConnectionManagerImpl"]
+- ["So15IXNMuseListenerP", ""]
 - !private ["So15IXNMuseListenerP", "bluetoothManager"]
 - ["So15IXNMuseListenerP", "centralManager"]
 - ["So15IXNMuseListenerP", "centralManagerDidUpdateState"]
@@ -349,7 +377,6 @@ depends-member:
 - ["So15IXNMuseListenerP", "receiveMuseConnectionPacket"]
 - !private ["So15IXNMuseListenerP", "refreshMuseList"]
 - !private ["So15IXNMuseListenerP", "sendConnectionEvent"]
-- ["So15IXNMuseListenerP", ""]
 - ["So14IXNMuseManagerP", "getMuses"]
 - ["So14IXNMuseManagerP", "museListener"]
 - !private ["So14IXNMuseManagerP", "sharedManager"]
@@ -363,6 +390,8 @@ depends-member:
 - ["So17IXNMuseManagerIosC", "stopListening"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["6EEG10121MuseConnectionManagerP", "connectTo"]
 - !private ["6EEG10121MuseConnectionManagerP", "sharedInstance"]
@@ -382,7 +411,7 @@ depends-member:
 - ["6EEG10119MuseConnectorModuleC", "MuseManager"]
 - ["6EEG10119MuseConnectorModuleC", "RCTPromiseRejectBlock"]
 - ["6EEG10119MuseConnectorModuleC", "RCTPromiseResolveBlock"]
-- !private ["6EEG10119MuseConnectorModuleC", "String"]
+- ["6EEG10119MuseConnectorModuleC", "String"]
 - ["6EEG10119MuseConnectorModuleC", "bluetoothManager"]
 - ["6EEG10119MuseConnectorModuleC", "centralManager"]
 - ["6EEG10119MuseConnectorModuleC", "centralManagerDidUpdateState"]
@@ -404,20 +433,15 @@ depends-member:
 - ["6EEG10119MuseConnectorModuleC", "start"]
 - ["6EEG10111MuseManagerP", "IXNMuse"]
 - ["6EEG10111MuseManagerP", "IXNMuseListener"]
+- ["6EEG10111MuseManagerP", ""]
 - ["6EEG10111MuseManagerP", "getMuses"]
 - ["6EEG10111MuseManagerP", "museListener"]
 - !private ["6EEG10111MuseManagerP", "sharedManager"]
 - ["6EEG10111MuseManagerP", "startListening"]
 - ["6EEG10111MuseManagerP", "stopListening"]
-- ["6EEG10111MuseManagerP", ""]
-- !private ["s17MutableCollectionP", "count"]
-- !private ["s17MutableCollectionP", "map"]
-- !private ["s17MutableCollectionP", "subscript"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
+- !private ["SM", "count"]
+- !private ["SM", "map"]
+- !private ["SM", "subscript"]
 - ["So8NSObjectC", "BluetoothManager"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CBCentralManager"]
@@ -432,7 +456,8 @@ depends-member:
 - ["So8NSObjectC", "MuseManager"]
 - ["So8NSObjectC", "RCTPromiseRejectBlock"]
 - ["So8NSObjectC", "RCTPromiseResolveBlock"]
-- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", ""]
 - ["So8NSObjectC", "bluetoothManager"]
 - ["So8NSObjectC", "centralManager"]
 - ["So8NSObjectC", "centralManagerDidUpdateState"]
@@ -460,91 +485,87 @@ depends-member:
 - ["So8NSObjectC", "startListening"]
 - ["So8NSObjectC", "state"]
 - ["So8NSObjectC", "stopListening"]
-- ["So8NSObjectC", ""]
-- !private ["So16NSObjectProtocolP", "CBCentralManager"]
-- !private ["So16NSObjectProtocolP", "EventEmitterImpl"]
-- !private ["So16NSObjectProtocolP", "IXNMuseManagerIos"]
-- !private ["So16NSObjectProtocolP", "MuseConnectionManagerImpl"]
-- !private ["So16NSObjectProtocolP", "bluetoothManager"]
-- ["So16NSObjectProtocolP", "centralManager"]
-- ["So16NSObjectProtocolP", "centralManagerDidUpdateState"]
-- !private ["So16NSObjectProtocolP", "connectionManager"]
-- !private ["So16NSObjectProtocolP", "currentConnectionState"]
-- ["So16NSObjectProtocolP", "delegate"]
-- !private ["So16NSObjectProtocolP", "eventEmitter"]
-- !private ["So16NSObjectProtocolP", "getAvailableMuseParamList"]
-- !private ["So16NSObjectProtocolP", "getMuseParams"]
-- ["So16NSObjectProtocolP", "getMuses"]
-- !private ["So16NSObjectProtocolP", "getName"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isBluetoothEnabled"]
-- !private ["So16NSObjectProtocolP", "isLowEnergy"]
-- ["So16NSObjectProtocolP", "museListChanged"]
-- ["So16NSObjectProtocolP", "museListener"]
-- !private ["So16NSObjectProtocolP", "museManager"]
-- ["So16NSObjectProtocolP", "receive"]
-- ["So16NSObjectProtocolP", "receiveMuseConnectionPacket"]
-- !private ["So16NSObjectProtocolP", "refreshMuseList"]
-- !private ["So16NSObjectProtocolP", "sendConnectionEvent"]
-- !private ["So16NSObjectProtocolP", "sharedManager"]
-- ["So16NSObjectProtocolP", "startListening"]
-- ["So16NSObjectProtocolP", "state"]
-- ["So16NSObjectProtocolP", "stopListening"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
+- !private ["So8NSObjectP", "CBCentralManager"]
+- !private ["So8NSObjectP", "EventEmitterImpl"]
+- !private ["So8NSObjectP", "IXNMuseManagerIos"]
+- !private ["So8NSObjectP", "MuseConnectionManagerImpl"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bluetoothManager"]
+- ["So8NSObjectP", "centralManager"]
+- ["So8NSObjectP", "centralManagerDidUpdateState"]
+- !private ["So8NSObjectP", "connectionManager"]
+- !private ["So8NSObjectP", "currentConnectionState"]
+- ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "eventEmitter"]
+- !private ["So8NSObjectP", "getAvailableMuseParamList"]
+- !private ["So8NSObjectP", "getMuseParams"]
+- ["So8NSObjectP", "getMuses"]
+- !private ["So8NSObjectP", "getName"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isBluetoothEnabled"]
+- !private ["So8NSObjectP", "isLowEnergy"]
+- ["So8NSObjectP", "museListChanged"]
+- ["So8NSObjectP", "museListener"]
+- !private ["So8NSObjectP", "museManager"]
+- ["So8NSObjectP", "receive"]
+- ["So8NSObjectP", "receiveMuseConnectionPacket"]
+- !private ["So8NSObjectP", "refreshMuseList"]
+- !private ["So8NSObjectP", "sendConnectionEvent"]
+- !private ["So8NSObjectP", "sharedManager"]
+- ["So8NSObjectP", "startListening"]
+- ["So8NSObjectP", "state"]
+- ["So8NSObjectP", "stopListening"]
 - !private ["6EEG10111NativeEventO", "connectionChanged"]
 - !private ["6EEG10111NativeEventO", "museListChanged"]
-- !private ["s22RandomAccessCollectionP", "count"]
-- !private ["s22RandomAccessCollectionP", "map"]
-- !private ["s22RandomAccessCollectionP", "subscript"]
-- !private ["s26RangeReplaceableCollectionP", "count"]
-- !private ["s26RangeReplaceableCollectionP", "init"]
-- !private ["s26RangeReplaceableCollectionP", "map"]
-- !private ["s26RangeReplaceableCollectionP", "subscript"]
-- ["s16RawRepresentableP", "connected"]
-- ["s16RawRepresentableP", "connecting"]
-- !private ["s16RawRepresentableP", "connectionChanged"]
-- ["s16RawRepresentableP", "disconnected"]
-- !private ["s16RawRepresentableP", "museListChanged"]
-- !private ["s16RawRepresentableP", "poweredOn"]
-- !private ["s8SequenceP", "count"]
-- !private ["s8SequenceP", "init"]
-- !private ["s8SequenceP", "map"]
-- !private ["s8SequenceP", "subscript"]
+- !private ["Sk", "count"]
+- !private ["Sk", "map"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "count"]
+- !private ["Sm", "init"]
+- !private ["Sm", "init"]
+- !private ["Sm", "map"]
+- !private ["Sm", "subscript"]
+- ["SY", "connected"]
+- ["SY", "connecting"]
+- !private ["SY", "connectionChanged"]
+- ["SY", "disconnected"]
+- !private ["SY", "museListChanged"]
+- !private ["SY", "poweredOn"]
+- !private ["ST", "count"]
+- !private ["ST", "init"]
+- !private ["ST", "init"]
+- !private ["ST", "map"]
+- !private ["ST", "subscript"]
 - !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
+- !private ["SS", "init"]
+- !private ["Sy", "init"]
+- !private ["Sy", "init"]
+- !private ["s16TextOutputStreamP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s14_ArrayProtocolP", "count"]
-- !private ["s14_ArrayProtocolP", "map"]
-- !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "map"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CBCentralManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "EventEmitterImpl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "IXNMuseManagerIos"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "MuseConnectionManagerImpl"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bluetoothManager"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "centralManager"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "centralManagerDidUpdateState"]
@@ -570,43 +591,35 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "startListening"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "state"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "stopListening"]
-- ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "map"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
-- !private "s23BidirectionalCollectionP"
+- !private "s13ArrayProtocolP"
+- !private "SK"
 - "6EEG10116BluetoothManagerP"
 - !private "Sb"
 - "So16CBCentralManagerC"
 - "So24CBCentralManagerDelegateP"
 - "So9CBManagerC"
-- !private "SC14CBManagerStateO"
+- !private "So14CBManagerStateV"
 - "s7CVarArgP"
-- !private "s10CollectionP"
-- !private "s10ComparableP"
+- !private "Sl"
+- !private "SL"
 - "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- "s9EquatableP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
 - !private "6EEG10112EventEmitterP"
 - !private "6EEG10116EventEmitterImplC"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -615,8 +628,8 @@ depends-nominal:
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
-- "SC18IXNConnectionStateO"
+- "SH"
+- "So18IXNConnectionStateV"
 - !private "So7IXNMuseC"
 - "So25IXNMuseConnectionListenerP"
 - !private "So23IXNMuseConnectionPacketC"
@@ -629,27 +642,18 @@ depends-nominal:
 - !private "6EEG10125MuseConnectionManagerImplC"
 - "6EEG10119MuseConnectorModuleC"
 - "6EEG10111MuseManagerP"
-- !private "s17MutableCollectionP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
+- !private "SM"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
+- "So8NSObjectP"
 - !private "6EEG10111NativeEventO"
-- !private "s22RandomAccessCollectionP"
-- !private "s26RangeReplaceableCollectionP"
-- "s16RawRepresentableP"
-- !private "s8SequenceP"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "ST"
 - !private "SS"
-- !private "s14StringProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -658,17 +662,11 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules/RingBuffer.swiftmodule/arm64.swiftmodule"
@@ -990,4 +988,32 @@ depends-external:
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/Pods/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework/Modules/module.modulemap"
 - "/Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/RingBuffer.framework/Modules/module.modulemap"
-interface-hash: "40b8b2d93d2e87b3835b76e1f1658904"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUI.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/NetworkExtension.framework/Headers/NetworkExtension.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AVKit.framework/Headers/AVKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CallKit.framework/Headers/CallKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "408169e91864d4683a3d74b3b2d39d35"

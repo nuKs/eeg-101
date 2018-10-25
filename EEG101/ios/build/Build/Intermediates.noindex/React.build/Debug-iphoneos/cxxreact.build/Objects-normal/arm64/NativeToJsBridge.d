@@ -388,6 +388,7 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Memory.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/MoveWrapper.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/Instance.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/NativeToJsBridge.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSBigString.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/SystraceSection.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/MethodCall.h \

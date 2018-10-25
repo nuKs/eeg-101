@@ -1,7 +1,7 @@
 // #import <Foundation/Foundation.h> // for NSNumber
 #import <React/RCTBridgeModule.h>
 
-#import "EEG101-Swift.h"
+#import "Flux-Swift.h"
 
 @interface Classifier: NSObject <RCTBridgeModule>
   

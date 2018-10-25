@@ -390,13 +390,17 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSBundleType.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCLegacyTracing.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCMemory.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCNativeModules.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCPerfStats.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCSamplingProfiler.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCTracing.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSCUtils.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/JSBigString.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/JSModulesUnbundle.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/ModuleRegistry.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/Platform.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/MessageQueueThread.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/RAMBundleRegistry.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/cxxreact/JSModulesUnbundle.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/RecoverableError.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/SystraceSection.h

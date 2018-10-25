@@ -374,4 +374,5 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Format-inl.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/Exception.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/portability/Windows.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/NativeModule.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/cxxreact/SystraceSection.h

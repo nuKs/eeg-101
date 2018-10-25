@@ -377,4 +377,6 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/jschelpers/noncopyable.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/privatedata/PrivateDataBase.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../third-party/folly-2016.09.26.00/folly/json.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/jschelpers/JSCHelpers.h
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/jschelpers/JSCHelpers.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/React/../ReactCommon/jschelpers/Value.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native/ReactCommon/jschelpers/JavaScriptCore.h

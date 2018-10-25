@@ -48,15 +48,15 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new ReactVideoPackage(),
-            new VectorIconsPackage(),
-            new RCTTorchPackage(),
-            new LinearGradientPackage(),
-            new RNI18nPackage(),
-            new LottiePackage(),
-            new SvgPackage(),
-            new EEGPackage(),
-            new AwarePackage()
+          new ReactVideoPackage(),
+          new VectorIconsPackage(),
+          new RCTTorchPackage(),
+          new LinearGradientPackage(),
+          new RNI18nPackage(),
+          new LottiePackage(),
+          new SvgPackage(),
+          new EEGPackage(),
+          new AwarePackage()
       );
     }
   };

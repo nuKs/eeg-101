@@ -19,16 +19,11 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		140FBD5461D047AFBFE5B901 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B0AEA4D2CFE04BEFAFD502A3 /* FontAwesome.ttf */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		181FFAFC2293438180FB011F /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 837BC2D057204EE596660183 /* FontAwesome.ttf */; };
 		1AD73122C20C49AE8EE618AF /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18C40D6CCE23487D854C22AC /* SimpleLineIcons.ttf */; };
-		1E7583C296004BF99EC73F16 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96443E4022084396ABCD14BA /* Entypo.ttf */; };
-		2326F0636085458CA113DA48 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66561BBE84E34A6785B33901 /* Feather.ttf */; };
 		25E61664E7051AF9A0A2C5C5 /* Pods_EEG101.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463405559A796182A93DCEDD /* Pods_EEG101.framework */; };
-		29F37CE27DB641A18A4D2ADF /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A9CDFEB4847C49F17E441 /* MaterialCommunityIcons.ttf */; };
 		3AB7F0928D2E497DAD4D0E48 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30C716F9967A4CF9A68A5B51 /* MaterialCommunityIcons.ttf */; };
-		4BBF3F44CBD84CB3A59F1975 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6553BD832826406C97AD3640 /* Ionicons.ttf */; };
 		5A08DD066E4F4783BCCD3552 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F97FD9EF5744993A63188C0 /* Roboto_medium.ttf */; };
 		6042D6F5AF5740D8B54FAB45 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E34518C5ED1F4230B84B5E59 /* Roboto.ttf */; };
 		611C25DB5502471A9C19A91A /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2904C65026FE464184B4930C /* Octicons.ttf */; };
@@ -36,17 +31,13 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8BA3E913844D4C9EB783778A /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7694032B28D74886A27D7E9D /* libBVLinearGradient.a */; };
 		8EE7931677FE4803A34ABC2E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF6DD6FD7145429FB084F436 /* Ionicons.ttf */; };
-		963CE3593BED4F76A65B6F36 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE4D51939CB046328D4114FD /* Octicons.ttf */; };
 		96D61CDFFAE845918A235046 /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E257353FC846A1B71BF56C /* libLottieReactNative.a */; };
 		9C7A2EE6928B47D5AB51C8EF /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 358E0424902242C6A05697F2 /* Feather.ttf */; };
 		A8ED92CB57E7405F9CEF6AF0 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C482F706943491D86B5B661 /* EvilIcons.ttf */; };
 		AF40E920913A44118065CFD4 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38E69633E4394330A21C96E8 /* Zocial.ttf */; };
-		C791660C8370419986AAE26F /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AECD27DB78424C089085E1E1 /* Foundation.ttf */; };
 		D414075558254E72BFA77CC6 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F02E88D9C6A49CBA70098DC /* MaterialIcons.ttf */; };
 		D43A8354150847809B579C75 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D2218AB49C49458B9CF514 /* libRCTVideo.a */; };
 		D48418C949304240B74D6BAE /* libRNI18n.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71381AC0F0E74E01A9091143 /* libRNI18n.a */; };
-		D48C2B47D4704E2386EC234F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A096D8D2EC04308833E86D7 /* MaterialIcons.ttf */; };
-		D9BA5F7C986D49509305F798 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E92F85BF454271B9DB8209 /* Zocial.ttf */; };
 		DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF03ED792117B62000FAD02B /* Roboto-Black.ttf */; };
 		DF03ED7C2117B6CE00FAD02B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF03ED7B2117B6CE00FAD02B /* Roboto-Thin.ttf */; };
 		DF2FD2CF211B93BD0020B728 /* BimslabUtilityBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2FD2CD211B93BA0020B728 /* BimslabUtilityBridge.m */; };
@@ -72,6 +63,7 @@
 		DF505C91212C351600F56EF3 /* MuseStreamEeg.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C83212C351600F56EF3 /* MuseStreamEeg.swift */; };
 		DF505C92212C351600F56EF3 /* MuseSensorGyro.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF505C84212C351600F56EF3 /* MuseSensorGyro.swift */; };
 		DF6B9A71212C77820067FA6B /* RingBuffer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DFF307E3212C52D100D3B281 /* RingBuffer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DFAFD3F0216E99E100C49C8B /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAFD3EF216E99E100C49C8B /* ExternalAccessory.framework */; };
 		DFC0691F21172F2D00765503 /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068DB2116248400765503 /* libLottie.a */; };
 		DFC06920211732FA00765503 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068B421161F5800765503 /* libRNVectorIcons.a */; };
 		DFD28B942118F6D300C7F70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD28B932118F6D300C7F70C /* AppDelegate.swift */; };
@@ -88,10 +80,8 @@
 		DFF3AC29211A612B00459038 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DFF3AC28211A612700459038 /* Roboto-Light.ttf */; };
 		E2A1B759199542F1B542F7D9 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E73E5FA5B464AA2ACA74D36 /* rubicon-icon-font.ttf */; };
 		E584A25C2B1E4C1EB51E13AF /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A0EA346D7A464FC5A000512E /* Foundation.ttf */; };
-		E71CB0D823034EDB836C71E1 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE4AAB8135834DA889B47C92 /* SimpleLineIcons.ttf */; };
 		F7D7CB25F5914C83A420AF7B /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D3D7CFB01F9471B9FC51746 /* Entypo.ttf */; };
 		F85A72EB43DB47A99FE96137 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 659CEC5C340B4A71B23F9D36 /* libRNSVG.a */; };
-		F9A770566D3943C780A74BE2 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 786D1ECBEFDA46FCB142CE4C /* EvilIcons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -543,7 +533,7 @@
 		0480B3798E374118B5AA1929 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* EEG101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EEG101.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Flux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EEG101/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = EEG101/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -619,6 +609,8 @@
 		DF505C82212C351600F56EF3 /* MuseStreamHsiPrecision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamHsiPrecision.swift; sourceTree = "<group>"; };
 		DF505C83212C351600F56EF3 /* MuseStreamEeg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseStreamEeg.swift; sourceTree = "<group>"; };
 		DF505C84212C351600F56EF3 /* MuseSensorGyro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuseSensorGyro.swift; sourceTree = "<group>"; };
+		DFAFD3EF216E99E100C49C8B /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		DFAFD3F1216E99E100C49C8B /* EEG101.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = EEG101.entitlements; path = EEG101/EEG101.entitlements; sourceTree = "<group>"; };
 		DFC068BE2116242D00765503 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		DFC068C72116244D00765503 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/lib/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		DFC068CD2116248400765503 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
@@ -663,6 +655,7 @@
 				DFC06920211732FA00765503 /* libRNVectorIcons.a in Frameworks */,
 				D43A8354150847809B579C75 /* libRCTVideo.a in Frameworks */,
 				8BA3E913844D4C9EB783778A /* libBVLinearGradient.a in Frameworks */,
+				DFAFD3F0216E99E100C49C8B /* ExternalAccessory.framework in Frameworks */,
 				25E61664E7051AF9A0A2C5C5 /* Pods_EEG101.framework in Frameworks */,
 				DFF3ABB9211A5AE700459038 /* Muse.framework in Frameworks */,
 			);
@@ -796,6 +789,7 @@
 		13B07FAE1A68108700A75B9A /* EEG101 */ = {
 			isa = PBXGroup;
 			children = (
+				DFAFD3F1216E99E100C49C8B /* EEG101.entitlements */,
 				DF505BCA2128F0A100F56EF3 /* AwareBridge.m */,
 				DF505BCC2128F0BF00F56EF3 /* AwareModule.swift */,
 				DF2FD2CD211B93BA0020B728 /* BimslabUtilityBridge.m */,
@@ -925,7 +919,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* EEG101.app */,
+				13B07F961A680F5B00A75B9A /* Flux.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1018,6 +1012,7 @@
 		DFC0691E21172F2D00765503 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFAFD3EF216E99E100C49C8B /* ExternalAccessory.framework */,
 				DF505B982125D61300F56EF3 /* CoreBluetooth.framework */,
 				463405559A796182A93DCEDD /* Pods_EEG101.framework */,
 				1D01CE9F7F436D3B638E7931 /* Pods_EEG101Tests.framework */,
@@ -1108,7 +1103,7 @@
 			);
 			name = EEG101;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* EEG101.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Flux.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1121,11 +1116,14 @@
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = BBT48V5R86;
+						DevelopmentTeam = VK36A2Y7KS;
 						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
 								enabled = 1;
 							};
 						};
@@ -1625,7 +1623,6 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				F7D7CB25F5914C83A420AF7B /* Entypo.ttf in Resources */,
 				A8ED92CB57E7405F9CEF6AF0 /* EvilIcons.ttf in Resources */,
-				140FBD5461D047AFBFE5B901 /* FontAwesome.ttf in Resources */,
 				E584A25C2B1E4C1EB51E13AF /* Foundation.ttf in Resources */,
 				8EE7931677FE4803A34ABC2E /* Ionicons.ttf in Resources */,
 				D414075558254E72BFA77CC6 /* MaterialIcons.ttf in Resources */,
@@ -1636,20 +1633,10 @@
 				DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */,
 				5A08DD066E4F4783BCCD3552 /* Roboto_medium.ttf in Resources */,
 				6042D6F5AF5740D8B54FAB45 /* Roboto.ttf in Resources */,
-				E71CB0D823034EDB836C71E1 /* SimpleLineIcons.ttf in Resources */,
-				D9BA5F7C986D49509305F798 /* Zocial.ttf in Resources */,
 				9C7A2EE6928B47D5AB51C8EF /* Feather.ttf in Resources */,
-				29F37CE27DB641A18A4D2ADF /* MaterialCommunityIcons.ttf in Resources */,
-				2326F0636085458CA113DA48 /* Feather.ttf in Resources */,
 				3AB7F0928D2E497DAD4D0E48 /* MaterialCommunityIcons.ttf in Resources */,
 				E2A1B759199542F1B542F7D9 /* rubicon-icon-font.ttf in Resources */,
-				1E7583C296004BF99EC73F16 /* Entypo.ttf in Resources */,
-				F9A770566D3943C780A74BE2 /* EvilIcons.ttf in Resources */,
 				181FFAFC2293438180FB011F /* FontAwesome.ttf in Resources */,
-				C791660C8370419986AAE26F /* Foundation.ttf in Resources */,
-				4BBF3F44CBD84CB3A59F1975 /* Ionicons.ttf in Resources */,
-				D48C2B47D4704E2386EC234F /* MaterialIcons.ttf in Resources */,
-				963CE3593BED4F76A65B6F36 /* Octicons.ttf in Resources */,
 				1AD73122C20C49AE8EE618AF /* SimpleLineIcons.ttf in Resources */,
 				AF40E920913A44118065CFD4 /* Zocial.ttf in Resources */,
 			);
@@ -1670,7 +1657,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh index.bimslab.ios.js";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh index.bimslab.ios.js\n";
 		};
 		18B047FC0BABEC88F8A4B9AD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1843,11 +1830,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EEG101/EEG101.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = BBT48V5R86;
+				DEVELOPMENT_TEAM = VK36A2Y7KS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1877,9 +1866,9 @@
 					"-lc++",
 				);
 				"OTHER_SWIFT_FLAGS[arch=*]" = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.bimslab.EEG101;
-				PRODUCT_NAME = EEG101;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pnplab.flux;
+				PRODUCT_NAME = Flux;
+				PROVISIONING_PROFILE_SPECIFIER = "Flux / Dev";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "EEG101-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1896,10 +1885,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EEG101/EEG101.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = BBT48V5R86;
+				DEVELOPMENT_TEAM = VK36A2Y7KS;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1928,9 +1919,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.bimslab.EEG101;
-				PRODUCT_NAME = EEG101;
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.pnplab.flux;
+				PRODUCT_NAME = Flux;
+				PROVISIONING_PROFILE_SPECIFIER = "Flux / Dev";
 				SWIFT_OBJC_BRIDGING_HEADER = "EEG101-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";

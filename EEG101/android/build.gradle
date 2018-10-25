@@ -24,7 +24,6 @@ buildscript {
 allprojects {
     repositories {
         mavenLocal()
-        jcenter()
         maven {
             // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
             url "$rootDir/../node_modules/react-native/android"
@@ -34,5 +33,8 @@ allprojects {
             url "https://jitpack.io"
         }
         google()
+
+        // must be the last in the list - see https://stackoverflow.com/questions/50940565/failed-to-resolve-play-services-tasks
+        jcenter()
     }
 }

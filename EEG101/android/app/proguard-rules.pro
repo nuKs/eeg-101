@@ -87,6 +87,16 @@
 -dontwarn javax.**
 
 
+# Added by nuKs for PNPLabs -- https://flutter.io/android-release/
+# @note all these stuffs didn't work out
+
+# -ignorewarnings
+
+# -keep class * {
+#     public private *;
+# }
+
+# -dontwarn com.google.android.gms.internal.zzhu
 
 
 

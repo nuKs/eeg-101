@@ -37,46 +37,7 @@ class AppDelegate: AWAREDelegate {
     
     // put window in front (probably optional)
     self.window.makeKeyAndVisible()
-    
-    // Use our own xcdatamodel/momd instead of aware one so we can add new
-    // sqlite tables for the home-made eeg sensor etc.
-    let momdUrl = Bundle.main.url(forResource: "MuseAwareSensor", withExtension: "momd")
-    ExternalCoreDataHandler.shared()!.overwriteManageObjectModel(withFileURL: momdUrl)
-    let sqliteURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
-    ExternalCoreDataHandler.shared()!.sqliteFileURL = sqliteURL!.appendingPathComponent("MuseAwareSensor.sqlite") // @todo @warning make sure sqlite db exists!
-
-    // Request notification & sensing permissions
-    let core = AWARECore.shared()
-    core!.activate()
-    core!.requestPermissionForBackgroundSensing()
-    core!.requestPermissionForPushNotification()
-    
-    // SAMPLE CODE: For adding a study URL directly.
-    let url = "https://api.awareframework.com/index.php/webservice/index/1939/lA3beuWw3aYD"
-    
-    let manager = AWARESensorManager.shared()
-#if DEBUG
-    manager!.setDebugToAllSensors(true)
-    manager!.setDebugToAllStorage(true)
-#else
-    manager!.setDebugToAllSensors(false)
-    manager!.setDebugToAllStorage(false)
-#endif
-
-    let study = AWAREStudy.shared()
-#if DEBUG
-    study!.setDebug(true)
-#else
-    study!.setDebug(false)
-#endif
-    
-    study!.setAutoDBSync(true)
-    
-    study!.join(withURL: url, completion: { (settings, studyState, error) in
-      manager!.addSensors(with: study)
-      manager!.startAllSensors()
-    })
-    
+        
     return true
   }
   

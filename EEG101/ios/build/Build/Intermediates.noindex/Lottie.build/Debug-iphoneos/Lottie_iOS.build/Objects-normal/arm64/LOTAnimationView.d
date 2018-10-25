@@ -1,11 +1,11 @@
 dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/Private/LOTAnimationView.m \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Intermediates.noindex/Lottie.build/Debug-iphoneos/Lottie_iOS.build/module.modulemap \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTAnimationView.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTAnimationView_Compat.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTComposition.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTKeypath.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTValueDelegate.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationView.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationView_Compat.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTComposition.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTKeypath.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTValueDelegate.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/MacCompatability/LOTPlatformCompat.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTModels.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/AnimatableProperties/LOTKeyframe.h \
@@ -28,7 +28,7 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/Extensions/CGGeometry+LOTAdditions.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/Extensions/LOTBezierPath.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/Private/LOTAnimationView_Internal.h \
-  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/PublicHeaders/LOTAnimationCache.h \
+  /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/ios/build/Build/Products/Debug-iphoneos/include/Lottie/LOTAnimationCache.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/AnimatableLayers/LOTCompositionContainer.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/AnimatableLayers/LOTLayerContainer.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/lottie-ios/lottie-ios/Classes/Models/LOTAssetGroup.h

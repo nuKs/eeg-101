@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 import { NativeRouter, AndroidBackButton, Route, Redirect, Switch } from "react-router-native";
 
+import LoginScene from "../src/bimslab/LoginScene";
 import ExperimentScene from "../src/bimslab/experiments/ExperimentScene";
 import ExperimentQAScene from "../src/bimslab/experiments/ExperimentQAScene";
 import ExperimentFilmScene from "../src/bimslab/experiments/ExperimentFilmScene";
@@ -48,7 +49,6 @@ export default class EEG101 extends Component {
       <StyleProvider style={getTheme()}>
         <Provider store={store}>
           <NativeRouter>
-            {/*<View style={{flex: 1}}>*/}
             <AndroidBackButton>
               <StatusBar backgroundColor="black" />
               <Container>
@@ -58,8 +58,9 @@ export default class EEG101 extends Component {
                 <Content_>
                   <Switch>
                     <Route exact path="/" render={() => (
-                      <Redirect to="/experiment/connector/1" />
+                      <Redirect to="/login" />
                     )}/>
+                    <Route exact path="/login" component={LoginScene} />
                     <Route exact path="/experiment" component={ExperimentScene} />
                     <Route exact path="/experiment/qa" component={ExperimentQAScene} />
                     <Route exact path="/experiment/connector/1" render={() => (
@@ -72,10 +73,17 @@ export default class EEG101 extends Component {
                     <Route path="/analysis" component={AnalysisRootScene} />
                   </Switch>
                 </Content_>
-                <Menu />
+                  {/* @Display Menu only when user is out of login screen */}
+                  <Switch>
+                    <Route exact path="/login" />
+                    {/*
+                    <Route render={() => (
+                      <Menu />
+                    )}/>
+                    */}
+                  </Switch>
               </Container>
             </AndroidBackButton>
-            {/*</View>*/}
           </NativeRouter>
         </Provider>
       </StyleProvider>

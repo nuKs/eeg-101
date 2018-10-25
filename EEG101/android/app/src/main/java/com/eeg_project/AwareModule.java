@@ -15,8 +15,8 @@ import android.util.Log;
 
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
-import com.aware.plugin.eegmuse.Plugin;
-import com.aware.plugin.eegmuse.Provider;
+import com.eeg_project.aware_plugins.eegmuse.Plugin;
+import com.eeg_project.aware_plugins.eegmuse.Provider;
 import com.choosemuse.libmuse.Eeg;
 import com.choosemuse.libmuse.Muse;
 import com.choosemuse.libmuse.MuseArtifactPacket;
@@ -56,8 +56,6 @@ public class AwareModule extends ReactContextBaseJavaModule {
 
         this._reactContext = reactContext;
 
-        // @todo permission (or within js)
-
         WeakReference<AwareModule> weakPlugin = new WeakReference<AwareModule>(this);
         dataListener = new DataListener(weakPlugin);
         _contentResolver = this._reactContext.getContentResolver();
@@ -72,6 +70,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
         _reactContext.bindService(pluginIntent, mServerConnBQ, Context.BIND_AUTO_CREATE);
     }
 
+
     @ReactMethod
     public void storeQuestionnaire(String questionnaireId, ReadableMap content) {
         Map<String, Object> processingContent = content.toHashMap();
@@ -81,6 +80,27 @@ public class AwareModule extends ReactContextBaseJavaModule {
         }
 
         _bimsQuestionnairePlugin.storeQuestionnaire(questionnaireId, parsedContent);
+    }
+
+    private static AwareStartListener _listener = null;
+    public static void registerAwareStartListener(AwareStartListener listener) {
+        _listener = listener;
+    }
+
+    @ReactMethod
+    public void startAware() {
+        Log.d("AwareModule", "startAware");
+
+        // This function is called once user has logged in.
+        // Listener is set in main activity delegate to trigger perm request (as permission request
+        // methods are inherited from activity delegate.
+        if (AwareModule._listener != null) {
+            AwareModule._listener.onAwareStartRequested();
+        }
+        else {
+            assert(false);
+            // Should never happen.
+        }
     }
 
     @Override
@@ -132,17 +152,17 @@ public class AwareModule extends ReactContextBaseJavaModule {
     public void startPluginAndRecording() {
         Log.i("AwareModule", "bridge/java: startRecord");
         // plugin is started in constructor
-        // Aware.startPlugin(this._reactContext, "com.aware.plugin.eegmuse");
+        // Aware.startPlugin(this._reactContext, "com.eeg_project.aware_plugins.eegmuse");
 
         ComponentName componentName;
-        componentName = new ComponentName(_reactContext.getPackageName(), "com.aware.plugin.eegmuse.Plugin");
+        componentName = new ComponentName(_reactContext.getPackageName(), "com.eeg_project.aware_plugins.eegmuse.Plugin");
         if (Aware.DEBUG)
             Log.d(Aware.TAG, "Initializing bundled: " + componentName.toString());
 
         /*
         if (packageInfo.versionName.equals("bundled")) {
         } else {
-            componentName = new ComponentName("com.aware.plugin.eegmuse", "com.aware.plugin.eegmuse.Plugin");
+            componentName = new ComponentName("com.eeg_project.aware_plugins.eegmuse", "com.com.eeg_project.aware_plugins.eegmuse.Plugin");
             if (Aware.DEBUG)
                 Log.d(Aware.TAG, "Initializing external: " + componentName.toString());
         }
@@ -180,7 +200,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
 
 
         // Plugin is not stopped because it should be located in the background
-        // Aware.stopPlugin(this._reactContext, "com.aware.plugin.eegmuse");
+        // Aware.stopPlugin(this._reactContext, "com.eeg_project.aware_plugins.eegmuse");
         _reactContext.unbindService(mServerConn);
     }
 
@@ -201,7 +221,9 @@ public class AwareModule extends ReactContextBaseJavaModule {
         dataThread.start();
         dataHandler = new Handler(dataThread.getLooper());
 
-        bufferConsumerThread = new BufferConsumer(new WeakReference<ConcurrentCircularBuffer<MuseDataPacket>>(_dataBuffer));
+        String deviceId = Aware.getSetting(this._reactContext, Aware_Preferences.DEVICE_ID);
+
+        bufferConsumerThread = new BufferConsumer(new WeakReference<ConcurrentCircularBuffer<MuseDataPacket>>(_dataBuffer),  deviceId);
         bufferConsumerThread.start();
 
         _muse.registerDataListener(dataListener, MuseDataPacketType.EEG);
@@ -213,6 +235,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
     }
 
     private DataListener dataListener;
+
     class DataListener extends MuseDataListener {
         final WeakReference<AwareModule> activityRef;
 
@@ -235,11 +258,6 @@ public class AwareModule extends ReactContextBaseJavaModule {
     }
 
     private void receiveMuseDataPacket(MuseDataPacket p, Muse muse) {
-        /*
-        @warning very slow
-        String deviceId = Aware.getSetting(this._reactContext, Aware_Preferences.DEVICE_ID);
-        */
-
         // dataHandler.post(new ProcessorRunnable(p));
         _dataBuffer.add(p);
     }
@@ -247,10 +265,12 @@ public class AwareModule extends ReactContextBaseJavaModule {
     public class BufferConsumer extends Thread {
 
         private final WeakReference<ConcurrentCircularBuffer<MuseDataPacket>> _circularBuffer;
+        private final String _deviceId;
 
-        public BufferConsumer(WeakReference<ConcurrentCircularBuffer<MuseDataPacket>> circularBuffer) {
+        public BufferConsumer(WeakReference<ConcurrentCircularBuffer<MuseDataPacket>> circularBuffer, String deviceId) {
             super();
             _circularBuffer = circularBuffer;
+            _deviceId = deviceId;
         }
 
         public void run(){
@@ -260,7 +280,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
                     // doesn't slow down
                     ContentValues context_data = new ContentValues();
                     context_data.put(Provider.EEGMuse_Data.TIMESTAMP, p.timestamp());
-                    context_data.put(Provider.EEGMuse_Data.DEVICE_ID, "test"); // @todo set back deviceId
+                    context_data.put(Provider.EEGMuse_Data.DEVICE_ID, _deviceId);
                     context_data.put(Provider.EEGMuse_Data.EEG1, p.getEegChannelValue(Eeg.EEG1));
                     context_data.put(Provider.EEGMuse_Data.EEG2, p.getEegChannelValue(Eeg.EEG2));
                     context_data.put(Provider.EEGMuse_Data.EEG3, p.getEegChannelValue(Eeg.EEG3));
@@ -304,7 +324,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
          * Create a new concurrent circular buffer.
          *
          * @param type The type of the array.  This is captured for the same reason
-         * it's required by {@link java.util.List.toArray()}.
+         * it's required by { @link java.util.List.toArray()}.
          *
          * @param bufferSize The size of the buffer.
          *
@@ -423,7 +443,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
          * Get a stable snapshot of the complete buffer.
          *
          * <p>This operation fetches a snapshot of the buffer using the algorithm
-         * defined in {@link snapshot()}.  If there was concurrent modification of
+         * defined in { @link snapshot()}.  If there was concurrent modification of
          * the buffer during the copy, however, it will retry until a full stable
          * snapshot of the buffer was acquired.</p>
          *

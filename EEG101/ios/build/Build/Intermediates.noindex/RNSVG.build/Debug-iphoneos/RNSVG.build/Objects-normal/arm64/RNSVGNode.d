@@ -25,6 +25,7 @@ dependencies: \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Utils/RNSVGPathParser.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Brushes/RNSVGBrushType.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/RNSVGContainer.h \
+  RNSVGContainer.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Elements/RNSVGClipPath.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Elements/RNSVGGroup.h \
   /Users/medullosuprarenal/Documents/_eeg/reactnative/EEG101/node_modules/react-native-svg/ios/Elements/RNSVGPath.h \

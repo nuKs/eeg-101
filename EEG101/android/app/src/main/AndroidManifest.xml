@@ -4,25 +4,47 @@
           android:versionCode="15"
           android:versionName="2.5">
 
+
+    <!-- aware external app demo perms' -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+
+    <!-- perms coming from I don't know where -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- <uses-permission android:name="android.permission.CAMERA"/> -->
+    <!-- <uses-permission android:name="android.permission.FLASHLIGHT"/> -->
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
-    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <!-- <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" /> -->
+
+    <!-- aware-client perms' -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <!-- not sure the next perm is req., it's used on the aware-client repo but not the ucla one -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- needed for Android 28 P -->
+    <!-- <uses-permission android:name="android.permission.READ_SYNC_STATS" />-->
+    <!-- <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />-->
+    <!-- <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />-->
+    <!-- <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />-->
+    <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" />-->
+    <!-- Permissions to safeguard data collection quality -->
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />-->
 
     <permission
         android:name="com.aware.READ_CONTEXT_DATA"
@@ -37,9 +59,16 @@
         android:label="Write to AWARE&apos;s Context data"
         android:protectionLevel="normal" />
 
+    <!--
     <uses-sdk
         android:minSdkVersion="21"
         android:targetSdkVersion="22"
+        tools:overrideLibrary="com.aware" />
+    -->
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26"
         tools:overrideLibrary="com.aware" />
 
     <application
@@ -49,12 +78,23 @@
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
+        <!--
+        <activity
+            android:name=".AwareDebugActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -62,6 +102,7 @@
         </activity>
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
 
+        <!-- Adding accessibility service to this app -->
         <service
             android:name="com.aware.Applications"
             android:enabled="true"
@@ -78,7 +119,7 @@
         </service>
 
         <!--
-        commenting out to make space for aware
+        commenting out this react FileProvider to leave space for aware's standard one
         @todo check if it works with <Video>
 
         <provider
@@ -91,6 +132,37 @@
                 android:resource="@xml/paths" />
         </provider>
         -->
+
+        <!-- Use a hardcoded label string on the service
+        to keep the name of the original plugin if added as a library to another -->
+        <service
+            android:name="com.eeg_project.aware_plugins.eegmuse.Plugin"
+            android:exported="true"
+            android:label="AWARE: Plugin Template" />
+
+        <activity
+            android:name="com.eeg_project.aware_plugins.eegmuse.Settings"
+            android:exported="true" />
+
+        <!-- Keep the ${applicationId} so there are no conflicts when merging this plugin as a library for reuse. Update the plugin_template string in values -->
+        <provider
+            android:name="com.eeg_project.aware_plugins.eegmuse.Provider"
+            android:authorities="com.eeg_project.provider.eegmuse"
+            android:exported="true"
+            android:label="EEG Muse Sensor"
+            android:syncable="true"
+            android:readPermission="com.aware.READ_CONTEXT_DATA"
+            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+
+        <service
+            android:name="com.eeg_project.aware_plugins.eegmuse.SyncAdapter"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_template_eegmuse" />
+        </service>
 
     </application>
 

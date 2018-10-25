@@ -1,7 +1,7 @@
 
 #import <React/RCTBridgeModule.h>
 
-#import "EEG101-Swift.h"
+#import "Flux-Swift.h"
 
 @interface Aware: NSObject <RCTBridgeModule>
 
@@ -27,6 +27,10 @@ RCT_EXPORT_METHOD(startPluginAndRecording) {
 
 RCT_EXPORT_METHOD(stopPluginAndRecording) {
   [self.module stopPluginAndRecording];
+}
+
+RCT_EXPORT_METHOD(startAware) {
+  [self.module startAware];
 }
 
 @end
