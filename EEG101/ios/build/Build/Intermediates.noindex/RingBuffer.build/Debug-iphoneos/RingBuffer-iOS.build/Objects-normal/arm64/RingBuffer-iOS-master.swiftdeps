@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
-options: "f14314f0692dc34a3fae0740d64ff075"
-build_time: [1539884244, 216450000]
-inputs:
-  "/Users/medullosuprarenal/Documents/_eeg/ios/RingBuffer/RingBufferSources/RingBuffer.swift": [1534860055, 0]
