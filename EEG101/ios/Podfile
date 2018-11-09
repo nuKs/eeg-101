@@ -8,6 +8,7 @@ target 'EEG101' do
   # Pods for EEG101
   
   pod 'AWAREFramework', :git=>'https://github.com/tetujin/AWAREFramework-iOS.git'
+  pod 'EncryptedCoreData', :git => 'https://github.com/project-imas/encrypted-core-data.git'
 
   target 'EEG101Tests' do
     inherit! :search_paths

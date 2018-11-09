@@ -93,11 +93,11 @@ android {
         preDexLibraries = false
     }
     defaultConfig {
-        applicationId "com.eeg_project"
+        applicationId "org.pnplab.flux"
           // required because of >=21 multiDexEnabled >=26 required because @ReactMethod annotation
         targetSdkVersion 26
-        versionCode 26
-        versionName "2.6"
+        versionCode 27
+        versionName "1.1"
         multiDexEnabled true // Fix issue "Cause: method ID not in [0, 0xffff]: 65536"
         ndk {
             abiFilters "armeabi-v7a"

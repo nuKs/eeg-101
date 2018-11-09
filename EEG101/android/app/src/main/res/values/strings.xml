@@ -6,5 +6,5 @@
     <string name="aware_activate_accessibility">Veuillez activer \"Flux DGC\" dans les services d\'accessibilité.</string>
     <string name="foreground_notification_title">Flux DGC</string>
     <string name="foreground_notification_text" tools:ignore="DuplicateDefinition">L\'application Flux est active.</string>
-    <string name="provider_eegmuse">com.eeg_project.provider.eegmuse</string>
+    <string name="provider_eegmuse">org.pnplab.flux.provider.eegmuse</string>
 </resources>

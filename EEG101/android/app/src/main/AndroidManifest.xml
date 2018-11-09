@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools"
-          package="com.eeg_project"
+          package="org.pnplab.flux"
           android:versionCode="15"
           android:versionName="2.5">
 
@@ -72,7 +72,7 @@
         tools:overrideLibrary="com.aware" />
 
     <application
-        android:name=".MainApplication"
+        android:name="org.pnplab.flux.MainApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@mipmap/ic_launcher"
@@ -91,7 +91,7 @@
         </activity>
         -->
         <activity
-            android:name=".MainActivity"
+            android:name="org.pnplab.flux.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
@@ -124,7 +124,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.eeg_project.fileprovider"
+            android:authorities="org.pnplab.flux.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -136,28 +136,28 @@
         <!-- Use a hardcoded label string on the service
         to keep the name of the original plugin if added as a library to another -->
         <service
-            android:name="com.eeg_project.aware_plugins.eegmuse.Plugin"
-            android:exported="true"
+            android:name="org.pnplab.flux.aware_plugins.eegmuse.Plugin"
+            android:exported="false"
             android:label="AWARE: Plugin Template" />
 
         <activity
-            android:name="com.eeg_project.aware_plugins.eegmuse.Settings"
-            android:exported="true" />
+            android:name="org.pnplab.flux.aware_plugins.eegmuse.Settings"
+            android:exported="false" />
 
         <!-- Keep the ${applicationId} so there are no conflicts when merging this plugin as a library for reuse. Update the plugin_template string in values -->
         <provider
-            android:name="com.eeg_project.aware_plugins.eegmuse.Provider"
-            android:authorities="com.eeg_project.provider.eegmuse"
-            android:exported="true"
+            android:name="org.pnplab.flux.aware_plugins.eegmuse.Provider"
+            android:authorities="org.pnplab.flux.provider.eegmuse"
+            android:exported="false"
             android:label="EEG Muse Sensor"
             android:syncable="true"
             android:readPermission="com.aware.READ_CONTEXT_DATA"
             android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
 
         <service
-            android:name="com.eeg_project.aware_plugins.eegmuse.SyncAdapter"
+            android:name="org.pnplab.flux.aware_plugins.eegmuse.SyncAdapter"
             android:enabled="true"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
             </intent-filter>
