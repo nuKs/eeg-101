@@ -106,9 +106,9 @@
         <service
             android:name="com.aware.Applications"
             android:enabled="true"
-            android:exported="true"
+            android:exported="false"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
-            tools:replace="android:enabled">
+            tools:replace="android:enabled,android:exported">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />
                 <category android:name="android.accessibilityservice.category.FEEDBACK_GENERIC" />
@@ -162,6 +162,25 @@
                 <action android:name="android.content.SyncAdapter" />
             </intent-filter>
             <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_template_eegmuse" />
+        </service>
+
+        <provider
+            android:name="org.pnplab.flux.aware_plugins.questionnaire.Provider"
+            android:authorities="org.pnplab.flux.provider.questionnaire"
+            android:exported="false"
+            android:label="Self-Reported Questionnaire"
+            android:syncable="true"
+            android:readPermission="com.aware.READ_CONTEXT_DATA"
+            android:writePermission="com.aware.WRITE_CONTEXT_DATA" />
+
+        <service
+            android:name="org.pnplab.flux.aware_plugins.questionnaire.SyncAdapter"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_template_questionnaire" />
         </service>
 
     </application>

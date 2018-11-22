@@ -13,7 +13,7 @@ import android.view.WindowManager;
 import com.aware.Applications;
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
-import com.aware.plugin.google.activity_recognition.Settings;
+// import com.aware.plugin.google.activity_recognition.Settings;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -178,8 +178,8 @@ public class AwareDebugActivity extends Activity {
 
                     // Log.i("AwareModule", "start com.aware.plugin.eegmuse");
                     // Aware.startPlugin(getApplicationContext(), "com.aware.plugin.eegmuse");
-                    // Log.i("AwareModule", "start com.aware.plugin.bimsquestionnaire");
-                    // Aware.startPlugin(getApplicationContext(), "com.aware.plugin.bimsquestionnaire");
+                    // Log.i("AwareModule", "start com.aware.plugin.questionnaire");
+                    // Aware.startPlugin(getApplicationContext(), "com.aware.plugin.questionnaire");
 
                     // This makes the app crash `Attempted to add a toast window with unknown token android.os.Binder` / Perhaps because of syncing reminder
                     //Settings for data synching strategies

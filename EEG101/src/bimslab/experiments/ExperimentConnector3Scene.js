@@ -64,9 +64,9 @@ class ConnectorThree extends Component {
           <Text style={styles.instructions}>{I18n.t("museFitProperly")}</Text>
           <Text style={styles.body}>{I18n.t("fitInstructions")}</Text>
         </View>
-        <View style={styles.indicatorContainer}>
+        {/*<View style={styles.indicatorContainer}>
           {this.renderNoiseIndicator()}
-        </View>
+        </View>*/}
 
         <View style={styles.buttonContainer}>
           <CleanButton onPress={this.click}>COMMENCER</CleanButton>

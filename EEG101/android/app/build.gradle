@@ -94,10 +94,10 @@ android {
     }
     defaultConfig {
         applicationId "org.pnplab.flux"
-          // required because of >=21 multiDexEnabled >=26 required because @ReactMethod annotation
+        // required because of >=21 multiDexEnabled >=26 required because @ReactMethod annotation
         targetSdkVersion 26
-        versionCode 27
-        versionName "1.1"
+        versionCode 28
+        versionName "1.2"
         multiDexEnabled true // Fix issue "Cause: method ID not in [0, 0xffff]: 65536"
         ndk {
             abiFilters "armeabi-v7a"
@@ -238,8 +238,9 @@ dependencies {
     implementation 'com.github.wendykierp:JTransforms:3.1'
     //adding AWARE now as a dependency
     implementation 'com.github.denzilferreira:aware-client:75552d101e'
+    // implementation 'com.github.nuks:aware-client:160e210ce3'
     // implementation 'com.github.nuks:_a:126d1ae086'
-    implementation 'com.github.nuks:_b:38a1431e9b'
+    // implementation 'com.github.nuks:_b:38a1431e9b' // bimsquestionnaire
 
     // my attempt to fix https://stackoverflow.com/questions/15990075/the-import-com-google-android-gms-cannot-be-resolved
     compile 'com.google.android.gms:play-services:7.8.0'
@@ -249,8 +250,10 @@ dependencies {
 
     //we add more plugins we want bundled after this. Let's compile now.
     //UCLA needs: activity recognition, fused location plugins, conversations
+    /*
     api "com.github.denzilferreira:com.aware.plugin.google.activity_recognition:$aware_libs"
     api "com.github.denzilferreira:com.aware.plugin.google.fused_location:$aware_libs"
+    */
 
     implementation files('./libs/libmuse_android.jar')
 

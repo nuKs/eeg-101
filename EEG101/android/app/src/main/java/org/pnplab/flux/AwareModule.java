@@ -38,7 +38,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
     private final ContentResolver _contentResolver;
     private ReactApplicationContext _reactContext;
     private Plugin _plugin;
-    private com.aware.plugin.bimsquestionnaire.Plugin _bimsQuestionnairePlugin;
+    private org.pnplab.flux.aware_plugins.questionnaire.Plugin _questionnairePlugin;
     private Muse _muse;
     private ConcurrentCircularBuffer<MuseDataPacket> _dataBuffer = new ConcurrentCircularBuffer<MuseDataPacket>(MuseDataPacket.class, 220);
 
@@ -62,7 +62,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
 
         // Retrieve bims questionnaire plugin instance
         ComponentName componentName;
-        componentName = new ComponentName(_reactContext.getPackageName(), "com.aware.plugin.bimsquestionnaire.Plugin");
+        componentName = new ComponentName(_reactContext.getPackageName(), "org.pnplab.flux.aware_plugins.questionnaire.Plugin");
         if (Aware.DEBUG)
             Log.d(Aware.TAG, "Initializing bundled: " + componentName.toString());
         Intent pluginIntent = new Intent();
@@ -79,7 +79,7 @@ public class AwareModule extends ReactContextBaseJavaModule {
             parsedContent.put(key, (Double) processingContent.get(key));
         }
 
-        _bimsQuestionnairePlugin.storeQuestionnaire(questionnaireId, parsedContent);
+        _questionnairePlugin.storeQuestionnaire(questionnaireId, parsedContent);
     }
 
     private static AwareStartListener _listener = null;
@@ -137,14 +137,14 @@ public class AwareModule extends ReactContextBaseJavaModule {
     protected ServiceConnection mServerConnBQ = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder binder) {
-            Log.d("AwareModule", "onServiceConnected/bimsquestionnaire");
-            com.aware.plugin.bimsquestionnaire.Plugin.LocalBinder castedBinder = (com.aware.plugin.bimsquestionnaire.Plugin.LocalBinder) binder;
-            _bimsQuestionnairePlugin = castedBinder.getService();
+            Log.d("AwareModule", "onServiceConnected/questionnaire");
+            org.pnplab.flux.aware_plugins.questionnaire.Plugin.LocalBinder castedBinder = (org.pnplab.flux.aware_plugins.questionnaire.Plugin.LocalBinder) binder;
+            _questionnairePlugin = castedBinder.getService();
         }
 
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            Log.d("AwareModule", "onServiceDisconnected/bimsquestionnaire");
+            Log.d("AwareModule", "onServiceDisconnected/questionnaire");
         }
     };
 

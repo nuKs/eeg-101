@@ -11,7 +11,7 @@ import android.view.WindowManager;
 import com.aware.Applications;
 import com.aware.Aware;
 import com.aware.Aware_Preferences;
-import com.aware.plugin.google.activity_recognition.Settings;
+// import com.aware.plugin.google.activity_recognition.Settings;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
 
@@ -204,8 +204,8 @@ public class MainActivity extends ReactActivity {
                         /*
                         Log.i("AwareModule", "start com.aware.plugin.eegmuse");
                         Aware.startPlugin(getApplicationContext(), "com.aware.plugin.eegmuse");
-                        Log.i("AwareModule", "start com.aware.plugin.bimsquestionnaire");
-                        Aware.startPlugin(getApplicationContext(), "com.aware.plugin.bimsquestionnaire");
+                        Log.i("AwareModule", "start org.pnplab.flux.aware_plugins.questionnaire");
+                        Aware.startPlugin(getApplicationContext(), "org.pnplab.flux.aware_plugins.questionnaire");
                         */
 
                         // This makes the app crash `Attempted to add a toast window with unknown token android.os.Binder` / Perhaps because of syncing reminder
@@ -217,6 +217,7 @@ public class MainActivity extends ReactActivity {
                         Aware.setSetting(getApplicationContext(), Aware_Preferences.FREQUENCY_CLEAN_OLD_DATA, 1); //weekly basis cleanup of local storage, otherwise we run out of space locally on the device
                         Aware.setSetting(getApplicationContext(), Aware_Preferences.FREQUENCY_WEBSERVICE, 5); //try to sync data to the server every 5m
 
+                        /*
                         //Activity Recognition settings
                         Aware.setSetting(getApplicationContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true);
                         //this is actually controlled by Google's algorithm. We want every 10 seconds, but this is not guaranteed. Recommended value is 60 s.
@@ -231,6 +232,7 @@ public class MainActivity extends ReactActivity {
                         Aware.setSetting(getApplicationContext(), com.aware.plugin.google.fused_location.Settings.FALLBACK_LOCATION_TIMEOUT, 20); //if not moving for 20 minutes, new location captured
                         Aware.setSetting(getApplicationContext(), com.aware.plugin.google.fused_location.Settings.LOCATION_SENSITIVITY, 5); //need to move 5 meter to assume new location
                         Aware.startPlugin(getApplicationContext(), "com.aware.plugin.google.fused_location");
+                        */
 
                         //conversations
                         // we don't use it anymore - it crashes the app at launch w/ "couldn't find "libaudioclassifier.so""

@@ -10,6 +10,8 @@ PODS:
   - EAIntroView (2.9.0):
     - EARestrictedScrollView (~> 1.1.0)
   - EARestrictedScrollView (1.1.0)
+  - EncryptedCoreData (3.1):
+    - SQLCipher (~> 3.4.0)
   - GoogleSignIn (4.1.2):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
@@ -39,11 +41,17 @@ PODS:
     - SCNetworkReachability/Core (= 2.0.6)
   - SCNetworkReachability/Core (2.0.6):
     - macros_blocks (~> 0.0.1)
+  - SQLCipher (3.4.2):
+    - SQLCipher/standard (= 3.4.2)
+  - SQLCipher/common (3.4.2)
+  - SQLCipher/standard (3.4.2):
+    - SQLCipher/common
   - SVProgressHUD (2.2.5)
   - TPCircularBuffer (1.6.1)
 
 DEPENDENCIES:
   - AWAREFramework (from `https://github.com/tetujin/AWAREFramework-iOS.git`)
+  - EncryptedCoreData (from `https://github.com/project-imas/encrypted-core-data.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -57,23 +65,30 @@ SPEC REPOS:
     - ios-ntp
     - macros_blocks
     - SCNetworkReachability
+    - SQLCipher
     - SVProgressHUD
     - TPCircularBuffer
 
 EXTERNAL SOURCES:
   AWAREFramework:
     :git: https://github.com/tetujin/AWAREFramework-iOS.git
+  EncryptedCoreData:
+    :git: https://github.com/project-imas/encrypted-core-data.git
 
 CHECKOUT OPTIONS:
   AWAREFramework:
     :commit: cbe9f3644ecf5ec8f82f630878e101180c0e736a
     :git: https://github.com/tetujin/AWAREFramework-iOS.git
+  EncryptedCoreData:
+    :commit: b97ffaf2f19dad4d1558bc9b0668cc2e09d17347
+    :git: https://github.com/project-imas/encrypted-core-data.git
 
 SPEC CHECKSUMS:
   AWAREFramework: a091abbcd8733de312f92743d212fbc5dbf894d5
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  EncryptedCoreData: f6762fb05f88a52f36c5648659abc91b57f244b4
   GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
@@ -81,9 +96,10 @@ SPEC CHECKSUMS:
   ios-ntp: 49a4ef0866aee5343627710c1c7de71d7c064417
   macros_blocks: cf3ff5810b798f462def9f1e3999817dc45cf2df
   SCNetworkReachability: dbb0150b1a7a4579e148420132da19e718b955ce
+  SQLCipher: f9fcf29b2e59ced7defc2a2bdd0ebe79b40d4990
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TPCircularBuffer: c13243556527551c4d320709c7b14a6d20cdc30a
 
-PODFILE CHECKSUM: 699a2ef93ecf8c20d8ad7c41ca76d5177e8a87b7
+PODFILE CHECKSUM: 536cb21f95f66ca65a7764a72736576d82e51383
 
 COCOAPODS: 1.5.3
