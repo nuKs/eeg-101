@@ -1,37 +1,27 @@
 PODS:
-  - AWAREFramework (1.1.5):
-    - EAIntroView (~> 2.9.0)
+  - AWAREFramework (1.1.10):
+    - EncryptedCoreDataNuks
     - GoogleSignIn
     - ios-ntp
     - SCNetworkReachability
     - SVProgressHUD
     - TPCircularBuffer
   - CocoaAsyncSocket (7.6.3)
-  - EAIntroView (2.9.0):
-    - EARestrictedScrollView (~> 1.1.0)
-  - EARestrictedScrollView (1.1.0)
-  - EncryptedCoreData (3.1):
+  - EncryptedCoreDataNuks (3.4):
     - SQLCipher (~> 3.4.0)
-  - GoogleSignIn (4.1.2):
+  - GoogleSignIn (4.4.0):
     - "GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)"
     - "GoogleToolboxForMac/NSString+URLArguments (~> 2.1)"
-    - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/DebugUtils (2.1.4):
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-  - GoogleToolboxForMac/Defines (2.1.4)
-  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4)":
-    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
-    - GoogleToolboxForMac/Defines (= 2.1.4)
-    - "GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)"
-  - "GoogleToolboxForMac/NSString+URLArguments (2.1.4)"
-  - GTMOAuth2 (1.1.6):
-    - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.2.0):
-    - GTMSessionFetcher/Full (= 1.2.0)
-  - GTMSessionFetcher/Core (1.2.0)
-  - GTMSessionFetcher/Full (1.2.0):
-    - GTMSessionFetcher/Core (= 1.2.0)
+  - GoogleToolboxForMac/DebugUtils (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - "GoogleToolboxForMac/NSDictionary+URLArguments (2.2.0)":
+    - GoogleToolboxForMac/DebugUtils (= 2.2.0)
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+    - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
+  - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
+  - GTMSessionFetcher/Core (1.2.1)
   - ios-ntp (1.1.9):
     - CocoaAsyncSocket
   - macros_blocks (0.0.4):
@@ -50,17 +40,14 @@ PODS:
   - TPCircularBuffer (1.6.1)
 
 DEPENDENCIES:
-  - AWAREFramework (from `https://github.com/tetujin/AWAREFramework-iOS.git`)
-  - EncryptedCoreData (from `https://github.com/project-imas/encrypted-core-data.git`)
+  - AWAREFramework (from `https://github.com/nuKs/AWAREFramework-iOS.git`, branch `nuKs/encryption`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaAsyncSocket
-    - EAIntroView
-    - EARestrictedScrollView
+    - EncryptedCoreDataNuks
     - GoogleSignIn
     - GoogleToolboxForMac
-    - GTMOAuth2
     - GTMSessionFetcher
     - ios-ntp
     - macros_blocks
@@ -71,28 +58,21 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   AWAREFramework:
-    :git: https://github.com/tetujin/AWAREFramework-iOS.git
-  EncryptedCoreData:
-    :git: https://github.com/project-imas/encrypted-core-data.git
+    :branch: nuKs/encryption
+    :git: https://github.com/nuKs/AWAREFramework-iOS.git
 
 CHECKOUT OPTIONS:
   AWAREFramework:
-    :commit: cbe9f3644ecf5ec8f82f630878e101180c0e736a
-    :git: https://github.com/tetujin/AWAREFramework-iOS.git
-  EncryptedCoreData:
-    :commit: b97ffaf2f19dad4d1558bc9b0668cc2e09d17347
-    :git: https://github.com/project-imas/encrypted-core-data.git
+    :commit: 4704742405ebf5d6b7d970c318c680c3ffa9bd65
+    :git: https://github.com/nuKs/AWAREFramework-iOS.git
 
 SPEC CHECKSUMS:
-  AWAREFramework: a091abbcd8733de312f92743d212fbc5dbf894d5
+  AWAREFramework: 9e30c58536fa02096239444353eca4c51775a75f
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
-  EAIntroView: 76f68cc56242f2e25359419e6ecc2344ee7e1756
-  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
-  EncryptedCoreData: f6762fb05f88a52f36c5648659abc91b57f244b4
-  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
-  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
-  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
-  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  EncryptedCoreDataNuks: 36fc68736e07fb70c0e413e127c910015917a853
+  GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   ios-ntp: 49a4ef0866aee5343627710c1c7de71d7c064417
   macros_blocks: cf3ff5810b798f462def9f1e3999817dc45cf2df
   SCNetworkReachability: dbb0150b1a7a4579e148420132da19e718b955ce
@@ -100,6 +80,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TPCircularBuffer: c13243556527551c4d320709c7b14a6d20cdc30a
 
-PODFILE CHECKSUM: 536cb21f95f66ca65a7764a72736576d82e51383
+PODFILE CHECKSUM: 01b65ed6c976b6fa740dcf6d6f32b27298cc7edd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.0.beta.2

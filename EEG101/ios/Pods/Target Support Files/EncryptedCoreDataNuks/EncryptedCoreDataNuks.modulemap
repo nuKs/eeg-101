@@ -1,0 +1,6 @@
+framework module EncryptedCoreDataNuks {
+  umbrella header "EncryptedCoreDataNuks-umbrella.h"
+
+  export *
+  module * { export * }
+}

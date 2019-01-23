@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "99294812B4F2C77534C8B4DBD6760346"
+               BlueprintIdentifier = "71EE4246C3F0573C0F43D8BB92CB953E"
                BlueprintName = "AWAREFramework"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "AWAREFramework.framework">

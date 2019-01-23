@@ -30,6 +30,11 @@ final class AwareModule: NSObject {
     let sqliteURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last
     ExternalCoreDataHandler.shared()!.sqliteFileURL = sqliteURL!.appendingPathComponent("MuseAwareSensor.sqlite") // @todo @warning make sure sqlite db exists!
     
+    // Set local db encryption keys.
+    let encryptionKey = kFluxIosEncryptionKey
+    CoreDataHandler.shared()!.sqliteEncryptionKey = encryptionKey;
+    ExternalCoreDataHandler.shared()!.sqliteEncryptionKey = encryptionKey;
+    
     // Request notification & sensing permissions
     let core = AWARECore.shared()
     DispatchQueue.main.async {

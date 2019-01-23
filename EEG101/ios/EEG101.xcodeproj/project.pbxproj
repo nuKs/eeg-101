@@ -66,6 +66,9 @@
 		DFAFD3F0216E99E100C49C8B /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFAFD3EF216E99E100C49C8B /* ExternalAccessory.framework */; };
 		DFC0691F21172F2D00765503 /* libLottie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068DB2116248400765503 /* libLottie.a */; };
 		DFC06920211732FA00765503 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC068B421161F5800765503 /* libRNVectorIcons.a */; };
+		DFCB5E9E21C91F29001DB36C /* .env.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DFCB5E9C21C91F29001DB36C /* .env.release.xcconfig */; };
+		DFCB5E9F21C91F29001DB36C /* .env.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DFCB5E9D21C91F29001DB36C /* .env.debug.xcconfig */; };
+		DFCB5EA121C92897001DB36C /* EEG101-Bridging-Header-Keys.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCB5EA021C92897001DB36C /* EEG101-Bridging-Header-Keys.m */; };
 		DFD28B942118F6D300C7F70C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD28B932118F6D300C7F70C /* AppDelegate.swift */; };
 		DFF3ABB9211A5AE700459038 /* Muse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF3AB83211A5A4B00459038 /* Muse.framework */; };
 		DFF3ABDD211A5C9700459038 /* EpochBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF3ABD1211A5C9600459038 /* EpochBuffer.swift */; };
@@ -614,6 +617,9 @@
 		DFC068BE2116242D00765503 /* RNI18n.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/ios/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		DFC068C72116244D00765503 /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/lib/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		DFC068CD2116248400765503 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = "../node_modules/lottie-ios/Lottie.xcodeproj"; sourceTree = "<group>"; };
+		DFCB5E9C21C91F29001DB36C /* .env.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = .env.release.xcconfig; path = ../.env.release.xcconfig; sourceTree = "<group>"; };
+		DFCB5E9D21C91F29001DB36C /* .env.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = .env.debug.xcconfig; path = ../.env.debug.xcconfig; sourceTree = "<group>"; };
+		DFCB5EA021C92897001DB36C /* EEG101-Bridging-Header-Keys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EEG101-Bridging-Header-Keys.m"; sourceTree = "<group>"; };
 		DFD28B922118F6D300C7F70C /* EEG101-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EEG101-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFD28B932118F6D300C7F70C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = EEG101/AppDelegate.swift; sourceTree = "<group>"; };
 		DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RingBuffer.xcodeproj; path = ../../../ios/RingBuffer/RingBuffer.xcodeproj; sourceTree = "<group>"; };
@@ -808,6 +814,7 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				DFD28B932118F6D300C7F70C /* AppDelegate.swift */,
 				DFD28B922118F6D300C7F70C /* EEG101-Bridging-Header.h */,
+				DFCB5EA021C92897001DB36C /* EEG101-Bridging-Header-Keys.m */,
 				DF505C20212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld */,
 				DF505C7B212C351400F56EF3 /* MuseSensorAccelerometer.swift */,
 				DF505C77212C351400F56EF3 /* MuseSensorDrlRef.swift */,
@@ -896,6 +903,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				DFCB5E9D21C91F29001DB36C /* .env.debug.xcconfig */,
+				DFCB5E9C21C91F29001DB36C /* .env.release.xcconfig */,
 				DF505BCE2129D2BE00F56EF3 /* Roboto-Bold.ttf */,
 				DF505BCF2129D2BE00F56EF3 /* Roboto-Light.ttf */,
 				DFF307D8212C52D100D3B281 /* RingBuffer.xcodeproj */,
@@ -1623,6 +1632,7 @@
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				F7D7CB25F5914C83A420AF7B /* Entypo.ttf in Resources */,
 				A8ED92CB57E7405F9CEF6AF0 /* EvilIcons.ttf in Resources */,
+				DFCB5E9E21C91F29001DB36C /* .env.release.xcconfig in Resources */,
 				E584A25C2B1E4C1EB51E13AF /* Foundation.ttf in Resources */,
 				8EE7931677FE4803A34ABC2E /* Ionicons.ttf in Resources */,
 				D414075558254E72BFA77CC6 /* MaterialIcons.ttf in Resources */,
@@ -1630,6 +1640,7 @@
 				DF03ED7C2117B6CE00FAD02B /* Roboto-Thin.ttf in Resources */,
 				DF505BD02129D2BF00F56EF3 /* Roboto-Bold.ttf in Resources */,
 				DFF3AC29211A612B00459038 /* Roboto-Light.ttf in Resources */,
+				DFCB5E9F21C91F29001DB36C /* .env.debug.xcconfig in Resources */,
 				DF03ED7A2117B62000FAD02B /* Roboto-Black.ttf in Resources */,
 				5A08DD066E4F4783BCCD3552 /* Roboto_medium.ttf in Resources */,
 				6042D6F5AF5740D8B54FAB45 /* Roboto.ttf in Resources */,
@@ -1665,7 +1676,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EEG101/Pods-EEG101-resources.sh",
 				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Assets/AWARE.xcdatamodeld",
 				"${PODS_CONFIGURATION_BUILD_DIR}/AWAREFramework/AWAREFramework.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
@@ -1678,7 +1689,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEG101/Pods-EEG101-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E92925F836410681162FF088 /* [CP] Check Pods Manifest.lock */ = {
@@ -1705,13 +1716,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EEG101/Pods-EEG101-frameworks.sh",
 				"${PODS_ROOT}/AWAREFramework/AWAREFramework/Frameworks/StudentLifeAudio.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/EAIntroView/EAIntroView.framework",
-				"${BUILT_PRODUCTS_DIR}/EARestrictedScrollView/EARestrictedScrollView.framework",
-				"${BUILT_PRODUCTS_DIR}/EncryptedCoreData/EncryptedCoreData.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/EncryptedCoreDataNuks/EncryptedCoreDataNuks.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SCNetworkReachability/SCNetworkReachability.framework",
@@ -1724,10 +1732,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StudentLifeAudio.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EAIntroView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EARestrictedScrollView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EncryptedCoreData.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EncryptedCoreDataNuks.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCNetworkReachability.framework",
@@ -1738,7 +1743,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EEG101/Pods-EEG101-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EEG101/Pods-EEG101-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1753,6 +1758,7 @@
 				DFF3ABE2211A5C9700459038 /* AppNativeEventEmitter.swift in Sources */,
 				DF505C89212C351600F56EF3 /* MuseSensorAccelerometer.swift in Sources */,
 				DF505C22212ABA5800F56EF3 /* MuseAwareSensor.xcdatamodeld in Sources */,
+				DFCB5EA121C92897001DB36C /* EEG101-Bridging-Header-Keys.m in Sources */,
 				DFF3ABDF211A5C9700459038 /* MuseConnectorModule.swift in Sources */,
 				DF505C8D212C351600F56EF3 /* MuseSensorHsi.swift in Sources */,
 				DF505C85212C351600F56EF3 /* MuseSensorDrlRef.swift in Sources */,
@@ -1829,7 +1835,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70699ED84D08BBDDBE637AED /* Pods-EEG101.debug.xcconfig */;
+			baseConfigurationReference = DFCB5E9D21C91F29001DB36C /* .env.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1874,7 +1880,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.pnplab.flux;
 				PRODUCT_NAME = Flux;
 				PROVISIONING_PROFILE_SPECIFIER = "Flux / Dev";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
 				SWIFT_OBJC_BRIDGING_HEADER = "EEG101-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1884,7 +1890,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 938E24A16132990A12801EE5 /* Pods-EEG101.release.xcconfig */;
+			baseConfigurationReference = DFCB5E9C21C91F29001DB36C /* .env.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

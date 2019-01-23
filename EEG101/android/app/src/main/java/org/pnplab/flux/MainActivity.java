@@ -219,9 +219,9 @@ public class MainActivity extends ReactActivity {
 
                         /*
                         //Activity Recognition settings
-                        Aware.setSetting(getApplicationContext(), Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true);
+                        Aware.setSetting(getApplicationContext(), com.aware.plugin.google.activity_recognition.Settings.STATUS_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, true);
                         //this is actually controlled by Google's algorithm. We want every 10 seconds, but this is not guaranteed. Recommended value is 60 s.
-                        Aware.setSetting(getApplicationContext(), Settings.FREQUENCY_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, 60);
+                        Aware.setSetting(getApplicationContext(), com.aware.plugin.google.activity_recognition.Settings.FREQUENCY_PLUGIN_GOOGLE_ACTIVITY_RECOGNITION, 60);
                         Aware.startPlugin(getApplicationContext(), "com.aware.plugin.google.activity_recognition"); //initialise plugin and set as active
 
                         //fused location
@@ -242,6 +242,10 @@ public class MainActivity extends ReactActivity {
                         Log.i("AwareModule", "start org.pnplab.flux.aware_plugins.eegmuse");
                         Aware.setSetting(getApplicationContext(), org.pnplab.flux.aware_plugins.eegmuse.Settings.STATUS_PLUGIN_EEGMUSE, true);
                         Aware.startPlugin(getApplicationContext(), "org.pnplab.flux.aware_plugins.eegmuse");
+
+                        Log.i("AwareModule", "start org.pnplab.flux.aware_plugins.questionnaire");
+                        Aware.setSetting(getApplicationContext(), org.pnplab.flux.aware_plugins.questionnaire.Settings.STATUS_PLUGIN_QUESTIONNAIRE, true);
+                        Aware.startPlugin(getApplicationContext(), "org.pnplab.flux.aware_plugins.questionnaire");
 
                         //Ask accessibility to be enabled
                         Applications.isAccessibilityServiceActive(getApplicationContext());

@@ -18,4 +18,6 @@
 #import <React/RCTEventEmitter.h>
 
 #import "Muse/Muse.h"
-// #import "EncryptedStore.h"
+
+// see EEG101-Bridging-Header-Keys.m
+extern NSString* const kFluxIosEncryptionKey;
