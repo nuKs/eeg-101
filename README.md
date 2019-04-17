@@ -1,4 +1,4 @@
-* DEPRECATED FORK *
+**DEPRECATED FORK**
 
 <p align="center">
   <img alt="banner" src="/images/EEG101graphic.png/" width="600">
